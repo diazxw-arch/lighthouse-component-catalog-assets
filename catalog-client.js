@@ -62,8 +62,18 @@ function errorMessage(message,retry){
  grid.replaceChildren();const panel=document.createElement('div'),text=document.createElement('p'),button=document.createElement('button');
  panel.className='catalog-error';panel.setAttribute('role','alert');text.textContent=message;button.type='button';button.textContent='再試行';button.addEventListener('click',retry);panel.append(text,button);grid.append(panel);grid.setAttribute('aria-busy','false');
 }
+function preparePreview(html,item){
+ if(item.id!=='LH01-0001'||!item.implemented)return html;
+ const template=document.createElement('template');template.innerHTML=html;
+ const frame=template.content.querySelector('iframe[sandbox="allow-scripts"]');
+ const source=frame?.getAttribute('srcdoc');if(!source?.includes('lh-voice-search__bar'))return html;
+ // Native form submission is disabled in this opaque sandbox. Dispatch the
+ // existing React submit callback after its keyboard/IME handlers have run.
+ const bridge='<script>document.addEventListener("keydown",function(event){if(event.defaultPrevented||event.key!=="Enter"||event.isComposing||event.keyCode===229)return;var input=event.target;if(!(input instanceof HTMLInputElement)||input.type!=="search"||input.disabled)return;var form=input.form;if(!form||!form.matches("form.lh-voice-search__bar[role=search]"))return;event.preventDefault();if(form.checkValidity())form.dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));});</script>';
+ frame.setAttribute('srcdoc',source.replace('</body>',bridge+'</body>'));return template.innerHTML;
+}
 function paint(items){
- grid.innerHTML=items.map(item=>{const html=cache.get(item.card)?.data?.[item.id];if(typeof html!=='string')throw Error('missing card');return html;}).join('');
+ grid.innerHTML=items.map(item=>{const html=cache.get(item.card)?.data?.[item.id];if(typeof html!=='string')throw Error('missing card');return preparePreview(html,item);}).join('');
  if(state.sort==='recent')for(const item of items){
   const body=document.getElementById(item.id)?.querySelector('.body');if(!body||!Number.isFinite(Date.parse(item.addedAt)))continue;
   const date=document.createElement('p');date.className='catalog-added';date.textContent='目録の初回記録：'+new Date(item.addedAt).toLocaleDateString('ja-JP',{year:'numeric',month:'2-digit',day:'2-digit',timeZone:'Asia/Tokyo'});body.prepend(date);
