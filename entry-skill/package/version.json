@@ -1,0 +1,12 @@
+{
+  "name": "lighthouse-catalog-entry",
+  "version": "1.0",
+  "review_interval": 30,
+  "version_increment_tenths": 1,
+  "measured_completions_at_release": 0,
+  "historical_reference_time_ms": null,
+  "historical_crop_time_ms": null,
+  "historical_quality_score": null,
+  "runtime": {"python": ">=3.11", "pillow_reviewed": "12.3.0", "dependency_installation": "none"},
+  "automation": "none"
+}

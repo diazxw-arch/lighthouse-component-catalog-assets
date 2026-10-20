@@ -1,0 +1,1 @@
+const b=document.getElementById('copy-prompt'),s=document.getElementById('copy-status');b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById('agent-prompt').textContent);s.textContent='指示をコピーしました。対象IDと保存先を添えて、エージェントに渡してください。';}catch{s.textContent='コピーできませんでした。下の指示を選択してコピーしてください。';document.getElementById('agent-prompt').focus();}});

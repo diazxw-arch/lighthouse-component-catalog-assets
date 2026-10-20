@@ -1,0 +1,13 @@
+{
+  "name": "lighthouse-catalog-component-builder",
+  "version": "1.0",
+  "versionTenths": 10,
+  "reviewEvery": 30,
+  "completedSinceRelease": 0,
+  "timing": "No new component timing samples yet",
+  "quality": "No new component quality samples yet",
+  "runtime": "Node.js built-ins only; offline explicit-path receipt ledger",
+  "authority": "Direct user request; old workers and automations remain paused",
+  "source": "Catalog implementation chats No.68 and No.69, scoped human corrections and parent acceptance evidence",
+  "behavioralValidation": "Observed historical failure baseline plus deterministic tracker tests; no claim of a fresh-agent pressure test"
+}

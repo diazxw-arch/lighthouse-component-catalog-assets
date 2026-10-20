@@ -1,0 +1,37 @@
+{
+  "entryId": "LH07-0115",
+  "skillVersion": "1.1",
+  "method": "reference-first-scoped-imagegen",
+  "difficulty": "standard",
+  "startedAt": "2026-10-20T01:00:00.000Z",
+  "finishedAt": "2026-10-20T01:06:00.000Z",
+  "generationMs": 120000,
+  "activeMs": 200000,
+  "attempts": 1,
+  "status": "reviewed",
+  "imageSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "imageVersion": 1,
+  "quality": {
+    "geometryIcons": 4,
+    "typography": 4,
+    "contentState": 4,
+    "paletteSurfaces": 4,
+    "protectedMedia": 4
+  },
+  "defects": [],
+  "evidence": {
+    "visuallyInspected": true,
+    "stored": true,
+    "catalogUpdated": true,
+    "catalogReadBack": true,
+    "storedImageOpened": true,
+    "promptRecorded": true,
+    "referencesRecorded": true,
+    "checkpointSaved": true
+  },
+  "timingCoverage": {
+    "elapsedScope": "full",
+    "preparationMeasured": true,
+    "unknownIntervals": []
+  }
+}

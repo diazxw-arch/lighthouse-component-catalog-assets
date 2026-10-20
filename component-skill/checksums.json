@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "files": [
+    {
+      "file": "baseline.json",
+      "sha256": "f6530f203fb5fec29129d8c4ebdf34afff4194cdf7a600b479a632a9bd877f76"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "sha256": "8526e877ec1ac7ebd3bf3b7124791a049099121755c36b8b0d771ee6fc51b3ca"
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "afc1f75e3374821fd74ef8fc4eca231dfe2f1fee0a6731c390d006d8b9760ce5"
+    },
+    {
+      "file": "receipt.template.json",
+      "sha256": "26151daabc235df189b365fb487db10e47d5d4441a609265d65528ddccc4103a"
+    },
+    {
+      "file": "references/known-errors.md",
+      "sha256": "89de634647f1b41b25afba00aa735f6d5a5af20c80f580a82f935af904bdec75"
+    },
+    {
+      "file": "references/measurement.md",
+      "sha256": "c1c8971d36620714ab59801d79fd2d1339b5742e69f9ecedb53606be6bf34a2b"
+    },
+    {
+      "file": "references/workflow.md",
+      "sha256": "6efd0f14c1e43171bf73a331fde25448e0553403753e6bfcd4bd50361faf1fa5"
+    },
+    {
+      "file": "scripts/cycle.mjs",
+      "sha256": "8f0f28bffe4b8af438e3f9b9d8c64926b5dfd8d1767c5d02daaa2c1e9e154061"
+    },
+    {
+      "file": "SKILL.md",
+      "sha256": "0f64d159ea8a48da3b7bfffe41bb90f4d1163c7dbf51d07e1c986616d7faf4d2"
+    }
+  ]
+}

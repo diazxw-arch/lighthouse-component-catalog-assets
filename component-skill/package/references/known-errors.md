@@ -1,0 +1,19 @@
+# Observed errors and proven remedies
+
+These are historical observations from the two catalog implementation chats and parent acceptance receipts, not new design authority. The initial skill uses these actual failures as its behavioral baseline; it does not claim a fresh-agent pressure test.
+
+| Failure | Better method | Scope and retained exceptions |
+| --- | --- | --- |
+| After B's 2026-10-19 23:17:55Z compaction, a closed LH05-0023 hover task replaced the active batch. An old proof timestamp was refreshed. | Restore exact unfinished batch and post-checkpoint commands; pin unchanged proof; never refresh timestamps without an observation. | Human messages `01a15678-6774-7a71-a7a4-b6925db8a924` and `01a15678-6785-7001-8fd2-1e7815412a87`, coordinator No.67. Closed work stays closed unless new authority/regression applies. |
+| A13 photo pin overlapped footer action by 44×10px; an ancestor-less month-hover selector showed no feedback. | Compare original pin position, inspect hit rectangles and actual topmost target, then test press/hover. | Discovery map/calendar family. Keep original staggered gutter and geometry; no global layout redesign. |
+| B18 dialog keyboard attempt reached a focus guard without proving the host callback. | Use the existing Radix dialog; observe real selection/callback, Escape/reopen/focus return and scroll-lock cleanup. | Dialog family. Keep the failed attempt; a later successful interaction supplies the pass. |
+| LH05-0055 native submit could be blocked by the installed catalog sandbox before the event. | Test pointer and Enter inside the real iframe; use a component request handler compatible with existing permissions. | Strict catalog iframe only. Do not loosen sandbox or forbid ordinary forms globally. |
+| Crop controls overlapped a corner target; second pointer, disable during drag and no-op edge arrows broke ownership/history. | One-pointer capture/cancel, target overlap check, keyboard bounds feedback, no duplicate no-op undo and no drag announcement spam. | Crop/drag family. Local checks do not imply an unmerged batch is accepted. |
+| Broadly applying a hover correction would overwrite meaningful colors. | Unbranded controls use the approved darker neutral hover; theme/color swatches preserve their fill. | LH05-0023 correction. Keep catalog purple implementation marker and component branding. |
+| Segment caps and press scaling created gaps. | Round only outside caps, keep inner joins square and avoid scaling that separates segments. | LH05-0021; not a global corner-radius replacement. |
+| Enlarged blue quote marks could be mistaken for a global font change. | Apply the requested quotation treatment while retaining text and photos. | LH01-0035 only. |
+| Source, numeric scores, font-family assertions and screenshots were overclaimed. | Separate actual visual, interaction, font load, native reopen, physical device and production evidence. | All families. State residuals and unknowns; preserve licensed available font choices. |
+| Native stderr notices or missing browser crypto triggered repeated wrappers. | Check real exit codes; hash outside the browser with reviewed native tools; one diagnosis and a prerequisite-based retry. | Native Windows only; no WSL/dependency/helper fallback. |
+| Fresh deployment 404 or SPA fallback 200 was treated as a valid component. | Verify terminal deployment, exact immutable HTML/build hashes, alias and actual-catalog response. | Release evidence. CRLF normalization and byte identity are distinct. |
+
+Private source receipts remain in the catalog's existing coordination checkpoint and owner ledgers. Do not publish transcripts, absolute personal paths, credentials or process inventories with this package. New errors enter a scoped correction/receipt when observed, then the next 30-component review decides whether they improve this reference.

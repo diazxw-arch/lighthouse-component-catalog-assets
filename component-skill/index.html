@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>カタログから部品を実装する · Lighthouse</title>
+<link rel="stylesheet" href="style.css">
+<main>
+<nav aria-label="現在の場所"><a href="../../">部品の目録へ戻る</a></nav>
+<header><h1>カタログから部品を実装する</h1><p class="version">Component Builder <strong>v1.0</strong></p><p class="lead">参考画像と画像生成版を読み取り、再利用できる実際のコンポーネントを作るための Codex スキル。</p><div class="downloads"><a class="primary" href="lighthouse-catalog-component-builder-v1.0.zip" download>スキル一式をダウンロード</a><a href="package/SKILL.md" download>SKILL.md</a><a href="checksums.json">ファイルのチェックサム</a></div></header>
+<section aria-labelledby="use-heading"><h2 id="use-heading">この部品から始める</h2><p>スキル一式を確認して Codex に追加し、部品IDを指定してください。既存の作業や自動処理は再開しません。</p>
+<form id="prompt-form"><label for="component-id">部品ID</label><div class="input-row"><input id="component-id" name="component" placeholder="LH01-0034" pattern="LH[0-9]{2}-[0-9]{4,6}" maxlength="13" autocomplete="off" aria-describedby="id-help" required><button type="submit">依頼文を作る</button></div><p id="id-help" class="note">目録にあるIDを入力（例：LH01-0034）。生成するのは依頼文です。</p></form>
+<label for="prompt">Codex への依頼文</label><textarea id="prompt" rows="5" readonly>Use $lighthouse-catalog-component-builder to implement catalog component LH01-0034. Follow the latest human scope, preserve reference media, verify the real component in production and the actual catalog, and record measured time and quality. Keep paused workers and automations stopped.</textarea><button id="copy-prompt" type="button">依頼文をコピー</button><p id="prompt-status" role="status" aria-live="polite"></p>
+</section>
+<section aria-labelledby="cycle-heading"><h2 id="cycle-heading">30件ごとに、方法を見直す</h2><p>新たに検証完了した部品が30件に達したら、所要時間・品質・発生した問題を比較し、スキルを <strong>0.1</strong> 更新します。次は <strong>v1.1</strong>。改善が実証されない方法は採用しません。</p>
+<dl><div><dt>このスキルでの新規完了</dt><dd>0 / 30 件</dd></div><div><dt>所要時間・手戻り</dt><dd>未計測</dd></div><div><dt>品質・初回合格率</dt><dd>新規サンプルなし</dd></div></dl><p class="note">v1.0 公開時点の記録。以前の受入済み155件は重複計上しません。公開ページは保存された記録で、常時監視や自動実行は行いません。</p>
+</section>
+<section aria-labelledby="method-heading"><h2 id="method-heading">制作から公開まで</h2><ol><li><strong>現在地を確認</strong> — 最新の指示、担当、未完了のIDと参照画像を確かめる。</li><li><strong>実際の部品を作る</strong> — 既存の部品を再利用し、見た目・状態・操作を実装する。</li><li><strong>比較して検証</strong> — 元画像との比較、スマートフォン・タブレット・PC、キーボードと実際の目録内で確認する。</li><li><strong>レビューして公開</strong> — 必要な独立レビュー・CIを通し、本番と目録の両方で結果を確かめる。</li><li><strong>時間と品質を記録</strong> — 作業・待機・手戻りを分け、異なる30部品の完了後に方法とバージョンを見直す。</li></ol><p>5件を基本に、まとまりのある部品を小さく進めます。変更のない入力には有効な既存の証拠を使い、変更した箇所は再確認します。</p></section>
+<section aria-labelledby="refs-heading"><h2 id="refs-heading">手順・変更履歴</h2><ul class="references"><li><a href="package/references/workflow.md">制作・検証・公開の詳細</a></li><li><a href="package/references/known-errors.md">過去の問題と適用範囲</a></li><li><a href="package/references/measurement.md">時間・品質の記録と30件の更新手順</a></li><li><a href="package/receipt.template.json" download>完了記録のテンプレート</a></li><li><a href="package/CHANGELOG.md">バージョン履歴</a></li></ul><p class="note">v1.0 は保存された実装チャットと受入証拠から作成。新規部品の制作速度や品質向上は、計測後に評価します。画像生成・調査・実装は別の工程です。</p></section>
+<footer><a href="../../">部品の目録へ戻る</a><span>Lighthouse · Component Builder v1.0</span></footer>
+</main><script src="page.js" defer></script></html>

@@ -1,0 +1,114 @@
+{
+  "id": "LH01-0123",
+  "family": "replace with actual family",
+  "complexity": "small/medium/large",
+  "implementer": "actual implementation owner",
+  "reviewer": "different actual reviewer",
+  "skillVersion": "1.0",
+  "startedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
+  "completedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
+  "activeMinutes": null,
+  "blockedMinutes": null,
+  "reworkMinutes": null,
+  "inputs": [
+    {
+      "path": "relative/source.tsx",
+      "sha256": "REPLACE_WITH_SHA256"
+    }
+  ],
+  "gates": {
+    "visual": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "interaction": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "responsive": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "accessibility": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "tests": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "independentReview": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "ci": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "production": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    },
+    "actualCatalog": {
+      "status": "pending",
+      "inputHash": "SHA256_OF_JSON_STRINGIFY_INPUTS",
+      "observedAt": "ACTUAL_OBSERVATION_ISO_DATE",
+      "evidence": {
+        "path": "relative/proof.json",
+        "sha256": "ACTUAL_EVIDENCE_SHA256"
+      }
+    }
+  },
+  "quality": {
+    "firstPass": false,
+    "reviewRounds": 1,
+    "openDefects": [
+      "Resolve before completion"
+    ],
+    "residuals": []
+  },
+  "cleanup": {
+    "status": "retained",
+    "reason": "Replace with actual reviewed disposition"
+  }
+}

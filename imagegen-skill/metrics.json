@@ -1,0 +1,49 @@
+{
+  "version": "1.1",
+  "completedEntries": 10,
+  "entriesPerRevision": 10,
+  "nextVersion": "1.2",
+  "timing": {
+    "samples": 10,
+    "medianMs": 530000,
+    "p90Ms": 747000
+  },
+  "quality": {
+    "geometryIcons": 3.5,
+    "typography": 3.5,
+    "contentState": 3.8,
+    "paletteSurfaces": 3,
+    "protectedMedia": 3.6
+  },
+  "firstPassReadyRate": 0.2,
+  "correctionRate": 0.8,
+  "attemptsPerEntry": 1.8,
+  "generation": {
+    "samples": 9,
+    "medianMs": 31100,
+    "p90Ms": 51600
+  },
+  "active": {
+    "samples": 0,
+    "medianMs": null,
+    "p90Ms": null
+  },
+  "defects": {
+    "glyph": 1,
+    "icon": 0,
+    "media-redrawn": 2,
+    "crop": 0,
+    "state": 0,
+    "missing-content": 0,
+    "tint": 0,
+    "palette": 4,
+    "margins": 3,
+    "geometry": 4,
+    "registration": 0,
+    "other": 1
+  },
+  "measuredEntries": 10,
+  "researchWorkers": 10,
+  "observedImageCalls": 34,
+  "source": "Published skill release; no private worker receipts"
+}
