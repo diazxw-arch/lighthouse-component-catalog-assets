@@ -1,0 +1,1 @@
+html,body,#root{margin:0;min-height:100%;background:white}#root{width:100%}.lh-reader-utility-demo{width:100%;max-width:390px;margin:0 auto;font-family:Meiryo,'Lighthouse Reader Utility Sans',sans-serif;color:#1d1d1d}.lh-reader-utility-demo>p:empty{display:none}.lh-reader-utility-demo>p{margin:12px 16px;font-size:12px;line-height:20px}

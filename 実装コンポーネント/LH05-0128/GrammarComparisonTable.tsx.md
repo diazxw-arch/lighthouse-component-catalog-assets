@@ -1,0 +1,5 @@
+import {GrammarVocabulary,type GrammarVocabularyToken} from './GrammarVocabulary';
+import './grammar-practice.css';
+export type GrammarComparisonRow={id:string;cells:readonly[GrammarVocabularyToken,GrammarVocabularyToken]};
+type Props={label:string;columns:readonly[GrammarVocabularyToken,GrammarVocabularyToken];rows:readonly GrammarComparisonRow[];onVocabulary:(id:string)=>void;disabled?:boolean};
+export function GrammarComparisonTable({label,columns,rows,onVocabulary,disabled=false}:Props){return <div className="lh-grammar-comparison"><div className="lh-grammar-comparison__frame"><table aria-label={label}><colgroup><col/><col/></colgroup><thead><tr>{columns.map(column=><th key={column.id} scope="col"><GrammarVocabulary token={column} onRequest={onVocabulary} disabled={disabled}/></th>)}</tr></thead><tbody>{rows.length?rows.map(row=><tr key={row.id}>{row.cells.map(cell=><td key={cell.id}><GrammarVocabulary token={cell} onRequest={onVocabulary} disabled={disabled}/></td>)}</tr>):<tr><td colSpan={2}><span role="status">比較することばはまだありません。</span></td></tr>}</tbody></table></div></div>;}

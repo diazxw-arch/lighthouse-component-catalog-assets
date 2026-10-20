@@ -1,0 +1,1 @@
+html,body,#root{margin:0;min-height:100%;background:#fff}#root{width:100%}.lh-grammar-demo{width:100%;max-width:390px;margin:0 auto;color:#1d1d1d;font:400 14px/24px Meiryo,'Lighthouse Grammar Practice Sans',sans-serif}.lh-grammar-demo>p{margin:12px 16px;font-size:12px;line-height:20px}.lh-grammar-demo>p:empty{display:none}

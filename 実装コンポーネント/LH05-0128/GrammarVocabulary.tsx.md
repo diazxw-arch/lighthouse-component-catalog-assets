@@ -1,0 +1,4 @@
+export type GrammarVocabularyToken={id:string;text:string;prefix?:string};
+export type GrammarVocabularyPart=string|GrammarVocabularyToken;
+export function GrammarVocabulary({token,onRequest,disabled=false}:{token:GrammarVocabularyToken;onRequest:(id:string)=>void;disabled?:boolean}){const prefix=token.prefix&&token.text.startsWith(token.prefix)?token.prefix:'';return <button type="button" className="lh-grammar-vocabulary" disabled={disabled} onClick={()=>onRequest(token.id)}>{prefix?<><strong>{prefix}</strong>{token.text.slice(prefix.length)}</>:token.text}</button>;}
+export function GrammarVocabularyLine({parts,onRequest,disabled=false}:{parts:readonly GrammarVocabularyPart[];onRequest:(id:string)=>void;disabled?:boolean}){return <>{parts.map((part,index)=>typeof part==='string'?<span key={index}>{part}</span>:<GrammarVocabulary key={index} token={part} onRequest={onRequest} disabled={disabled}/>)}</>;}

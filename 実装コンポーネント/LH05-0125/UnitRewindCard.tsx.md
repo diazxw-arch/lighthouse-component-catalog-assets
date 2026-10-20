@@ -1,0 +1,3 @@
+import './reader-utility.css';
+type Props={heading:string;descriptionLines:readonly string[];actionLabel:string;artworkSrc:string;onStart:()=>void;disabled?:boolean;busy?:boolean;error?:string};
+export function UnitRewindCard({heading,descriptionLines,actionLabel,artworkSrc,onStart,disabled=false,busy=false,error}:Props){return <section className="lh-unit-rewind" aria-label="今日の単元を振り返るカード"><article aria-busy={busy||undefined}><h2>{heading}</h2><p>{descriptionLines.map((line,index)=><span key={index}>{line}</span>)}</p><img src={artworkSrc} alt="復習を案内するキャラクター"/><button type="button" disabled={disabled||busy} onClick={onStart}>{busy?'復習を準備しています…':actionLabel}</button></article>{error&&<p role="alert" className="lh-reader-message">{error}</p>}</section>;}

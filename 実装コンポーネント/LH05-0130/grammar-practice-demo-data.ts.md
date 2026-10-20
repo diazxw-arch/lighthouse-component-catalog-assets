@@ -1,0 +1,12 @@
+import type {GrammarComparisonRow} from './GrammarComparisonTable';
+import type {GrammarVocabularyPart,GrammarVocabularyToken} from './GrammarVocabulary';
+import type {GrammarAudioExample} from './UnitGrammarGuide';
+import type {UnitKeyPhrase} from './UnitKeyPhrases';
+export const comparisonColumns:readonly[GrammarVocabularyToken,GrammarVocabularyToken]=[{id:'male',text:'男性名詞'},{id:'female',text:'女性名詞'}];
+export const comparisonRows:readonly GrammarComparisonRow[]=[{id:'indefinite',cells:[{id:'a-boy',text:'ある少年',prefix:'ある'},{id:'a-girl',text:'ある少女',prefix:'ある'}]},{id:'definite',cells:[{id:'the-boy',text:'その少年',prefix:'その'},{id:'the-girl',text:'その少女',prefix:'その'}]}];
+export const nounIntro:readonly(readonly GrammarVocabularyPart[])[]=[['フランス語の',{id:'noun',text:'名詞'},'には、',{id:'male',text:'男性名詞'},'と'],[{id:'female',text:'女性名詞'},'があります。どちらかによって、'],['一緒に使う',{id:'word',text:'ことば'},'が変わります。']];
+export const nounExplanation:readonly(readonly GrammarVocabularyPart[])[]=[[{id:'adjective',text:'形容詞'},'の形も、説明する',{id:'noun',text:'名詞'},'の'],[{id:'gender',text:'性'},'に合わせて変わります。']];
+export const grammarExamples:readonly GrammarAudioExample[]=[{id:'coffee',label:'コーヒーは小さいです。',parts:[{id:'coffee-phrase',text:'コーヒーは小さいです。'}]},{id:'table',label:'テーブルは小さいです。',parts:[{id:'table-phrase',text:'テーブルは小さいです。'}]}];
+export const grammarGuideCopy={sectionTitle:'セクション1',lessonLabel:'レッスン5〜9・初級',heading:'文法のポイント',nounLabel:'名詞の性',verbLabel:'動詞'};
+export const keyPhraseCopy={metadata:'セクション2・ユニット1',titleLines:['名詞の性と数を','合わせて表現する'],sectionLabel:'重要な表現',headingLines:['名詞の性と数を','合わせて使いましょう']};
+export const keyPhrases:readonly UnitKeyPhrase[]=[{id:'restaurant',label:'レストランは開いています。',parts:[{id:'restaurant-word',text:'レストラン'},'は',{id:'open',text:'開いています'},'。'],meaning:'お店は営業中です。'},{id:'house',label:'家は小さいです。',parts:[{id:'house-word',text:'家'},'は',{id:'small',text:'小さいです'},'。'],meaning:'小さな家です。'},{id:'shop',label:'お店は今日は閉まっています。',parts:[{id:'shop-word',text:'お店'},'は',{id:'today',text:'今日は'},{id:'closed',text:'閉まっています'},'。'],meaning:'今日は休業しています。'}];

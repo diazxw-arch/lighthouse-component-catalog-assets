@@ -1,0 +1,1 @@
+html,body,#root{margin:0;min-height:100%;background:white}#root{width:100%}.lh-reading-guide-demo{width:100%;max-width:390px;margin:0 auto;font:400 14px/24px Meiryo,'Lighthouse Reading Guide Sans',sans-serif;color:#1d1d1d}.lh-reading-guide-demo>p{margin:12px 20px;font-size:12px;line-height:20px}.lh-reading-guide-demo>p:empty{display:none}
