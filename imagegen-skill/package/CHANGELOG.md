@@ -1,3 +1,7 @@
+#1.4 / hourly-2
+
+Clarify actual ImageGen raw provenance, full-original versus cropped-native artwork review, material correction decisions and no-tint inactive surfaces. Persist per-entry preparation start. Runtime, acceptance floors, lifetime attempts and production concurrency remain unchanged. Five newly accepted entries include two first-pass results; mixed timing and unresolved attempts prevent a causal speedup claim.
+
 #1.3 / hourly-1
 
 Human-requested hourly review replaces10-entry skill gates. Added digest-bound historical ledger migration, nonblocking ready accounting, hourly release snapshots and truthful in-flight version carryover. Preserve acceptance runtime, originals and attempts. Compare display-size scale and original icon anatomy; retain unknown timing. No measured speed or quality gain claimed.

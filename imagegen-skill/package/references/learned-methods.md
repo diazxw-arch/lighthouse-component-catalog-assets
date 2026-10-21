@@ -1,3 +1,9 @@
+## Hourly-2 workflow corrections
+
+Candidate identity is the actual unmodified ImageGen raw, with call provenance. An original/reference crop is evidence, never a generated replacement. Inspect the full original before interpreting a cropped native asset: a motif outside that crop may be genuine. Judge correction calls by material visible defects at intended size; preserve readable minor residuals rather than spending a call on them. Current no-tint guidance includes inactive tracks and unselected surfaces while preserving original artwork colors.
+
+Two recent entries passed on the first call; other protected-media and frame failures remain private. These observations support the review decisions, not a causal speedup claim. Keep deferred calls, orchestration and parent queue overhead in separate overall-throughput accounting; accepted-only timing is not the whole workflow.
+
 ## Hourly-1 observed improvements
 
 Compare source and candidate at actual display width before judging text/icon scale. The LH12 support-card review separated excess canvas height from readable content scale; only the genuine missing multi-sparkle anatomy justified deferral. Original icons control multiplicity, silhouette and stroke even when the mock is simplified. Keep known call timing conflicts unknown. Continuous private production and concurrent parent reviews avoid per-entry waits. These are workflow corrections; one accepted case does not establish a speedup.
@@ -24,7 +30,7 @@ This is a qualitative selection from10 existing worker histories, durable checkp
 
 Source-pixel compositing was observed in older runs. It is not the default image-editing method here: use the supported ImageGen editing tool. Any different workflow needs explicit user authorization and its own provenance/review; a composite is not evidence that ImageGen preserved source pixels.
 
-The starting workflow is reference-first, one entry at a time, localized correction, verified registration, durable checkpoint. The10-entry reviews will test whether particular changes improve elapsed time while preserving the quality contract.
+The starting workflow is reference-first, one entry at a time, localized correction, verified registration, durable checkpoint. The hourly reviews test whether particular changes improve elapsed time while preserving the quality contract.
 
 ## First10-entry review, version1.1
 
