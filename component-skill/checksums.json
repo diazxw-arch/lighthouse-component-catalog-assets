@@ -1,5 +1,7 @@
 {
   "version": "1.4",
+  "policyRevision": "hourly-throughput-quality-20261021",
+  "archive": "lighthouse-catalog-component-builder-v1.4-hourly-throughput-quality-20261021.zip",
   "files": [
     {
       "file": "baseline.json",
