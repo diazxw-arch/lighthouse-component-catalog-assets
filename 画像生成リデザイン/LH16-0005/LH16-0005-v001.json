@@ -1,0 +1,71 @@
+{
+  "id": "LH16-0005",
+  "name": "グラデーションの色点",
+  "version": 1,
+  "file": "画像生成リデザイン/LH16-0005/LH16-0005-v001.png",
+  "sha256": "bcf2b1871271d645dd9c4e99d04b3313629db60638323c72ffa8358b666ab37d",
+  "createdAt": "2026-10-21T12:36:29.941Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Create catalog component LH16-0005 from these references, exactly 366 x 190 full component proportions. Actual Canva reference shows a gradient color-stop track with three circular handles. Current authored Japanese component translates its functional color data to a green/light-green/dark-green track. Preserve all three visible handle positions and shape from current render, no added fourth stop or unrelated color-picker controls. White surrounding canvas and readable exact labels. Preserve the functional gradient ramp and handles; they are color-editing data, not decorative tint. No tinted outer card or glow. Keep every word/state, hierarchy and alignment complete and readable. Only this component, no surrounding app or watermark, no invented content. Exact Japanese copy: グラデーションの色点 | 色を追加、または色点を選択.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T12:36:29.941Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original anatomy, identity icons and functional state",
+      "sha256": "5240f82e1a5b53c9848e2e66664f276567c995f5aca9e6ab7f1cde8457770324"
+    },
+    {
+      "role": "Current Japanese copy/frame; source icons and newest white rule override inaccurate mock",
+      "sha256": "780d8c4013a3280689b60d4808304bccedc59b7b6f107549cd241dfea6325bea"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/96727784-419b-4864-8985-7b3784973f24",
+    "sourceId": "96727784-419b-4864-8985-7b3784973f24",
+    "originalReferences": [
+      {
+        "recordedPath": "reference/96727784-419b-4864-8985-7b3784973f24.jpg",
+        "absolutePath": "16-creation/reference/96727784-419b-4864-8985-7b3784973f24.jpg",
+        "exists": true,
+        "link": "16-creation/reference/96727784-419b-4864-8985-7b3784973f24.jpg",
+        "sourceId": "96727784-419b-4864-8985-7b3784973f24",
+        "url": "https://mobbin.com/screens/96727784-419b-4864-8985-7b3784973f24",
+        "recordedSha256": "5240f82e1a5b53c9848e2e66664f276567c995f5aca9e6ab7f1cde8457770324",
+        "actualSha256": "5240f82e1a5b53c9848e2e66664f276567c995f5aca9e6ab7f1cde8457770324",
+        "dimensions": {
+          "width": 1920,
+          "height": 1320
+        },
+        "acquisitionRoute": "Mobbinコネクターのimage_urlからダウンロード",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 112,
+              "y": 908,
+              "width": 415,
+              "height": 92
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "保存した参照画像のピクセル座標・左上原点"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

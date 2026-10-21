@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **1.4** · hourly workflow and website updates · next version **1.5**.
+Version **1.6** · hourly workflow and website updates · next version **1.7**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -15,6 +15,8 @@ Honor the latest human Stop/Pause and ownership. Read the current assignment, pr
 
 Read [workflow](references/workflow.md) for the relevant stage and [known errors](references/known-errors.md) before that family. Use Apple Design within the reference geometry and current Lighthouse guidance; retain authored type, wording, media and colors. Scope corrections to their affected components and explicit exceptions. Use the piece-builder only when the actual task involves Layout Maker pieces.
 
+Before a parent aggregate release, restore the canonical committed-byte stage and the complete existing browser-audit helpers. Read the new publication preflight in workflow.md. This avoids repeated parent preparation errors while keeping every actual acceptance gate.
+
 ## Deliver a component
 
 1. Inspect the original, selected Image Gen version, catalog manifest, existing implementation and acceptance hashes. Missing Image Gen stays waiting. Already accepted unchanged work is reused.
@@ -23,6 +25,14 @@ Read [workflow](references/workflow.md) for the relevant stage and [known errors
 4. The worker implements and checks locally in coherent groups of 5, up to 10. Hand off exact source/input hashes, checks and missing gates to the parent. Source-ready/render-pending stays distinct from accepted. Recheck changed paths; preserve valid unchanged proof.
 5. The parent alone pushes, integrates and publishes components in groups of 30 source candidates, with required independent review/build/CI, production and actual-catalog checks. Worker publication is outside its scope. Retire FigCraft mocks only after replacement verification, dependency/active-writer checks and recoverable retention. Honor later local-only or Stop instructions.
 6. Record completion with the reviewed [cycle tracker](references/measurement.md). Only distinct newly accepted components count. Never count baseline deliveries, fixes, state variants or partial batches. Save the next concrete step and stop owned temporary children.
+
+## Throughput goal:100 accepted entries per hour
+
+The human goal is100 distinct fully accepted entries per wall-clock hour across the existing authorized pipeline. This is a target, not achieved performance. Count only entries with every required gate passed; report source-ready candidates separately.100/hour corresponds to36seconds average spacing between completed pipeline outputs, not36seconds of measured authoring per entry. Preserve coherent local groups5 and parent component publication groups30; keep hourly skill and website releases separate.
+
+At each hourly review report rolling1h/3h/24h accepted throughput and source-ready throughput with exact window endpoints, distinct IDs, comparable family/complexity and quality denominators. Show the gap to100/hour, queue counts and known/unknown phase timing. Never infer speed from a queued release burst or from synchronous file-write duration. Keep real start-to-source-ready, start-to-acceptance, active/check/review/wait/rework measurements distinct.
+
+Use the largest evidenced bottleneck for one bounded improvement: restore exact scoped commands and reusable deterministic source/receipt helpers; reuse validated primitives and unchanged source/font/media/render proof by exact identity; review shared source once and per-ID contracts separately; avoid full checkpoint serialization, guessed paths and repeated completed checks. Keep worker implementation running while parent independently reviews the queued aggregate. Record before/after comparable measurements and residuals before claiming gains. This target authorizes no additional workers, services, dependencies, WSL, other-chat outreach or relaxed fidelity/accessibility/security/review/CI/production/catalog/retention gates.
 
 ## Evolve every hour
 

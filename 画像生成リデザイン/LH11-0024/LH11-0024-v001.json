@@ -1,0 +1,76 @@
+{
+  "id": "LH11-0024",
+  "name": "担当者別の出欠承認一覧",
+  "version": 1,
+  "file": "画像生成リデザイン/LH11-0024/LH11-0024-v001.png",
+  "sha256": "6e963f5efd1c47be8ee02ceb5c8b073f01b3435906075f121a2ec46ee9b9efe9",
+  "createdAt": "2026-10-21T12:00:32.668Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Edit the current Japanese component using the original for anatomy. Output exactly its full 640 x 653 component frame and proportions, no surrounding app or watermark. Preserve Japanese content, row order and states. Original Deputy grouped timesheet list: three people, dated rows, approved/pending/absent status and warning triangles with scheduled-time sublabels. Current Japanese render uses monogram circles rather than photos. Preserve10 visible dated rows and3 person headers, totals as printed; do not invent hidden rows to reconcile totals. White list and badge surfaces; neutral dividers; green/orange/red status TEXT and outlines preserve meaning, without pastel tinted badge fills. Preserve exact dates/times and two warning triangles; no unrelated app shell. Keep all readable text, clean type, controls and alignment. No decorative color wash/glow. Do not redraw unrelated artwork or add elements. Exact copy inventory: 山田 太郎 | 5件・17時間55分 | 2月25日（水） | 承認済み | 10:00–15:00 | 3月1日（日） | 確認待ち | 3月2日（月） | 17:45–21:55 | 予定 10:00–15:00 | 3月3日（火） | 09:11–09:56 | 佐藤 花子 | 2件・5時間27分 | 2月26日（木） | 欠席 | 13:30–15:00 | 17:46–23:45 | 鈴木 次郎 | 6件・9時間50分 | 14:00–19:00 | 2月27日（金） | 2月28日（土）.\r\n\r\nSingle scoped correction to attempt 1: change the interior/background of every Approved, Pending and Absent status badge to pure white (#FFFFFF or transparent showing the white list surface). Preserve each badge's green/orange/red status text and matching outline. Preserve exact copy, all ten rows, all three headers, the two warning triangles, dates, times, current 640 x 653 frame, typography, sizes, positions, dividers, monograms and all other details. Do not change layout or type scale, and do not tint any badge interior.\r\n",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T12:00:32.668Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original anatomy and status states",
+      "sha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5"
+    },
+    {
+      "role": "Current Japanese rendered copy, layout and exact states",
+      "sha256": "6ca67ff38e8aae41ea3ac9189789085b7b2254876f218de82c03805f237889ec"
+    },
+    {
+      "role": "Attempt 1 candidate; correct content/layout, status badge fills to correct",
+      "sha256": "33df86cbaad160d8426a25aa1db95a4161f3eca71e80ad7915fb636696e57a81"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+    "sourceId": "9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+    "originalReferences": [
+      {
+        "recordedPath": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "absolutePath": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "exists": true,
+        "link": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "sourceId": "9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+        "url": "https://mobbin.com/screens/9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+        "recordedSha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5",
+        "actualSha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5",
+        "dimensions": {
+          "width": 1920,
+          "height": 1325
+        },
+        "acquisitionRoute": "Mobbin MCP search_screensのimage_urlから取得",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 301,
+              "y": 318,
+              "width": 561,
+              "height": 888,
+              "description": "担当者集計ごとに日別の出欠と承認状態を並べた一覧"
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "original-image-pixels"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

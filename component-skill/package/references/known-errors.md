@@ -42,3 +42,12 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - A static informational140date/chapter card deliberately has no enabled control. Do not invent interaction to satisfy a generic browser audit. Preserve informational semantics and verify its content/geometry.
 - A139capture preceded a later narrow stylesheet. Compare the entire render-input graph to both capture and delivered source; current immutable HTML identity and fresh renders resolve invalid reuse, not refreshed timestamps on old screenshots.
 - Source recording ownership must clear after a host-ended session; otherwise a visible Start control can send a redundant Stop. Preserve the independently reviewed138/139source correction and green regression evidence. The139caption/details and audio controls also need distinct real pointer hit regions at narrow widths.
+
+## Second30 acceptance: parent preparation failures
+
+- Catalog install correctly rejected raw Windows CRLF hashes. Restore exact committed blobs from the retained publication stage before installation; do not relax source identity checks.
+- A copied modal audit omitted its direction helper. Preserve complete helper dependencies and run a family probe before all cases. Native radio one-Tab navigation, post-modal hidden metadata and same-process iframe CDP target selection were audit errors, not new component defects.
+- A font provenance CSS was retained but its family was unused by that component. Pin all source font payloads and require embedding for every active family; do not claim an unused family was rendered.
+- The parent initially invoked a generic full-export validator without its required snapshot argument. Restore the scoped additive validator and exact inputs; never validate a snapshot against itself or refresh unrelated public counts/dates.
+- Three earlier real preview corrections remain defects/rework:153/154badge contours and161narrow-frame text bounds. The later strict catalog audit passed after scoped supplements; this does not erase those earlier failures or establish improved authoring speed.
+

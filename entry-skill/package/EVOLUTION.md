@@ -17,3 +17,6 @@ The direct owner requested immediate1.3 and hourly cadence now. For this exact t
 ## Observed issues driving1.3
 
 Prior meals and facilities batches each used10 starts with zero accepted entries. Clipped crops, stale handoffs, per-tool checkpoint rewriting, vendor-exact search expectations and comparing unregistered source background controls caused wasted work or false rejections. Actual root comparison showed LH12-0129 is a confirmation modal, not its dimmed Resolve/Escalate background; LH12-0317 must be judged against the registered unit. LH12-0318 subsequently passed actual original/finalcrop/global-nearest/readback checks. These observations justify the owner correction; one successful module does not establish a causal throughput gain.
+
+
+Owner target:10x accepted throughput,20x stretch, without weakening quality. Apply the continuous-production and evidence-reuse method in [FAST-PATH.md](FAST-PATH.md). Parent publishes an immutable reviewed snapshot while the sole worker continues its next bounded lease; hourly review is due without blocking production. Actual achieved multiplier remains unproven.

@@ -1,0 +1,72 @@
+{
+  "id": "LH11-0023",
+  "name": "リーダーの確認コメントと承認帯",
+  "version": 1,
+  "file": "画像生成リデザイン/LH11-0023/LH11-0023-v001.png",
+  "sha256": "d5be5e1bc8672902f38b21609c714d0ecbd2dc904167fa75751e113b68072545",
+  "createdAt": "2026-10-21T11:15:56.388Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Make one minimal geometry correction to reference 1 for LH11-0023. Reference 1 is the current candidate and controls the corrected surface colors and exact content. Reference 2 is the current rendered mock and controls the exact 640×231 frame, Japanese typography, and component geometry.\n\nPreserve every word and state exactly: リーダーの確認コメント; 奉仕時間を確認しました。; 合計 4時間30分; 承認する; 承認して次へ. Keep the send arrow, one divider, total line, and both approval actions.\n\nMatch reference 2's positions and sizes for the heading, comment field, send arrow, divider, total text, and bottom buttons. In particular, restore the lower divider and approval row to the mock's vertical positions and restore both button widths/heights to the mock's geometry. Keep the compact horizontal layout and alignment.\n\nKeep the corrected colors from reference 1: white comment field, white secondary 承認する button with a fine neutral outline, and forest-green primary 承認して次へ button. Do not reintroduce the mint secondary fill from reference 2.\n\nDo not change wording, font hierarchy, input content, total, icon identity, background, or other spacing. Add no new content or decorative chrome. Return only the component at the same 640×231 aspect ratio.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T11:15:56.388Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original filledmanagercomment andapprovalband anatomy",
+      "sha256": "844a92d0f0b771fa135946e46a7a3b9e4ca7ca1aca37a8c0bbc7801467092b76"
+    },
+    {
+      "role": "Japanese currentrender/frame",
+      "sha256": "7ebc6b9f3268bd18cba77bdf9ca0452b9a514a2109837855261e2b025bd84505"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/99d8165f-0d7c-4948-bc0a-e00a023a6fe2",
+    "sourceId": "99d8165f-0d7c-4948-bc0a-e00a023a6fe2",
+    "originalReferences": [
+      {
+        "recordedPath": "11-volunteers/参照/99d8165f-0d7c-4948-bc0a-e00a023a6fe2.jpg",
+        "absolutePath": "11-volunteers/参照/99d8165f-0d7c-4948-bc0a-e00a023a6fe2.jpg",
+        "exists": true,
+        "link": "11-volunteers/参照/99d8165f-0d7c-4948-bc0a-e00a023a6fe2.jpg",
+        "sourceId": "99d8165f-0d7c-4948-bc0a-e00a023a6fe2",
+        "url": "https://mobbin.com/screens/99d8165f-0d7c-4948-bc0a-e00a023a6fe2",
+        "recordedSha256": "844a92d0f0b771fa135946e46a7a3b9e4ca7ca1aca37a8c0bbc7801467092b76",
+        "actualSha256": "844a92d0f0b771fa135946e46a7a3b9e4ca7ca1aca37a8c0bbc7801467092b76",
+        "dimensions": {
+          "width": 1920,
+          "height": 1325
+        },
+        "acquisitionRoute": "Mobbin MCP search_screensのimage_urlから取得",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 883,
+              "y": 808,
+              "width": 1037,
+              "height": 398,
+              "description": "管理者コメント入力と記録承認の下部操作帯"
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "original-image-pixels"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

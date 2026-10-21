@@ -1,0 +1,71 @@
+{
+  "id": "LH16-0007",
+  "name": "文字スタイルの挿入",
+  "version": 1,
+  "file": "画像生成リデザイン/LH16-0007/LH16-0007-v001.png",
+  "sha256": "d8a2de1624e81d88a9ffa50ccb18d899c4599c439b55bc7c00ca515a39d2bd19",
+  "createdAt": "2026-10-21T13:01:35.628Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Recreate only LH16-0007, 文字スタイルの挿入, in the exact 366 x 286 frame. The current Japanese mock controls the visible layout and wording: title 文字スタイルの挿入; subsection label ブランドの文字; three stacked neutral outlined rows labeled 見出し, 小見出し, 本文, in that order. Show 見出し in bold, while 小見出し and 本文 use regular weight. Use the source crop only to understand the three text-style samples and their simple rounded-row anatomy. White canvas, dark readable text, subtle neutral-gray borders, compact even spacing. No green or purple tint, no filled selection, no Canva toolbar, app chrome, buttons or extra content.\r\n",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T13:01:35.628Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original source crop: use only the three brand-text style samples Heading, Subheading and Body. Exclude surrounding Canva controls and chrome. Assigned source crop x=112,y=342,w=415,h=225 from the Canva text panel.",
+      "sha256": "8a7cb52b4e147fc4b5f792082f57e40a8d7909e8c43e89ee2755e131bd1e4784"
+    },
+    {
+      "role": "Current Japanese mock controls exact 366 x 286 frame, title, labels, row order, emphasis and neutral outlines.",
+      "sha256": "da799361331ac7c298071121c5e6f7ee1bf958a734995d23476e23170248244f"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22",
+    "sourceId": "bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22",
+    "originalReferences": [
+      {
+        "recordedPath": "reference/bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22.jpg",
+        "absolutePath": "16-creation/reference/bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22.jpg",
+        "exists": true,
+        "link": "16-creation/reference/bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22.jpg",
+        "sourceId": "bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22",
+        "url": "https://mobbin.com/screens/bdb64ce2-a5d9-44e3-bdc0-929e4dab4d22",
+        "recordedSha256": "8a7cb52b4e147fc4b5f792082f57e40a8d7909e8c43e89ee2755e131bd1e4784",
+        "actualSha256": "8a7cb52b4e147fc4b5f792082f57e40a8d7909e8c43e89ee2755e131bd1e4784",
+        "dimensions": {
+          "width": 1920,
+          "height": 1320
+        },
+        "acquisitionRoute": "Mobbinコネクターのimage_urlからダウンロード",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 112,
+              "y": 342,
+              "width": 415,
+              "height": 225
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "保存した参照画像のピクセル座標・左上原点"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

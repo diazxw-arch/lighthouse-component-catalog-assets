@@ -34,3 +34,14 @@ Adds bounded local source-contract checks, exact text/typography preservation an
 ## 1.2 / ready-only-3 — human-directed throughput correction
 
 Continuous private small-batch production and concurrent parent review; exhausted cases defer individually. Original/current rendered evidence controls visible acceptance; native text contract is optional diagnostic. Existing runtime ready-only gates and lifetime attempts are unchanged.
+
+##1.5 / hourly-3-utf8
+- Bind ImageGen payload to checked prompt and ordered reference hashes; explicit local roots, no UNC/device or ancestor-junction redirection. Avoid duplicate reference checks for identical inputs.
+- Persist awaited-call evidence before bookkeeping; recover returned output instead of regenerating after an accounting failure.
+- Keep entry identity immutable across handoffs and verify path/manifest correspondence.
+- Retain minor-spacing acceptance and no-tint UI surfaces; distinguish functional color-picker/gradient data from decorative wash. No causal speedup or artwork-preservation gain established.
+
+Immediate human-directed throughput patch (version 1.5 / throughput-1): target 150 accepted ready entries/hour, replacing the earlier 3x target. Rolling queue, microbatches, batched source preparation and canonical receipts reduce avoidable overhead. Target unachieved; quality/provenance/registration gates unchanged. Hourly version clock unchanged; runtime scripts and dependencies unchanged.
+
+##1.6 / hourly-4
+Hourly evidence review:beforecall2 name a material visible defect in the existing receipt; avoid spacing-only retries that ultimately keep raw1. Preserve150/hour as unachievedtarget,allqualitygates andactualattemptcounts. Fifteenaccepted/fourtwo-call entries in frozenwindow; two keptfirst raw.

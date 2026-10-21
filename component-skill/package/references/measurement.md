@@ -59,3 +59,19 @@ The third10 accepted entries cover word learning/controlled recording and readin
 
 A broad verification interval can begin at an actual retained source-ready handoff and include subsequent corrections/waiting/coordination. Label that basis; it is not authoring time. Reuse valid source/render observations with their actual dates only after full input-graph identity checks. Keep resolved source findings, layout defects and audit-harness mistakes separate, and preserve each exact successful supplement.
 
+
+## Hourly1.5 observed review
+
+Thirty more components passed all required gates, bringing new accepted total to60. Their source-ready-to-acceptance intervals include waiting, corrections and parent publication. Active authoring remains unknown30/30, so no active completion-time or speed improvement is claimed. Compare those intervals only within the recorded family/complexity and source-ready basis. The private review records median/p90, observed browser phases, accepted entries/hour over an explicit release window and quality denominators. Acceptance throughput from queued source is not authoring throughput.
+
+The initial combined actual-catalog audit passed26/30; four IDs needed parent harness/instrumentation supplements. Final results are120/120responsive renders,139/139functional/state cases,30/30accessibility and30/30desktop reachability. Earlier real preview corrections for153/154/161 remain separately recorded. The bounded workflow improvement targets parent publication/audit rework; its speed effect remains unproven. New worker per-ID start/local-check evidence is source-ready only until independent review and all release/catalog gates pass.
+
+
+## Throughput goal:100 accepted entries per hour
+
+The human goal is100 distinct fully accepted entries per wall-clock hour across the existing authorized pipeline. This is a target, not achieved performance. Count only entries with every required gate passed; report source-ready candidates separately.100/hour corresponds to36seconds average spacing between completed pipeline outputs, not36seconds of measured authoring per entry. Preserve coherent local groups5 and parent component publication groups30; keep hourly skill and website releases separate.
+
+At each hourly review report rolling1h/3h/24h accepted throughput and source-ready throughput with exact window endpoints, distinct IDs, comparable family/complexity and quality denominators. Show the gap to100/hour, queue counts and known/unknown phase timing. Never infer speed from a queued release burst or from synchronous file-write duration. Keep real start-to-source-ready, start-to-acceptance, active/check/review/wait/rework measurements distinct.
+
+Use the largest evidenced bottleneck for one bounded improvement: restore exact scoped commands and reusable deterministic source/receipt helpers; reuse validated primitives and unchanged source/font/media/render proof by exact identity; review shared source once and per-ID contracts separately; avoid full checkpoint serialization, guessed paths and repeated completed checks. Keep worker implementation running while parent independently reviews the queued aggregate. Record before/after comparable measurements and residuals before claiming gains. This target authorizes no additional workers, services, dependencies, WSL, other-chat outreach or relaxed fidelity/accessibility/security/review/CI/production/catalog/retention gates.
+

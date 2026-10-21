@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4 — 2026-10-21
+
+Owner target:10x accepted throughput,20x stretch, measured against the same actual elapsed baseline and unchanged quality. Keep production running while parent publishes an immutable reviewed snapshot. Reuse all20 source index, bounded shortlist, unchanged actual comparator evidence and reviewed runtime; remove per-tool checkpoint copying and redundant full-media publication reads. Stable-batch review/one aggregation/prompt lease handoff. Runtime, dependencies, source/crop/count/history gates are unchanged. Two recent accepted entries are insufficient for a causal speed claim; coordinator publication idle time is a measured bottleneck.
+
+
 ## 1.3 — 2026-10-21
 
 Direct owner update: skill evolution every ONE HOUR, replacing10-entry skill gates; website remains every10 valid entries. Measure time per accepted entry, accepted yield including failures/waits/retries and actual crop/quality outcomes. Hourly due does not block production. Allow useful coherent sections/multi-control panels; no candidate preapproval or automatic page-origin/vendor rejection. Compare registered component boundaries, reuse unchanged evidence, and remove per-tool checkpoint copying. Preserve provenance/crop/uniqueness/count/history gates and exact+0.1 safety/test/independent review. Initial hourly transition earns no component credit; next1.4 one hour after release. No dependencies/network/services added; prospective speed gain unproven.

@@ -1,0 +1,12 @@
+# Checked ImageGen request
+
+Use this installed skill's `scripts/preflight.mjs request --input <absolute-private-request.json>` before each image call. The private request has only `entryId`, `promptPath`, `promptSha256`, `referencesPath`, `referencesSha256`, and `allowedRoots`. Set allowedRoots to the exact assigned catalog root, never a whole drive or home directory. Prompt text must be valid UTF-8; decoding and re-encoding must preserve its hash-verified bytes exactly, or preparation fails before any tool call. Prompt and reference manifest must be nonempty local files up to64KiB; each of1–5 ordered PNG/JPEG/WebP references must carry its actual expected SHA256 and be at most64MiB.
+
+The returned `toolArguments` contains the checked prompt, ordered `referenced_image_paths` and `transparent_background:false`. Pass it unchanged to ImageGen; do not append placeholders, manually retype paths or silently swap references. Changed bytes/list/prompt require renewed preparation. This mode includes image-reference validation; do not duplicate the references command for unchanged inputs. Keep request/output JSON private because it contains prompt text and local paths.
+
+Request mode rejects UNC/device/alternate-stream forms, symbolic file/ancestor links and junction redirection, and checks canonical confinement to approved local roots. Use known local disks: a mapped drive may still be network-backed. The CLI request configuration itself also rejects share/device paths and linked ancestors. Existing legacy references/draft/records modes retain their prior behavior; they do not gain request-mode confinement.
+
+This is preflight, not an OS sandbox or tool enforcement. Files can change afterward; callers must keep checked files unchanged through the actual call. Hashes establish byte consistency, not trusted origin, entry-to-prompt correctness, semantic completeness or visual fidelity. The helper never generates, approves, registers, counts, uploads or installs anything. Parent inspection remains required.
+
+Capture call-start UTC immediately around the awaited image call, then durable actual await duration, call identity and returned raw path before bookkeeping. Unknown duration stays null. Recover an uncertain result before retrying. Build each handoff from an immutable current entry identity; check entryId/folder/manifests/candidate correspondence before appending. A prior object's changed ID must never relabel another entry's evidence.
+

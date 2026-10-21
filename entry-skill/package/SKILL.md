@@ -6,9 +6,9 @@ permissions: [file_read, file_write, shell]
 
 # Lighthouse Catalog Entry
 
-Version **1.3**. One completed task means one distinct reusable component, retained original, actual inspected component image and verified catalog entry. Research registration, native implementation and public delivery are separate.
+Version **1.4**. One completed task means one distinct reusable component, retained original, actual inspected component image and verified catalog entry. Research registration, native implementation and public delivery are separate.
 
-Read [FAST-PATH.md](FAST-PATH.md) for current recovery and early rejection decisions. Read [WORKFLOW.md](WORKFLOW.md) for the entry contract and commands. Read [EVOLUTION.md](EVOLUTION.md) when the next cumulative review is due. Use [receipt.example.json](receipt.example.json) as a schema, never as evidence.
+Read [FAST-PATH.md](FAST-PATH.md) for current recovery and early rejection decisions. Read [WORKFLOW.md](WORKFLOW.md) for the entry contract and commands. Read [EVOLUTION.md](EVOLUTION.md) when the hourly review is due. Use [receipt.example.json](receipt.example.json) as a schema, never as evidence.
 
 1. Recover the current checkpoint, owner scope and `計画.json`. Use one authorized writer in the existing assigned shard. Keep paused chats and automations paused. Use native Windows; do not launch WSL, helpers or workers.
 2. Start the measured task. Index the exact catalog.json file in every allocated area, including excluded rows. Reject reused source IDs and repeated component structures. Visually compare the nearest existing components; different text, photo, color, scroll position or visible state never establishes distinctness.
@@ -29,3 +29,6 @@ Reject trivial isolated buttons, clear repeated structures with only text/photo/
 Keep all20 source checks, actual original/crop inspection, exact pixels/hashes/boundaries, correct-shard readback, three flags and historical records. Never revive permanently revoked credit. Worker reporting does not expand. The parent handles stable-batch review, canonical aggregation, releases and publication.
 
 Update/review the skill EVERY ONE HOUR, replacing entry-count skill milestones. Track time to complete one accepted entry, overall accepted yield including rejected attempts/waits/retries, and actual crop/quality outcomes. Parent stages and tests supported improvements, obtains same-worker independent read-only review at a natural safe boundary, then releases exactly +0.1. An hourly review being due never blocks worker starts, registration or completion. This owner-requested1.3 transition earns zero component credit; the next1.4 review is one hour after the actual release. Website publication remains every10 valid new entries; crop-repair review remains every30 repairs separately. Keep sample sizes/median/p90 and unknown intervals honest; no unproven speed gain.
+
+
+Owner target:10x accepted throughput,20x stretch, without weakening quality. Apply the continuous-production and evidence-reuse method in [FAST-PATH.md](FAST-PATH.md). Parent publishes an immutable reviewed snapshot while the sole worker continues its next bounded lease; hourly review is due without blocking production. Actual achieved multiplier remains unproven.

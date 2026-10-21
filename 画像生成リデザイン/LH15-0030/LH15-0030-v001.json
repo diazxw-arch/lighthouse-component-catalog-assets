@@ -1,0 +1,73 @@
+{
+  "id": "LH15-0030",
+  "name": "資料の印刷先と部数と用紙を選ぶパネル",
+  "version": 1,
+  "file": "画像生成リデザイン/LH15-0030/LH15-0030-v001.png",
+  "sha256": "244e9cd4f49192f5a046b9b60e329ac9abdfc67fff745320944c7c9ddd1c7043",
+  "createdAt": "2026-10-21T11:33:25.565Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Create LH15-0030 (資料の印刷先と部数と用紙を選ぶパネル) as one compact component, intended display 390x201. Reference1 controls original anatomy/artwork; reference2 controls exact Japanese wording/layout. Visible copy: プリンター | 選択されていません | 部数 | 1 | 用紙サイズ | 10 × 15 cm. State: No printer selected;copies1; minusdisabled andplusenabled; paper10x15cm. Original facts: Original printer-row/rightchevron, copiesnumber andminus/plusstepper, paper-row/rightchevron. Exclude pagephoto preview below panel. Change: White ordinary input/stepper surfaces with neutraloutlines; disableminus byglyphcontrast ratherthanmintwash. Preserve compact390x201layout. Preserve established typography, bounds, all controls and original media. No added data/chrome/decorative frame. Return only actual ImageGen result at the component aspect; raw must remain unmodified.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T11:33:25.565Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original source anatomy/artwork/state",
+      "sha256": "d65735c0a8a6e83dcdf1030f8d0ca97bf41812e594d927f54941cba08725290d"
+    },
+    {
+      "role": "Japanese rendered content/layout; explicit source conflicts below override inaccurate mock icon/palette",
+      "sha256": "f2b8888efa98e466b78838244b18c254aaea7c6b07914d1f51933c8e2947c6d7"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/73b8fba8-6c7d-4552-b100-f74901b795e5",
+    "sourceId": "73b8fba8-6c7d-4552-b100-f74901b795e5",
+    "originalReferences": [
+      {
+        "recordedPath": "参考/73b8fba8-6c7d-4552-b100-f74901b795e5.webp",
+        "absolutePath": "15-files/参考/73b8fba8-6c7d-4552-b100-f74901b795e5.webp",
+        "exists": true,
+        "link": "15-files/参考/73b8fba8-6c7d-4552-b100-f74901b795e5.webp",
+        "sourceId": "73b8fba8-6c7d-4552-b100-f74901b795e5",
+        "url": "https://mobbin.com/screens/73b8fba8-6c7d-4552-b100-f74901b795e5",
+        "recordedSha256": "d65735c0a8a6e83dcdf1030f8d0ca97bf41812e594d927f54941cba08725290d",
+        "actualSha256": "d65735c0a8a6e83dcdf1030f8d0ca97bf41812e594d927f54941cba08725290d",
+        "dimensions": {
+          "width": 720,
+          "height": 1681
+        },
+        "acquisitionRoute": "Chromeの表示画像をdownloadMediaで保存、画面メニューのCopy linkで識別",
+        "acquiredAt": "2026-10-17T01:24:19.120Z",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "values": [
+                12,
+                106,
+                275,
+                160
+              ]
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "保存した画像を幅299px・高さ678pxの表示座標として参照。制作時に選択した領域。"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

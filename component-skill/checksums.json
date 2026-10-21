@@ -1,7 +1,7 @@
 {
-  "version": "1.4",
-  "policyRevision": "hourly-throughput-quality-20261021",
-  "archive": "lighthouse-catalog-component-builder-v1.4-hourly-throughput-quality-20261021.zip",
+  "version": "1.6",
+  "policyRevision": "hourly-100accepted-per-hour-target-20261021",
+  "archive": "lighthouse-catalog-component-builder-v1.6-hourly-100accepted-per-hour-target-20261021.zip",
   "files": [
     {
       "file": "baseline.json",
@@ -9,27 +9,27 @@
     },
     {
       "file": "CHANGELOG.md",
-      "sha256": "0e02110ea07a547033eeefe5d64c71f07b072418fe353d77d19fd532f6a13cf4"
+      "sha256": "655be0e38634094f53898360709db877e2e704b2950b5c9d0b2cd2079165c7ae"
     },
     {
       "file": "manifest.json",
-      "sha256": "be892fc761772b9a8bab7e1b4e7ca4a8ddcfef0a6bf6de8ef04b9e95f89b60b9"
+      "sha256": "e670d7f15843b801a8a74047b9ddda5764f959f8ec820a57d1f07173fe95ac29"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "1f209a19aa6740ea869d2f54c6d6c1c093a349ed8db7b34e69c71fa75a2f0190"
+      "sha256": "9e78817dc70fc2326aa997ca88e98789e30f4bba1dc1d775aee067d92ffe3af7"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "d1bc6049efb1d1478bc7564232e7c1d3280f96d2ff3969f1406928274f1a294e"
+      "sha256": "7091bad4b70412bc0d3567f27ae7156b6b28c558a143d057c344ddf837d0cf2b"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "d66f3e81a811d8a5549e69a6a44888feb2b1e69c7a4abd5a1761358565154781"
+      "sha256": "699aaa98a4cc9a340055dbe8cd302a2bf187253a194bf6cfb0fecfd50eee32cf"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "8250760b616aff2f603db514131aa815ddc0768eab44f03aecbac5a6f6d4cf97"
+      "sha256": "c08bff32e743506815f2ce5245b4ae6a657351a372e4ebba90e1fed6147c288a"
     },
     {
       "file": "scripts/cycle.mjs",
@@ -37,7 +37,7 @@
     },
     {
       "file": "SKILL.md",
-      "sha256": "e8565aa77e302c058229157aae241fa0bec714c2c3e8bc5fa256aaac55caddc8"
+      "sha256": "e0dbcade861f6a7fe1c41cb67f2e97b80248bb0a1413a77ffbc986b325c8ad1b"
     }
   ]
 }

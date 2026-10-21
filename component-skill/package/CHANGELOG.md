@@ -1,3 +1,11 @@
+# Version1.6 —100accepted entries/hour target
+
+Human throughput objective100fullyaccepted entries per wall-clock hour; hourly reviews compare rolling1h/3h/24h source and acceptance throughput separately. Target is not achieved speed. Remove repeated parent inventory/serialization and reuse exact validated evidence; retain all quality and publication gates. Correct workflow heading; runtime/dependencies unchanged from inspected1.5. Exact independent review and publication are required for release.
+
+# Version1.5 — restore publication inputs and scoped audit helpers
+
+Hourly review of30new accepted entries (60cumulative). Preserve canonical Git bytes, complete browser helper closure, active-font scope and exact scoped validator inputs before parent release. Retain original failures and rerun only affected cases; preserve all acceptance gates. Active authoring unknown30/30, no measured speed gain. Runtime and dependencies unchanged from inspected1.4.
+
 # Version1.4 — hourly measured workflow improvement
 
 Direct human policy replaces10-accepted-entry releases with hourly skill+website releases. Offline ledger migration preserves historical records; due review no longer blocks completions, and due reviews may include zero accepted entries. Per-entry source-ready/acceptance timing, active/check/review/wait/rework and stage-specific quality/workflow evidence guide bottleneck improvements. No measured speed improvement claimed. All acceptance, source/hash, locking and release-inspection protections remain.

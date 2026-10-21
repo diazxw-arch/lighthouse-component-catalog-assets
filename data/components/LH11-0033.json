@@ -1,1 +1,373 @@
-{"id":"LH11-0033","name":"参加可能時間の提出案内","category":"奉仕・チーム運営","categoryKey":"11-volunteers","sourceApp":"Deputy","sourceUrl":"https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730","sourceId":"ef00f73a-5e39-4f3a-8517-b76721c0d730","region":{"description":"参加できる日時をリーダーに伝える説明と設定入口","normalizedCrop":[0.69,0.25,0.3,0.157],"pixelCrop":{"x":1325,"y":331,"width":576,"height":208}},"useCase":"参加可能時間の提出案内","atoms":["heading","body","button","box","status","date","avatar","icon","divider","row","column"],"native":"11-volunteers/%E5%A5%89%E4%BB%95%E9%83%A8%E5%93%81%E9%9B%8602.figcraft","nativeNode":9,"preview":"11-volunteers/%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/LH11-0033.png","state":"BUILT / FIDELITY_ACCEPTED","counted":true,"verification":{"nativeReadback":true,"renderInspected":true,"referenceCompared":true,"instanceOverride":true,"residuals":[],"evidence":{"readback":"11-volunteers/検証/保存確認02.json","preview":"11-volunteers/プレビュー/LH11-0033.png","contactSheet":"11-volunteers/部品一覧03.png","basicRenderedInspection":"日本語・面の塗り・書き出された内容を一覧で観察。詳細な参照忠実度の受入とは区別。","detailedComparison":"11-volunteers/検証/詳細比較/受入比較詳細v2-0032-0036.png","finalNativeReadback":"11-volunteers/検証/修正試行/LH11-0032-0036読戻し09.json","fidelityAcceptanceRecord":"acceptance.jsonl"},"exported":true,"sourceMatched":true,"visualAcceptance":{"status":"ACCEPTED","reviewedAt":"2026-10-19T08:23:30.733Z","method":"Saved source crop and final production-native export visually compared at normalized display width; Japanese copy adaptation, day/time values, state count, controls, crop and visible clipping checked.","note":"参加可能日の登録を案内する見出し・説明文・操作を保存参照と照合。"}},"residuals":[],"adaptations":["日本語の奉仕用語と架空の担当者名へ変更","Meiryoの20/28・14/24・12/16、字間0","Lighthouseの緑と中立色へ変更","参照領域を390pxまたは640pxへ適応。文字の可読性を優先して縦余白を調整"],"workerCatalog":"11-volunteers/catalog.json","references":[{"recordedPath":"11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg","absolutePath":"11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg","exists":true,"link":"11-volunteers/%E5%8F%82%E7%85%A7/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg","sourceId":"ef00f73a-5e39-4f3a-8517-b76721c0d730","url":"https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730","recordedSha256":"21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c","actualSha256":"21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c","dimensions":{"width":1920,"height":1325},"acquisitionRoute":"Mobbin MCP search_screensのimage_urlから取得","acquiredAt":"2026-10-17","regionEvidence":[{"field":"region","value":{"format":"xywh","x":1325,"y":331,"width":576,"height":208,"description":"参加できる日時をリーダーに伝える説明と設定入口"}},{"field":"coordinateSpace","value":"original-image-pixels"}],"hashMatches":true}],"files":{"native":{"recordedPath":"11-volunteers/奉仕部品集02.figcraft","absolutePath":"11-volunteers/奉仕部品集02.figcraft","exists":true,"link":"11-volunteers/%E5%A5%89%E4%BB%95%E9%83%A8%E5%93%81%E9%9B%8602.figcraft"},"preview":{"recordedPath":"11-volunteers/プレビュー/LH11-0033.png","absolutePath":"11-volunteers/プレビュー/LH11-0033.png","exists":true,"link":"11-volunteers/%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/LH11-0033.png"},"referenceDerivative":null},"familyKey":"奉仕/参加可能時間の提出案内","tags":["奉仕","担当シフト","チーム運営","参加可能時間の提出案内"],"provenance":{"catalog":"11-volunteers/catalog.json","recordId":"LH11-0033","sourceFields":[{"app_name":"Deputy","id":"ef00f73a-5e39-4f3a-8517-b76721c0d730","mobbin_url":"https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730","reference":"11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg","sha256":"21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c","dimensions":{"width":1920,"height":1325},"acquisition":{"route":"Mobbin MCP search_screensのimage_urlから取得","date":"2026-10-17","resolution":"返却された高解像度画像URLの実データを保存。画面全体の元画像と同一であることは未保証。"}},{"screenId":"ef00f73a-5e39-4f3a-8517-b76721c0d730","path":"11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg","sha256":"21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c","dimensions":{"width":1920,"height":1325},"acquisitionRoute":"Mobbin MCP search_screensのimage_urlから取得","acquiredAt":"2026-10-17","acquisitionPrecision":"day","region":{"format":"xywh","x":1325,"y":331,"width":576,"height":208,"description":"参加できる日時をリーダーに伝える説明と設定入口"},"coordinateSpace":"original-image-pixels","role":"reconstruction","mobbin_url":"https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730","app_name":"Deputy"}]},"organization":{"issues":[],"linked":true,"review":"整理確認のみ。見た目・編集可能性・機能の受入ではありません。"},"generatedImages":[],"catalogPresentation":{"status":"waiting","label":"画像生成待ち","tone":"neutral","primaryKind":"source","image":"11-volunteers/%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/LH11-0033.png","displayedVersion":null,"registeredLatestVersion":null,"latestImageMissing":false,"completionScope":"image-generation-and-reported-review-only"}}
+{
+  "id": "LH11-0033",
+  "name": "参加可能時間の提出案内",
+  "category": "奉仕・チーム運営",
+  "categoryKey": "11-volunteers",
+  "sourceApp": "Deputy",
+  "sourceUrl": "https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730",
+  "sourceId": "ef00f73a-5e39-4f3a-8517-b76721c0d730",
+  "region": {
+    "description": "参加できる日時をリーダーに伝える説明と設定入口",
+    "normalizedCrop": [
+      0.69,
+      0.25,
+      0.3,
+      0.157
+    ],
+    "pixelCrop": {
+      "x": 1325,
+      "y": 331,
+      "width": 576,
+      "height": 208
+    }
+  },
+  "useCase": "参加可能時間の提出案内",
+  "atoms": [
+    "heading",
+    "body",
+    "button",
+    "box",
+    "status",
+    "date",
+    "avatar",
+    "icon",
+    "divider",
+    "row",
+    "column"
+  ],
+  "native": "11-volunteers/奉仕部品集02.figcraft",
+  "nativeNode": 9,
+  "preview": null,
+  "state": "BUILT / FIDELITY_ACCEPTED",
+  "counted": true,
+  "verification": {
+    "nativeReadback": true,
+    "renderInspected": true,
+    "referenceCompared": true,
+    "instanceOverride": true,
+    "residuals": [],
+    "evidence": {
+      "readback": "11-volunteers/検証/保存確認02.json",
+      "preview": "11-volunteers/プレビュー/LH11-0033.png",
+      "contactSheet": "11-volunteers/部品一覧03.png",
+      "basicRenderedInspection": "日本語・面の塗り・書き出された内容を一覧で観察。詳細な参照忠実度の受入とは区別。",
+      "detailedComparison": "11-volunteers/検証/詳細比較/受入比較詳細v2-0032-0036.png",
+      "finalNativeReadback": "11-volunteers/検証/修正試行/LH11-0032-0036読戻し09.json",
+      "fidelityAcceptanceRecord": "acceptance.jsonl"
+    },
+    "exported": true,
+    "sourceMatched": true,
+    "visualAcceptance": {
+      "status": "ACCEPTED",
+      "reviewedAt": "2026-10-19T08:23:30.733Z",
+      "method": "Saved source crop and final production-native export visually compared at normalized display width; Japanese copy adaptation, day/time values, state count, controls, crop and visible clipping checked.",
+      "note": "参加可能日の登録を案内する見出し・説明文・操作を保存参照と照合。"
+    }
+  },
+  "residuals": [],
+  "adaptations": [
+    "日本語の奉仕用語と架空の担当者名へ変更",
+    "Meiryoの20/28・14/24・12/16、字間0",
+    "Lighthouseの緑と中立色へ変更",
+    "参照領域を390pxまたは640pxへ適応。文字の可読性を優先して縦余白を調整"
+  ],
+  "workerCatalog": "11-volunteers/catalog.json",
+  "references": [
+    {
+      "recordedPath": "11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+      "absolutePath": "11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+      "exists": true,
+      "link": "11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+      "sourceId": "ef00f73a-5e39-4f3a-8517-b76721c0d730",
+      "url": "https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730",
+      "recordedSha256": "21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c",
+      "actualSha256": "21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c",
+      "dimensions": {
+        "width": 1920,
+        "height": 1325
+      },
+      "acquisitionRoute": "Mobbin MCP search_screensのimage_urlから取得",
+      "acquiredAt": "2026-10-17",
+      "regionEvidence": [
+        {
+          "field": "region",
+          "value": {
+            "format": "xywh",
+            "x": 1325,
+            "y": 331,
+            "width": 576,
+            "height": 208,
+            "description": "参加できる日時をリーダーに伝える説明と設定入口"
+          }
+        },
+        {
+          "field": "coordinateSpace",
+          "value": "original-image-pixels"
+        }
+      ],
+      "hashMatches": true
+    }
+  ],
+  "files": {
+    "native": {
+      "recordedPath": "11-volunteers/奉仕部品集02.figcraft",
+      "absolutePath": "11-volunteers/奉仕部品集02.figcraft",
+      "exists": true,
+      "link": "11-volunteers/奉仕部品集02.figcraft"
+    },
+    "preview": null,
+    "referenceDerivative": null
+  },
+  "familyKey": "奉仕/参加可能時間の提出案内",
+  "tags": [
+    "奉仕",
+    "担当シフト",
+    "チーム運営",
+    "参加可能時間の提出案内"
+  ],
+  "provenance": {
+    "catalog": "11-volunteers/catalog.json",
+    "recordId": "LH11-0033",
+    "sourceFields": [
+      {
+        "app_name": "Deputy",
+        "id": "ef00f73a-5e39-4f3a-8517-b76721c0d730",
+        "mobbin_url": "https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730",
+        "reference": "11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+        "sha256": "21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c",
+        "dimensions": {
+          "width": 1920,
+          "height": 1325
+        },
+        "acquisition": {
+          "route": "Mobbin MCP search_screensのimage_urlから取得",
+          "date": "2026-10-17",
+          "resolution": "返却された高解像度画像URLの実データを保存。画面全体の元画像と同一であることは未保証。"
+        }
+      },
+      {
+        "screenId": "ef00f73a-5e39-4f3a-8517-b76721c0d730",
+        "path": "11-volunteers/参照/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+        "sha256": "21c5d76dedda923f0316fcceaafb878c9562c4f8b960eede2478ac3a1049c61c",
+        "dimensions": {
+          "width": 1920,
+          "height": 1325
+        },
+        "acquisitionRoute": "Mobbin MCP search_screensのimage_urlから取得",
+        "acquiredAt": "2026-10-17",
+        "acquisitionPrecision": "day",
+        "region": {
+          "format": "xywh",
+          "x": 1325,
+          "y": 331,
+          "width": 576,
+          "height": 208,
+          "description": "参加できる日時をリーダーに伝える説明と設定入口"
+        },
+        "coordinateSpace": "original-image-pixels",
+        "role": "reconstruction",
+        "mobbin_url": "https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730",
+        "app_name": "Deputy"
+      }
+    ]
+  },
+  "organization": {
+    "issues": [],
+    "linked": true,
+    "review": "整理確認のみ。見た目・編集可能性・機能の受入ではありません。"
+  },
+  "generatedImages": [
+    {
+      "version": 1,
+      "file": "画像生成リデザイン/LH11-0033/LH11-0033-v001.png",
+      "metadataFile": "画像生成リデザイン/LH11-0033/LH11-0033-v001.json",
+      "sha256": "231a3024bfcffd33a0cd0953fbb1168fcf49077bc452914a602cf0d7abcb4005",
+      "createdAt": "2026-10-21T12:50:16.657Z",
+      "status": "reviewed",
+      "image": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.png",
+      "metadata": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.json"
+    }
+  ],
+  "catalogPresentation": {
+    "status": "finished",
+    "label": "画像生成完了",
+    "tone": "complete",
+    "primaryKind": "generated",
+    "image": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.png",
+    "displayedVersion": 1,
+    "registeredLatestVersion": 1,
+    "latestImageMissing": false,
+    "completionScope": "image-generation-and-reported-review-only"
+  },
+  "rebuildGuide": {
+    "schemaVersion": 1,
+    "id": "LH11-0033",
+    "basis": "catalog-metadata-and-pattern-guidance",
+    "notice": "用途・データ・動作・作り方は再制作時の提案です。新たな画像審査や実装済みの証明ではありません。",
+    "readiness": "candidate",
+    "facts": {
+      "name": "参加可能時間の提出案内",
+      "documentedPurpose": "参加可能時間の提出案内",
+      "sourceApp": "Deputy",
+      "category": "奉仕・チーム運営",
+      "atoms": [
+        "heading",
+        "body",
+        "button",
+        "box",
+        "status",
+        "date",
+        "avatar",
+        "icon",
+        "divider",
+        "row",
+        "column"
+      ],
+      "adaptations": [
+        "日本語の奉仕用語と架空の担当者名へ変更",
+        "Meiryoの20/28・14/24・12/16、字間0",
+        "Lighthouseの緑と中立色へ変更",
+        "参照領域を390pxまたは640pxへ適応。文字の可読性を優先して縦余白を調整"
+      ],
+      "sourceState": "BUILT / FIDELITY_ACCEPTED",
+      "nativeSource": {
+        "file": "11-volunteers/%E5%A5%89%E4%BB%95%E9%83%A8%E5%93%81%E9%9B%8602.figcraft",
+        "node": 9,
+        "exists": true
+      },
+      "originalReferences": [
+        {
+          "file": "11-volunteers/%E5%8F%82%E7%85%A7/ef00f73a-5e39-4f3a-8517-b76721c0d730.jpg",
+          "exists": true,
+          "sourceId": "ef00f73a-5e39-4f3a-8517-b76721c0d730",
+          "hashMatches": true,
+          "regionEvidence": [
+            {
+              "field": "region",
+              "value": {
+                "format": "xywh",
+                "x": 1325,
+                "y": 331,
+                "width": 576,
+                "height": 208,
+                "description": "参加できる日時をリーダーに伝える説明と設定入口"
+              }
+            },
+            {
+              "field": "coordinateSpace",
+              "value": "original-image-pixels"
+            }
+          ]
+        }
+      ],
+      "sourceCatalog": "11-volunteers/catalog.json",
+      "sourceUrl": "https://mobbin.com/screens/ef00f73a-5e39-4f3a-8517-b76721c0d730",
+      "latestGenerated": {
+        "version": 1,
+        "image": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.png",
+        "metadata": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.json",
+        "status": "reviewed",
+        "sha256": "231a3024bfcffd33a0cd0953fbb1168fcf49077bc452914a602cf0d7abcb4005"
+      },
+      "imageHistory": [
+        {
+          "version": 1,
+          "status": "reviewed",
+          "image": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.png",
+          "metadata": "%E7%94%BB%E5%83%8F%E7%94%9F%E6%88%90%E3%83%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3/LH11-0033/LH11-0033-v001.json",
+          "metadataAvailable": true,
+          "reviewNotes": "Parent approved exact candidate; see private digest-bound approval."
+        }
+      ],
+      "recordedReviewNotes": "Parent approved exact candidate; see private digest-bound approval.",
+      "pendingCorrection": null,
+      "knownIssues": []
+    },
+    "recommendations": {
+      "pattern": "schedule",
+      "patternLabel": "日程・担当枠",
+      "suggestedScreens": [
+        "奉仕の担当割当",
+        "行事の予定",
+        "予約枠の選択"
+      ],
+      "chooseWhen": [
+        "「参加可能時間の提出案内」の記録用途（参加可能時間の提出案内）が目的と合う場合。",
+        "日付・時間・担当者や空き枠を照合するとき。"
+      ],
+      "avoidWhen": [
+        "単なる日付ラベルだけなら情報行で十分か確認する。"
+      ],
+      "composition": [
+        "見出し",
+        "本文",
+        "操作",
+        "背景・枠",
+        "状態表示",
+        "日時",
+        "人物画像",
+        "アイコン",
+        "区切り",
+        "横組み",
+        "縦組み"
+      ],
+      "suggestedData": [
+        "開始・終了日時",
+        "タイムゾーン",
+        "担当者ID",
+        "枠・繰返し条件"
+      ],
+      "statesToDesign": [
+        "空き枠",
+        "重複",
+        "日またぎ",
+        "担当未定",
+        "変更中"
+      ],
+      "buildTips": [
+        "表示用の日付と保存する日時を区別し、繰返しの一回分と全体の編集を分ける。",
+        "アイコンの外形・線幅・光学的な重さは保存した原画で確認する。元のモックや生成画像の記号をそのまま正解にしない。"
+      ],
+      "accessibility": [
+        "日付と担当の関係を読み上げでも追え、キーボードで枠を選べるようにする。",
+        "日本語の長い文言と文字拡大でも情報を欠かさず、フォーカス位置を見失わないようにする。"
+      ],
+      "responsive": [
+        "狭い幅は文章の折返しと縦方向の伸長で対応し、操作とラベルの対応を保つ。",
+        "スマートフォン・タブレット・PCで実際に表示して、長い日本語・空欄・多数項目を確認する。"
+      ],
+      "handoff": [
+        "対象：LH11-0033「参加可能時間の提出案内」。記録上の用途：参加可能時間の提出案内。",
+        "保存した原画と対象範囲、元のネイティブ部品、画像生成版と比較記録を開き、再制作する版を決める。アイコン・写真・図の細部は原画を優先する。",
+        "元の編集先：11-volunteers\\奉仕部品集02.figcraft／ノード：9。元部品が生成版の見た目まで反映しているとは限らない。",
+        "個別の未解決事項が記録されていなくても、原画との比較と実際の動作確認を行う。",
+        "生成画像を一枚貼る方法で終えず、文字・ベクター・素材・プロパティを編集できる形に組み直す。",
+        "Meiryoの既存の役割別書体・太さ・行高・折返しと白背景を保持し、実寸で比較する。実装を依頼された場合はアプリのデータ・操作も別に検証する。"
+      ]
+    },
+    "related": [
+      {
+        "id": "LH11-0001",
+        "name": "担当シフトの詳細",
+        "purpose": "担当シフトの詳細",
+        "readiness": "candidate",
+        "reason": "同じ操作パターン。用途と情報量を見比べて選ぶ。"
+      },
+      {
+        "id": "LH11-0003",
+        "name": "分割した担当枠",
+        "purpose": "分割した担当枠",
+        "readiness": "candidate",
+        "reason": "同じ操作パターン。用途と情報量を見比べて選ぶ。"
+      },
+      {
+        "id": "LH11-0004",
+        "name": "担当シフトの繰返しと交代操作",
+        "purpose": "担当シフトの繰返しと交代操作",
+        "readiness": "candidate",
+        "reason": "同じ操作パターン。用途と情報量を見比べて選ぶ。"
+      }
+    ],
+    "fingerprint": "c0cab83147a72215ddf03d10592bf4db31b272507eefa2882d419cbf3d3c5592"
+  }
+}

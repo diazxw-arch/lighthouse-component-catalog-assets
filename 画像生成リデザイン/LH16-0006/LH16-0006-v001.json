@@ -1,0 +1,71 @@
+{
+  "id": "LH16-0006",
+  "name": "書体見本の一覧",
+  "version": 1,
+  "file": "画像生成リデザイン/LH16-0006/LH16-0006-v001.png",
+  "sha256": "60636f5f0f331bcd3a71b67c1cea18e5534b9dfcee4e4aa60f72f06eb546dd31",
+  "createdAt": "2026-10-21T12:53:13.618Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Recreate only LH16-0006, 書体見本の一覧, in the exact 366 x 534 frame as a Japanese font-sample browser pane. Use the original screenshot only for the narrow searchable font-list anatomy and stacked sample rows; use the current Japanese mock as authority for all exact copy, list length, weights and spacing. Preserve the title 書体見本の一覧, tabs 見つける and 自分の書体 with 見つける selected by a thin forest-green underline, a neutral outlined search field with a simple magnifying-glass icon and placeholder 書体を検索, then exactly five divided rows. Each row has the small metadata label 書体・標準 and one preview: メイリオ 123; 見出しの書体 123 (bold); 本文の書体 123; 日本語の書体 123; 明朝の見本 123. Keep all other previews regular. Use a white canvas, neutral gray dividers and restrained dark typography. No tinted rows, source app toolbar/sidebar, Canva chrome, slide canvas, extra font names, icons or controls. Fit all five samples legibly within the assigned frame.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T12:53:13.618Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original source anatomy for the narrow font search/list panel only: search control and stacked font family/type previews. Exclude Canva toolbar, left global navigation, blank slide canvas and footer.",
+      "sha256": "394b57829d9437036bc042ad06a0ce295f2e791d1620376f2fd8f541adccaacd"
+    },
+    {
+      "role": "Current Japanese render controls exact 366 x 534 frame, title, tabs/selected state, search label, five sample rows, Japanese copy, weight and spacing.",
+      "sha256": "315292712f698891feb7a125833709050cfc2f72e3daded084a297270327cae6"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/404df044-60a9-4d36-b712-427ff27e90a7",
+    "sourceId": "404df044-60a9-4d36-b712-427ff27e90a7",
+    "originalReferences": [
+      {
+        "recordedPath": "reference/404df044-60a9-4d36-b712-427ff27e90a7.jpg",
+        "absolutePath": "16-creation/reference/404df044-60a9-4d36-b712-427ff27e90a7.jpg",
+        "exists": true,
+        "link": "16-creation/reference/404df044-60a9-4d36-b712-427ff27e90a7.jpg",
+        "sourceId": "404df044-60a9-4d36-b712-427ff27e90a7",
+        "url": "https://mobbin.com/screens/404df044-60a9-4d36-b712-427ff27e90a7",
+        "recordedSha256": "394b57829d9437036bc042ad06a0ce295f2e791d1620376f2fd8f541adccaacd",
+        "actualSha256": "394b57829d9437036bc042ad06a0ce295f2e791d1620376f2fd8f541adccaacd",
+        "dimensions": {
+          "width": 1920,
+          "height": 1320
+        },
+        "acquisitionRoute": "Mobbinコネクターのimage_urlからダウンロード",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 112,
+              "y": 198,
+              "width": 418,
+              "height": 962
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "保存した参照画像のピクセル座標・左上原点"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

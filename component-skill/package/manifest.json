@@ -1,48 +1,34 @@
 {
   "name": "lighthouse-catalog-component-builder",
-  "version": "1.4",
-  "versionTenths": 14,
+  "version": "1.6",
+  "versionTenths": 16,
   "reviewEvery": null,
   "completedSinceRelease": 0,
-  "timing": "Third10:10 wide observed verification intervals from retained source-ready handoffs, including scoped fixes/waiting/coordination; active authoring/blocked/rework unknown10/10. Fresh per-ID production browser-check durations are recorded separately, not authoring speed.",
-  "quality": "Third10 initial actual-catalog audit7/10.137/138needed real282px iframe layout fixes;140failed an audit assumption requiring an enabled control on an intentionally informational card. All10finalrequiredgates passed. This is an initial audit result, not a source-first-pass defect rate.",
+  "timing": "Latest30 source-ready-to-acceptance intervals measured; active authoring unknown30/30. Comparable private family/complexity median/p90 and explicit acceptance-throughput window; no speed improvement proven.",
+  "quality": "Latest30 combined initial actual-catalog audit26/30 including4parent harness/instrumentation errors; final120renders/139functional/30accessibility/30desktop cases passed. Earlier real preview corrections153/154/161 retained.",
   "runtime": "Node.js built-ins only; offline explicit-path receipt ledger. New-catalog CLI initialization reads the reviewed package version; existing stores refuse reinitialization.",
   "authority": "Direct user request; old workers and automations remain paused",
-  "source": "First30 new accepted entries, exact original/native/ImageGen/build/render/production/catalog evidence;155historicalbaseline excluded",
+  "source": "60new accepted entries; latest30 production/actual-catalog receipts,155historicalbaseline excluded",
   "behavioralValidation": "Actual observed failure/correction evidence plus deterministic receipt/release tests. No fresh-agent pressure test and no comparative speed gain claimed.",
-  "policyRevision": "hourly-throughput-quality-20261021",
+  "policyRevision": "hourly-100accepted-per-hour-target-20261021",
   "parentPublicationEvery": 30,
-  "nextVersion": "1.5",
-  "acceptedCumulative": 30,
+  "nextVersion": "1.7",
+  "acceptedCumulative": 60,
   "lastReviewDecision": "retain",
   "speedImprovementProven": false,
   "observedReview": {
-    "samples": 10,
+    "samples": 30,
     "activeMeasured": 0,
-    "activeUnknown": 10,
-    "blockedMeasured": 0,
-    "blockedUnknown": 10,
-    "reworkMeasured": 0,
-    "reworkUnknown": 10,
-    "firstActualCatalogPass": 7,
-    "firstPassScope": "Initial parent actual-catalog audit result, including an audit assumption; not first implementation/source/render quality",
-    "historicalImplementationVersion": "1.0",
-    "acceptanceReviewVersion": "1.2",
-    "families": [
-      "word learning and controlled recording",
-      "reading plan and editorial guidance"
+    "activeUnknown": 30,
+    "firstActualCatalogPass": 26,
+    "firstPassScope": "Initial combined strict catalog audit, includes parent harness errors; not component-defect rate",
+    "actualEarlierPreviewCorrections": [
+      "LH05-0153",
+      "LH05-0154",
+      "LH05-0161"
     ],
-    "actualLayoutCorrections": [
-      "LH05-0137",
-      "LH05-0138"
-    ],
-    "auditCorrection": {
-      "id": "LH05-0140",
-      "cause": "Initial audit expected an enabled control on an intentionally informational date/chapter card.",
-      "resolution": "Explicit supplement verified informational content without inventing click behavior.",
-      "componentDefect": false
-    },
-    "cumulativeInitialCatalogAuditPass": 25
+    "finalAccepted": 30,
+    "speedImprovementProven": false
   },
   "websitePublicationEveryAccepted": null,
   "websiteReleaseArtifacts": [
@@ -55,5 +41,8 @@
   ],
   "reviewEveryMinutes": 60,
   "websitePublicationEveryMinutes": 60,
-  "hourlyEntryCountGate": false
+  "hourlyEntryCountGate": false,
+  "targetAcceptedPerHour": 100,
+  "targetMetric": "distinct fully accepted entries / elapsed wall-clock hour",
+  "targetAchieved": false
 }

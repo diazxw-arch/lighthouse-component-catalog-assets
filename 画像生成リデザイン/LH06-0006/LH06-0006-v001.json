@@ -1,0 +1,98 @@
+{
+  "id": "LH06-0006",
+  "name": "メールでの新規登録",
+  "version": 1,
+  "file": "画像生成リデザイン/LH06-0006/LH06-0006-v001.png",
+  "sha256": "132eaebc312df6475be38ffe65bd1d36513fe32732407f495ae88a6ddb6cee74",
+  "createdAt": "2026-10-21T12:36:38.280Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Recreate only the assigned Japanese email-signup component in the second reference's exact 390 x 228 frame. Use the original screenshot only to preserve the email form anatomy: label, empty rounded email input with a small trailing clear X, one supporting helper line, one filled primary action and a registered-user login link. The second reference controls exact Japanese copy and compact placement. Render exactly: メール; メールアドレスを入力; 所属先のメールを使うと、メンバーとつながれます。; 続ける; 登録済みの方はログイン. Keep the input empty with the clear X visible, CTA enabled. White background and input surface, light neutral outline, forest-green functional action and login link. No tint, decorative card, provider rows, app logo, status bar, footer, legal text or extra controls. Preserve the target frame and alignment.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T12:36:38.280Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original source anatomy and functional state",
+      "sha256": "8882f8813e4f439c0439bb26461b6b19bb9f72a68148de4bbc8a1c61e1c35111"
+    },
+    {
+      "role": "Current Japanese mock controls exact assigned frame, copy and render state",
+      "sha256": "ddb8bd6081210203b2f00a485092ee33be3031efd86924867eb755050454448a"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/7decb1dc-778e-4c02-8da1-e61107912bf6",
+    "sourceId": "7decb1dc-778e-4c02-8da1-e61107912bf6",
+    "originalReferences": [
+      {
+        "recordedPath": "06-forms/参考/7decb1dc-778e-4c02-8da1-e61107912bf6.webp",
+        "absolutePath": "06-forms/参考/7decb1dc-778e-4c02-8da1-e61107912bf6.webp",
+        "exists": true,
+        "link": "06-forms/参考/7decb1dc-778e-4c02-8da1-e61107912bf6.webp",
+        "sourceId": "7decb1dc-778e-4c02-8da1-e61107912bf6",
+        "url": "https://mobbin.com/screens/7decb1dc-778e-4c02-8da1-e61107912bf6",
+        "recordedSha256": "8882f8813e4f439c0439bb26461b6b19bb9f72a68148de4bbc8a1c61e1c35111",
+        "actualSha256": "8882f8813e4f439c0439bb26461b6b19bb9f72a68148de4bbc8a1c61e1c35111",
+        "dimensions": {
+          "width": 1179,
+          "height": 2676
+        },
+        "acquisitionRoute": "Mobbinコネクターのimage_urlから保存",
+        "acquiredAt": "2026-10-17T09:48:08.626215+09:00",
+        "regionEvidence": [
+          {
+            "field": "observedRegionPixels",
+            "value": {
+              "x": 0,
+              "y": 0,
+              "width": 1179,
+              "height": 2676
+            }
+          },
+          {
+            "field": "cropApplied",
+            "value": false
+          },
+          {
+            "field": "selectedRegionDescription",
+            "value": "中央下・メール入力と続行"
+          },
+          {
+            "field": "selectedRegionPixelBounds",
+            "value": null
+          },
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "bounds": [
+                0,
+                0,
+                1179,
+                2676
+              ],
+              "role": "実際に観察・保持した原画像全体",
+              "selectionDescription": "中央下・メール入力と続行",
+              "selectedBounds": null,
+              "selectedBoundsStatus": "詳細比較待ち。境界を推測していません。"
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "source-image-pixels"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "LH06-0003",
+  "name": "パスワード回復付き入力群",
+  "version": 1,
+  "file": "画像生成リデザイン/LH06-0003/LH06-0003-v001.png",
+  "sha256": "abbd4014d88aa4b84437c41911ac77ff7c8b7455b7d06991ba36ab2404e5e153",
+  "createdAt": "2026-10-21T10:44:53.769Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Target: Existing catalog component LH06-0003 「パスワード回復付き入力群」, one component at 390x186.\nReference roles: Reference 1 is a crop of the original rendered Dropbox password controls, reference evidence only; use it for the password field anatomy, trailing eye icon, recovery-link hierarchy and checked remember-control layout. Reference 2 is the exact current Japanese mock and controls the Japanese copy, 390x186 frame, spacing, typography and functional green treatment.\nPreserve exactly: label 「パスワード」; masked password dots with the trailing outline eye icon; recovery link 「パスワードをお忘れですか？」; checked checkbox with 「ログインしたままにする」. Keep the checkbox checked; do not reveal a password or add/omit controls. Match the mock's Meiryo roles, line wrapping, insets and alignments. Keep the input white with its quiet neutral outline. The green recovery link and checked state are functional accents from the current mock; use green only there, not as a surface tint.\nChange only broad surface treatment if needed: use a pure white #FFFFFF canvas, white input, and fine neutral gray border. No mint/pastel fill, colored wash, glow, extra card, header, login button, footer or device frame. Preserve the source eye icon's simple outline shape and weight.\nDeliver: exactly one 390x186 component with no added margins or content. Use actual ImageGen editing only; do not composite, crop, stretch or post-process the final bitmap. The source crop is reference evidence, never a candidate.\r\n",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T10:44:53.769Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original Dropbox password/masked input/recovery andchecked remember group",
+      "sha256": "ea6e2be46519108e8097125a2c127753495156dafe2543d933cbaeec35f31391"
+    },
+    {
+      "role": "LocalizedJapanese render exact copy and frame",
+      "sha256": "53b78cf59a683ef56da9e698680756b476274b4e529c4420e6b236eddafa9465"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/80e038ac-2812-4d13-8f5b-98a680cdb03f",
+    "sourceId": "80e038ac-2812-4d13-8f5b-98a680cdb03f",
+    "originalReferences": [
+      {
+        "recordedPath": "06-forms/参考/80e038ac-2812-4d13-8f5b-98a680cdb03f.webp",
+        "absolutePath": "06-forms/参考/80e038ac-2812-4d13-8f5b-98a680cdb03f.webp",
+        "exists": true,
+        "link": "06-forms/参考/80e038ac-2812-4d13-8f5b-98a680cdb03f.webp",
+        "sourceId": "80e038ac-2812-4d13-8f5b-98a680cdb03f",
+        "url": "https://mobbin.com/screens/80e038ac-2812-4d13-8f5b-98a680cdb03f",
+        "recordedSha256": "ea6e2be46519108e8097125a2c127753495156dafe2543d933cbaeec35f31391",
+        "actualSha256": "ea6e2be46519108e8097125a2c127753495156dafe2543d933cbaeec35f31391",
+        "dimensions": {
+          "width": 1920,
+          "height": 1320
+        },
+        "acquisitionRoute": "Mobbinコネクターのimage_urlから保存",
+        "acquiredAt": "2026-10-17T09:48:05.081221+09:00",
+        "regionEvidence": [
+          {
+            "field": "observedRegionPixels",
+            "value": {
+              "x": 0,
+              "y": 0,
+              "width": 1920,
+              "height": 1320
+            }
+          },
+          {
+            "field": "cropApplied",
+            "value": false
+          },
+          {
+            "field": "selectedRegionDescription",
+            "value": "中央・入力欄から記憶選択まで"
+          },
+          {
+            "field": "selectedRegionPixelBounds",
+            "value": null
+          },
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "bounds": [
+                0,
+                0,
+                1920,
+                1320
+              ],
+              "role": "実際に観察・保持した原画像全体",
+              "selectionDescription": "中央・入力欄から記憶選択まで",
+              "selectedBounds": null,
+              "selectedBoundsStatus": "詳細比較待ち。境界を推測していません。"
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "source-image-pixels"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

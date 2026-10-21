@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v1.4
+# Catalog implementation workflow, v1.6
 
 ## Authority and recovery
 
@@ -51,3 +51,12 @@ Record the qualified delivery once with `cycle.mjs`. Save the next unfinished st
 Read the actual iframe content width before assessing overflow or hit targets. For iframe-local geometry, read getBoundingClientRect inside that frame; browser page-coordinate bounds need an explicit translation. In a fixed-height preview, verify that internal scrolling and keyboard focus reach lower content/actions. A viewport screenshot does not show the entire component. Recheck only changed and concretely at-risk inputs, preserving the dates of reused proof.
 
 When text source pins differ across Windows/Git, verify lossless UTF-8 and CRLF-only normalization for the specific text file, including SVG/TXT. Font and photographic payloads remain exact bytes. If hosting publication fails, preserve the version/artifact, diagnose once and perform only a bounded attempt after a relevant prerequisite changes. Keep public source documents recoverable and hash-verifiable in the existing immutable asset workflow; a successful transport experiment does not establish the cause of an earlier generic failure.
+
+## Parent publication preflight from the second30 acceptance
+
+Freeze the exact final source and reuse its valid independent source/build proof. Restore the prior canonical Git-blob publication stage before catalog installation: Windows checkout CRLF must not be substituted for committed LF hashes. Preserve binary media/font bytes. Use the existing scoped additive catalog projection when changing only implementations; retain unrelated public entries, counts, dates, media histories and skill links. Check its real validator arguments before invoking it. Keep source documents in the existing reviewed immutable asset transport, and check archive expanded size before publication. These steps add no service, dependency or sandbox permission.
+
+Reuse the complete existing audit helper closure when moving tests into the actual strict catalog iframe. Probe one representative case per affected family before the full audit, then execute every required per-ID/state case. Native radio groups normally have one Tab stop and Arrow navigation. Capture pointer target metadata before an action can hide its underlay. If frame-specific CDP is unsupported for a same-process iframe, inspect that exact iframe document through its parent target; do not alter origin or sandbox restrictions. Verify actual active font embedding separately from unused declared provenance font files. Pin all retained inputs, and never exempt an active font from loading/render checks.
+
+Retain initial failed reports and diagnose whether the failure belongs to the component, audit harness, publication input or external boundary. Rerun only failed and concretely affected scopes, then reconcile successful supplements by exact ID/state/input and observation date. All final visual, keyboard, responsive, accessibility, independent review, build/CI, production and actual-catalog gates remain mandatory. No before/after active-time improvement has yet been measured.
+

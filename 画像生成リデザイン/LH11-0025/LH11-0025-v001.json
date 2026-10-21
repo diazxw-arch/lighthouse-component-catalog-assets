@@ -1,0 +1,72 @@
+{
+  "id": "LH11-0025",
+  "name": "チームの奉仕時間と担当回数",
+  "version": 1,
+  "file": "画像生成リデザイン/LH11-0025/LH11-0025-v001.png",
+  "sha256": "d11c334365363b9319708bf613047cbd8dbd1cc8e5fbc96a1a5912d6410b83b6",
+  "createdAt": "2026-10-21T12:24:38.863Z",
+  "status": "reviewed",
+  "generator": "image_gen",
+  "model": null,
+  "prompt": "Create catalog component LH11-0025 from these references, exactly 390 x 287 full component proportions. Actual Deputy left team sidebar has selected all-team summary and three person summaries with counts/hours. Original All group glyph is two people; mock 全 monogram is an inaccurate replacement there. Preserve original group icon and authored localized individual monograms 山/佐/鈴. No photos inside this component, no search or app shell. Replace old mint selected header wash with WHITE surface and meaningful forest-green outline. Other rows white, neutral dividers and neutral-gray monogram circles. Preserve all counts, hours, row ordering and selected-all state. Keep every word/state, hierarchy and alignment complete and readable. Only this component, no surrounding app or watermark, no invented content. Exact Japanese copy: すべての担当者 | 13回・33時間12分 | 山田 太郎 | 5回・17時間55分 | 佐藤 花子 | 2回・5時間27分 | 鈴木 次郎 | 6回・9時間50分.",
+  "review": {
+    "reportedBy": "uploader",
+    "reportedAt": "2026-10-21T12:24:38.863Z",
+    "status": "reviewed"
+  },
+  "reviewNotes": "Parent inspected and approved the exact stored candidate. Detailed private production evidence is retained locally.",
+  "inputReferences": [
+    {
+      "role": "Original anatomy, identity icons and functional state",
+      "sha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5"
+    },
+    {
+      "role": "Current Japanese copy/frame; source icons and newest white rule override inaccurate mock",
+      "sha256": "33af29b6e461a581b405a583391e8391bec59e9254006f991816edf7aca29feb"
+    }
+  ],
+  "source": {
+    "sourceUrl": "https://mobbin.com/screens/9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+    "sourceId": "9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+    "originalReferences": [
+      {
+        "recordedPath": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "absolutePath": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "exists": true,
+        "link": "11-volunteers/参照/9b66d06f-6c6c-4a4b-af13-5a79d595e04d.jpg",
+        "sourceId": "9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+        "url": "https://mobbin.com/screens/9b66d06f-6c6c-4a4b-af13-5a79d595e04d",
+        "recordedSha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5",
+        "actualSha256": "c3374172fa21ba4f68665e50d8d42906404cf5d119acae50cc7c99c2f878feb5",
+        "dimensions": {
+          "width": 1920,
+          "height": 1325
+        },
+        "acquisitionRoute": "Mobbin MCP search_screensのimage_urlから取得",
+        "acquiredAt": "2026-10-17",
+        "regionEvidence": [
+          {
+            "field": "region",
+            "value": {
+              "format": "xywh",
+              "x": 10,
+              "y": 212,
+              "width": 278,
+              "height": 364,
+              "description": "チーム合計と担当者別の回数・時間を並べた集計"
+            }
+          },
+          {
+            "field": "coordinateSpace",
+            "value": "original-image-pixels"
+          }
+        ],
+        "hashMatches": true
+      }
+    ]
+  },
+  "designSystem": {
+    "file": "デザイン基準/DESIGN.md",
+    "sha256": "a6aeebd5b53794452913eb6b830097b015375ac8a3c9d9faaa52eb327f5f7aee"
+  }
+}

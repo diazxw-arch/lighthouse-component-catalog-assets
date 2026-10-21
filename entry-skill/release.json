@@ -1,27 +1,27 @@
 {
   "name": "lighthouse-catalog-entry",
-  "version": "1.3",
+  "version": "1.4",
   "date": "2026-10-21",
   "review_interval": null,
   "review_cadence": "hourly",
   "review_interval_seconds": 3600,
   "website_publication_interval": 10,
-  "completed_at_release": 8,
+  "completed_at_release": 10,
   "current_valid_at_publication": 10,
-  "next_version": "1.4",
+  "next_version": "1.5",
   "next_review_at_cumulative_valid": null,
   "next_website_at_cumulative_valid": 20,
   "production_blocked_by_review": false,
-  "archive": "lighthouse-catalog-entry-v1.3.zip",
-  "sha256": "211a030e0bcef972396e966e298f386cb22c0a0a563e3d93f987e2220578938c",
+  "archive": "lighthouse-catalog-entry-v1.4.zip",
+  "sha256": "b5d9c7b0b146038bc15bea0bfcfdd52c2d7d0e3e5dd6d60ffbcb315c7b20af29",
   "files": {
-    "SKILL.md": "2e235e701684c333ebade3f9f96f3e6d8987b0e3e67e4e3f063a6a4d79f2eb59",
-    "WORKFLOW.md": "cba83de463b437981ef6fbe43f3add3fd5a1cb8b484ed8d596d17f66a95abae6",
-    "FAST-PATH.md": "7c35ba4d99d07876e3cf51728b0e67b992011e53798d9be40721530e5b486e51",
-    "EVOLUTION.md": "5a1167a617aa740de90bcecc05548ab7cc68758adff6bdabac4b13f0d381cd0d",
-    "CHANGELOG.md": "58261ece4e49f03ec2f8e5403d051fa666e1ee39cee4aa30f178c7fab1c82dab",
+    "SKILL.md": "d4e45bffc481758ecd48e2ebc9832c41077128627603c1ab222bc6a92e76cf03",
+    "WORKFLOW.md": "bbb99938673e0dea605a9aac84878402ca2f4deccc75082b05eb63182f506cd4",
+    "FAST-PATH.md": "160dbc4955f2b52c651eb0948fa6b7d57c7b546a24d32b878ec9f34c0efb5a3a",
+    "EVOLUTION.md": "c9e7560df2714597a81a2f90c0b6c446c25280119e2988c35aadcc6427ecc0fb",
+    "CHANGELOG.md": "0bce35c06e3e45ffc22235d624a8960a6ed5c3e5f227e94120c3cf3d0fee0fb2",
     "receipt.example.json": "b58aa83f6e6c82dd3d92760c9c655c59fe81dc901b9c5572e2cfdcdf6288ce5d",
-    "version.json": "942a7eea40f6ba8dac052993a5d1f7d68ca59a66ad8c23f924f9e742ad281d0f",
+    "version.json": "d5ada738fab6e5565c181095acb5cc75f018d6431728567fa9bf959d934361fd",
     "scripts/catalog_entry.py": "ea8322a9975f7631b7dea2293a3800a2dcc18749b1f3b7cea63719a258b3ca62"
   },
   "safety": {
@@ -36,5 +36,7 @@
     "passed": 40,
     "total": 40
   },
-  "speed_improvement_proven": false
+  "speed_improvement_proven": false,
+  "throughput_target_multiplier": 10,
+  "throughput_stretch_multiplier": 20
 }

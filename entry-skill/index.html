@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mobbin調査・部品登録スキル v1.3 | ライトハウス</title>
+<title>Mobbin調査・部品登録スキル v1.4 | ライトハウス</title>
 <meta name="description" content="Mobbinの原画像を保存し、実際の部品画像を切り出して目録へ登録する、版管理されたエージェント用スキル。1時間ごとに、1部品の完了時間と品質を見直します。">
 <style>
 :root{font-family:Meiryo,"Yu Gothic",sans-serif;color:#17251d;background:#fff;line-height:1.75;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:auto;padding:28px 24px 56px}a{color:#086544;text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid #087c54;outline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:.9rem;margin-bottom:28px}.eyebrow{font-size:.85rem;font-weight:bold;color:#37634c;letter-spacing:.05em}h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.4;margin:8px 0 14px;letter-spacing:-.025em}h2{font-size:1.25rem;margin:0 0 12px}p{margin:10px 0}.lead{max-width:800px}.version{display:inline-block;padding:3px 12px;border:1px solid #226747;border-radius:30px;font-size:.85rem;white-space:nowrap;vertical-align:middle}.downloads{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 30px}.button{display:inline-flex;align-items:center;min-height:44px;padding:9px 18px;border:2px solid #245a40;border-radius:9px;text-decoration:none;font-weight:bold}.primary{background:#245a40;color:#fff}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}.stat,section{border:2px solid #254b35;border-radius:12px;padding:20px}.stat strong{display:block;font-size:1.55rem;line-height:1.5}.stat span{font-size:.85rem;color:#43554a}section{margin:18px 0}ol{padding-left:1.5em}li{margin:10px 0}.muted{color:#4c5d52;font-size:.9rem}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{border-bottom:1px solid #cdd9d0;padding:11px 10px;vertical-align:top}th{white-space:nowrap}code{font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}.checksum{font-size:.78rem;word-break:break-all}details{border-top:1px solid #cdd9d0;padding:14px 0}summary{cursor:pointer;font-weight:bold;min-height:36px}footer{margin-top:32px;font-size:.85rem;color:#4c5d52}@media(max-width:640px){main{padding:20px 16px 40px}.stats{grid-template-columns:1fr;gap:10px}.stat{padding:14px 18px}.stat strong{font-size:1.3rem}section{padding:18px}th,td{padding:10px 8px}.button{width:100%;justify-content:center}}
@@ -13,14 +13,14 @@
 <nav aria-label="ページ移動"><a href="/">部品カタログ</a><a href="/component-skill/">部品実装スキル</a><a href="#workflow">登録の手順</a><a href="#evolution">1時間ごとの更新</a></nav>
 <header>
 <p class="eyebrow">LIGHTHOUSE · CATALOG RESEARCH</p>
-<h1>Mobbin調査・部品登録スキル <span class="version">v1.3</span></h1>
+<h1>Mobbin調査・部品登録スキル <span class="version">v1.4</span></h1>
 <p class="lead">原画像を残し、使える部品の範囲を見極め、実際の画像を切り出して目録に登録します。参照の保存・切り出しにかかった時間と、新しい登録の品質を記録するエージェント用スキルです。</p>
-<div class="downloads"><a class="button primary" href="lighthouse-catalog-entry-v1.3.zip" download>スキル v1.3 をダウンロード</a><a class="button" href="package/SKILL.md">SKILL.md を読む</a></div>
+<div class="downloads"><a class="button primary" href="lighthouse-catalog-entry-v1.4.zip" download>スキル v1.4 をダウンロード</a><a class="button" href="package/SKILL.md">SKILL.md を読む</a></div>
 <p class="muted">スキルは1時間ごとに時間と品質を審査し、確認済みの改善を取り込みます。作業者は候補の事前承認を待たずに進めます。サイトは有効な新規登録10件ごとに、最新の審査済みスキルと目録を更新します。</p></header>
-<div class="stats" aria-label="v1.3 リリース時点の記録">
-<div class="stat"><strong>8 部品</strong><span>v1.3リリース時点の有効な計測済み完了数</span></div>
+<div class="stats" aria-label="v1.4 リリース時点の記録">
+<div class="stat"><strong>10 部品</strong><span>v1.4リリース時点の有効な計測済み完了数</span></div>
 <div class="stat"><strong>40 / 40 テスト合格</strong><span>安全検査 0/100・8ファイル全件確認</span></div>
-<div class="stat"><strong>1時間ごとに審査</strong><span>次版はv1.4。審査時刻だけで登録作業を止めません</span></div>
+<div class="stat"><strong>1時間ごとに審査</strong><span>次版はv1.5。審査時刻だけで登録作業を止めません</span></div>
 </div>
 <p class="muted">既存の目録件数と、このスキルの計測済み完了数は別です。再切り出しや修正は新しい完了に数えません。公開は10件ごとに行います。過去のチャットの経過時間から作業速度を推定していません。</p>
 <section id="workflow"><h2>1部品を登録する手順</h2>
@@ -44,6 +44,6 @@
 <details><summary>検索でエラーが出ても、検証済みの保存参照は再利用できる</summary><p>新しいアクセスの失敗と、以前保存した正当な証拠を分けて扱います。認証や利用制限の回避は行いません。</p></details>
 <details><summary>目録の形式と、3つの集計フラグを保持</summary><p>実際の各分野のcatalog.jsonだけを読みます。バックアップや参照リストを件数に含めず、既存の制作・検証履歴を変更しません。</p></details>
 </section>
-<section><h2>ファイルと版の履歴</h2><p><a href="package/WORKFLOW.md">実行手順とコマンド</a> · <a href="package/EVOLUTION.md">1時間ごとの審査の詳細</a> · <a href="package/receipt.example.json">登録記録のひな形</a> · <a href="package/CHANGELOG.md">変更履歴</a> · <a href="release.json">版情報とハッシュ</a></p><p><strong>v1.3 · 2026年10月21日</strong> — 1時間ごとの時間・品質レビュー、登録件数による作業停止の解除、有用なまとまりを持つパネルの扱いを検証。40テスト合格、安全検査0/100・8/8ファイル、独立レビューAPPROVE。比較可能な十分な実績がまだなく、速度改善は未証明です。</p><p><a href="archive/v1.1/">v1.1の保存版</a> · <strong>v1.1 · 2026年10月21日</strong> — 実画像の全辺審査、計測ステージ必須化、無効完了の永久除外を検証。26テスト合格、安全検査0/100・7/7ファイル、独立レビューAPPROVE。速度改善は未証明です。</p><p><a href="archive/v1.0/">v1.0の保存版</a> · <strong>v1.0 · 2026年10月20日</strong> — 既存8分野の記録を調査して初版を作成。新たな実登録の時間・品質は、今後の実行から計測します。</p><p class="muted">ダウンロードはエージェント用の手順書とローカル補助ツールです。Mobbin接続と既存のPython/Pillow環境が必要です。</p></section>
+<section><h2>ファイルと版の履歴</h2><p><a href="package/WORKFLOW.md">実行手順とコマンド</a> · <a href="package/EVOLUTION.md">1時間ごとの審査の詳細</a> · <a href="package/receipt.example.json">登録記録のひな形</a> · <a href="package/CHANGELOG.md">変更履歴</a> · <a href="release.json">版情報とハッシュ</a></p><p><strong>v1.4 · 2026年10月21日</strong> — 1時間ごとの時間・品質レビュー、登録件数による作業停止の解除、有用なまとまりを持つパネルの扱いを検証。40テスト合格、安全検査0/100・8/8ファイル、独立レビューAPPROVE。有効な登録数を同じ時間で10倍、さらに20倍を目標に改善します。公開作業の待機を登録作業から分離し、保存済みの調査・比較証拠を再利用します。速度改善の達成はまだ未証明です。</p><p><a href="archive/v1.1/">v1.1の保存版</a> · <strong>v1.1 · 2026年10月21日</strong> — 実画像の全辺審査、計測ステージ必須化、無効完了の永久除外を検証。26テスト合格、安全検査0/100・7/7ファイル、独立レビューAPPROVE。速度改善は未証明です。</p><p><a href="archive/v1.0/">v1.0の保存版</a> · <strong>v1.0 · 2026年10月20日</strong> — 既存8分野の記録を調査して初版を作成。新たな実登録の時間・品質は、今後の実行から計測します。</p><p class="muted">ダウンロードはエージェント用の手順書とローカル補助ツールです。Mobbin接続と既存のPython/Pillow環境が必要です。</p></section>
 <footer>ライトハウス・日本語コンポーネント集 · 元の参照と履歴を保ち、確認できた結果だけを記録します。</footer>
 </main></body></html>
