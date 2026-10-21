@@ -1,0 +1,5 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';
+import {VocabularySortingCard} from './VocabularySortingCard';import {sortingCopy} from './vocabulary-statistics-demo-data';
+import './vocabulary-statistics-font.css';import './vocabulary-statistics-preview.css';
+export function VocabularySortingCardPreview(){const state=new URLSearchParams(location.search).get('state'),[message,setMessage]=useState('');return <main className="lh-vocabulary-statistics-demo"><VocabularySortingCard {...sortingCopy} itemId={state==='empty'?'':sortingCopy.itemId} word={state==='empty'?'':sortingCopy.word} canUndo={state!=='empty'} disabled={state==='disabled'} busy={state==='busy'} error={state==='error'?'仕分けを保存できませんでした。':undefined} onReturnToLearning={id=>setMessage(id+'を学習中に戻すリクエストです。')} onUndo={()=>setMessage('前の仕分けを取り消すリクエストです。')} onNext={id=>setMessage(id+'の次へ進むリクエストです。')}/><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<VocabularySortingCardPreview/>);

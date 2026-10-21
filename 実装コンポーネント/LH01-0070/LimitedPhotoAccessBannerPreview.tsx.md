@@ -1,0 +1,2 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {LimitedPhotoAccessBanner} from './LimitedPhotoAccessBanner';import './discovery-preview.css';
+export function Preview(){const[message,setMessage]=useState('');return <main className="lh-discovery-preview lh-visual-search-preview--banner"><div className="lh-visual-search-preview"><LimitedPhotoAccessBanner onManage={()=>setMessage('写真を管理する操作を受け取りました。端末の設定画面は接続されていません。')}/>{message&&<p role="status">{message}</p>}</div></main>;}createRoot(document.getElementById('root')!).render(<Preview/>);

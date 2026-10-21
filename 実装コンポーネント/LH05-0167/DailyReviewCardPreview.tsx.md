@@ -1,0 +1,4 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {DailyReviewCard} from './DailyReviewCard';import {dailyReviewCopy} from './review-practice-demo-data';
+import './review-practice-font.css';import './review-practice-preview.css';
+export function DailyReviewCardPreview(){const state=new URLSearchParams(location.search).get('state'),[message,setMessage]=useState('');return <main className="lh-review-practice-demo"><DailyReviewCard {...dailyReviewCopy} courseId={state==='empty'?'':dailyReviewCopy.courseId} disabled={state==='disabled'} busy={state==='busy'} error={state==='error'?'復習を準備できませんでした。':undefined} onReview={id=>setMessage(id+'を復習するリクエストです。')}/><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<DailyReviewCardPreview/>);

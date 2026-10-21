@@ -1,0 +1,17 @@
+import type {LearningAchievement} from './LearningAchievementStrip';
+import type {DailyLearningTask} from './DailyLearningSummary';
+import type {QuizSetupValue} from './QuizSetup';
+import flame from './learning-progress-media/daily-flame.png';
+import books from './learning-progress-media/daily-books.png';
+import timer from './learning-progress-media/daily-timer.png';
+import firstBadge from './learning-progress-media/achievement-1.png';
+import secondBadge from './learning-progress-media/achievement-2.png';
+import thirdBadge from './learning-progress-media/achievement-3.png';
+export const recommendationCardCopy={heading:'次の一歩のために学ぶ',reason:'この結果に合わせた学びのヒント',emptyLabel:'おすすめの本はまだありません。'};
+export const dailySummaryCopy={heading:'今日の学び',completionLabel:'今日の三つの学びを終えました',emptyLabel:'今日の学びはまだありません。'};
+export const dailyLearningTasks:readonly DailyLearningTask[]=[{id:'streak',label:'連続学習を始める',iconSrc:flame,iconLabel:'連続学習の炎',complete:true},{id:'summary',label:'要約をひとつ読み終える',iconSrc:books,iconLabel:'積み重ねた本',complete:true},{id:'minutes',label:'10分間学ぶ',iconSrc:timer,iconLabel:'学習時間の時計',complete:true}];
+export const achievementCopy={heading:'これまでの達成',emptyLabel:'これまでの達成はまだありません。'};
+export const learningAchievements:readonly LearningAchievement[]=[{id:'week',label:'一週間の学び',art:{src:firstBadge,width:145,height:493,label:'一週間の学びの原画と青い進捗弧'}},{id:'fortnight',label:'二週間の学び',art:{src:secondBadge,width:435,height:493,label:'二週間の学びの原画と青い進捗弧'}},{id:'explain',label:'説明する力',art:{src:thirdBadge,width:502,height:493,label:'説明する力の原画'}}];
+export const learningProfileCopy={heading:'学習プロフィール',achievementHeading:'これまでの達成',achievementEmptyLabel:achievementCopy.emptyLabel,streakLabel:'1日間の連続学習',streakDescription:'毎日学んで、記録を伸ばしましょう',weekdays:[{id:'sun',label:'日'},{id:'mon',label:'月'},{id:'tue',label:'火'},{id:'wed',label:'水'},{id:'thu',label:'木'},{id:'fri',label:'金'},{id:'sat',label:'土'}]};
+export const quizSetupCopy={heading:'テストを設定',subject:'健康と暮らしの用語集',counts:[{value:'5',label:'5問'},{value:'10',label:'10問'},{value:'15',label:'15問'},{value:'20',label:'20問'}],answerModes:[{value:'definition',label:'定義'},{value:'term',label:'用語'}]};
+export const initialQuizValue:QuizSetupValue={count:'15',answerMode:'definition',instant:true,trueFalse:false,multipleChoice:true,written:false};

@@ -1,0 +1,5 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';
+import {VocabularyLearningStatistics} from './VocabularyLearningStatistics';import {statisticsCopy,learningMetrics,learningWeekdays,scoreDistribution} from './vocabulary-statistics-demo-data';
+import './vocabulary-statistics-font.css';import './vocabulary-statistics-preview.css';
+export function VocabularyLearningStatisticsPreview(){const state=new URLSearchParams(location.search).get('state'),[message,setMessage]=useState('');return <main className="lh-vocabulary-statistics-demo"><VocabularyLearningStatistics {...statisticsCopy} metrics={state==='empty'?[]:learningMetrics} weekdays={state==='empty'?[]:learningWeekdays} distribution={state==='empty'?null:scoreDistribution} disabled={state==='disabled'} busy={state==='busy'} error={state==='error'?'練習を準備できませんでした。':undefined} onPractice={()=>setMessage('練習を始めるリクエストです。統計は呼び出し元が更新します。')}/><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<VocabularyLearningStatisticsPreview/>);

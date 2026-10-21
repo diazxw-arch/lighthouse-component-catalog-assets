@@ -1,0 +1,2 @@
+/** Retained native speaker polygon and Bezier network; palette is supplied by the scoped CSS. */
+export function ReviewSpeakerGlyph(){return <svg viewBox="0 0 24.5 24" aria-hidden="true" focusable="false" overflow="visible"><path d="M0 7H6L14 0V24L6 17H0Z" fill="currentColor"/><path d="M20 0C26 8 26 16 20 24M17 6C20.333333 10 20.333333 14 17 18" fill="none" stroke="currentColor" strokeWidth="1.5"/></svg>;}

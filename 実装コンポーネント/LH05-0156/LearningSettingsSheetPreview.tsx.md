@@ -1,0 +1,7 @@
+import {useRef,useState} from 'react';import {createRoot} from 'react-dom/client';
+import {LearningSettingsSheet} from './LearningSettingsSheet';
+import {MinimumAnswerNotice} from './MinimumAnswerNotice';
+import {initialLearningSettings,minimumAnswerCopy} from './study-settings-demo-data';
+import './study-settings-font.css';import './study-settings-preview.css';
+export function LearningSettingsSheetPreview(){const state=new URLSearchParams(location.search).get('state'),[value,setValue]=useState(initialLearningSettings),[message,setMessage]=useState(''),[open,setOpen]=useState(false),[container,setContainer]=useState<HTMLElement|null>(null),target=useRef<HTMLElement|null>(null);return <main className="lh-study-settings-demo"><div ref={setContainer} className="lh-study-settings-demo-frame"><LearningSettingsSheet heading="学習の設定" value={value} gradingLabel="意味が合っていれば正解" onChange={setValue} onInvalidDirection={trigger=>{target.current=trigger;setOpen(true);}} onGrading={()=>setMessage('答えの判定方法を開くリクエストです。')} onClose={()=>setMessage('学習の設定を閉じるリクエストです。')} disabled={state==='disabled'} busy={state==='busy'} error={state==='error'?'設定を保存できませんでした。':undefined}/><MinimumAnswerNotice open={open} container={container} returnFocus={target.current} title={minimumAnswerCopy.noticeTitle} descriptionLines={minimumAnswerCopy.noticeLines} actionLabel={minimumAnswerCopy.noticeAction} onDismiss={()=>setOpen(false)}/></div><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<LearningSettingsSheetPreview/>);

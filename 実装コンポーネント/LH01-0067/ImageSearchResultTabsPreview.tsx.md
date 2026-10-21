@@ -1,0 +1,2 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {ImageSearchResultTabs,type ImageSearchResultType} from './ImageSearchResultTabs';import './discovery-preview.css';
+export function Preview(){const[value,setValue]=useState<ImageSearchResultType>('places');return <main className="lh-discovery-preview lh-visual-search-preview--sheet"><ImageSearchResultTabs value={value} onValueChange={setValue}/></main>;}createRoot(document.getElementById('root')!).render(<Preview/>);

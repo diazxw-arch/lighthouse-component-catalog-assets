@@ -1,0 +1,4 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {MasteryReviewOverview} from './MasteryReviewOverview';import {overviewCopy,masteryCopy,masteryCourse} from './review-practice-demo-data';
+import './review-practice-font.css';import './review-practice-preview.css';
+export function MasteryReviewOverviewPreview(){const state=new URLSearchParams(location.search).get('state'),[message,setMessage]=useState('');return <main className="lh-review-practice-demo"><MasteryReviewOverview {...overviewCopy} mastery={{...masteryCopy,course:state==='empty'?null:masteryCourse,onReview:id=>setMessage(id+'を復習するリクエストです。'),error:state==='error'?'復習を準備できませんでした。':undefined}} disabled={state==='disabled'} busy={state==='busy'} onListening={()=>setMessage('聞き取りの復習を始めるリクエストです。')}/><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<MasteryReviewOverviewPreview/>);

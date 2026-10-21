@@ -1,0 +1,12 @@
+import type {LearningMetric} from './LearningMetricGrid';
+import type {ScoreDistributionData} from './LearningScoreDistribution';
+import type {LearningWeekdayRecord} from './VocabularyLearningStatistics';
+import type {MasteryReviewCourse} from './CourseMasteryReview';
+import coursePhoto from './vocabulary-statistics-media/review-course.png';
+export const sortingCopy={positionLabel:'1／68',learningCount:'0',knownCount:'1',statusLabel:'知っている',itemId:'pain',word:'痛み',instruction:'左へ動かすと「学習中」に戻ります',emptyLabel:'仕分ける単語はありません。'};
+export const learningMetrics:readonly LearningMetric[]=[{id:'read',value:'128',label:'読んだ語'},{id:'favorites',value:'4',label:'お気に入り'},{id:'saved',value:'7',label:'保存した語'},{id:'practice',value:'10',label:'練習した回数'}];
+export const scoreDistribution:ScoreDistributionData={headline:'学習者の4％より上にいます',scoreLabel:'あなたのスコア：29',youLabel:'あなた',curvePath:'M0 106 C70 106 90 86 136 42 C190 -10 210 98 318 106',markerX:76,markerY:90,averageX:188,axisLabel:'0　　　　　　　平均　　　　　　　100'};
+export const learningWeekdays:readonly LearningWeekdayRecord[]=['火','水','木','金','土','日','月'].map((label,index)=>({id:String(index),label,complete:index<2}));
+export const statisticsCopy={heading:'ことばの学習記録',testScore:'16／30',testDateLabel:'テストの得点（2026年3月25日）',testDateTime:'2026-03-25',streakHeading:'連続学習',streakValue:'2日',emptyMetricsLabel:'統計はまだありません。',emptyDistributionLabel:'分布はまだありません。'};
+export const masteryCourse:MasteryReviewCourse={id:'conversation-part-1',title:'はじめての会話・第1部',photoSrc:coursePhoto,photoLabel:'復習するコースの3人の女性',progress:100,progressLabel:'100％'};
+export const masteryCopy={category:'自分のコースから',conceptLabel:'1つの概念',mastery:100,masteryLabel:'習得率：100％',scheduleLabel:'次のおすすめの復習：364日後',emptyLabel:'復習するコースはありません。'};

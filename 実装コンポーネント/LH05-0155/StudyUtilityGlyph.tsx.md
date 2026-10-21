@@ -1,0 +1,2 @@
+type StudyUtilityGlyphProps={name:'speaker'|'star'|'undo'|'play'|'arrow'};
+export function StudyUtilityGlyph({name}:StudyUtilityGlyphProps){return <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">{name==='speaker'?<><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M16 8a6 6 0 0 1 0 8M19 5a10 10 0 0 1 0 14"/></>:name==='star'?<path d="m12 2.8 2.8 5.7 6.3.9-4.5 4.4 1 6.3-5.6-3-5.6 3 1-6.3-4.5-4.4 6.3-.9z"/>:name==='undo'?<path d="m8 5-5 5 5 5M3 10h10a7 7 0 0 1 7 7v2"/>:name==='play'?<path d="m7 4 13 8-13 8z"/>:<path d="M3 12h18m-7-7 7 7-7 7"/>}</svg>}

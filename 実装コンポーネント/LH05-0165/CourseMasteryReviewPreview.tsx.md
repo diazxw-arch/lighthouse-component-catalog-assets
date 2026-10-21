@@ -1,0 +1,4 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {CourseMasteryReview} from './CourseMasteryReview';import {masteryCopy,masteryCourse} from './vocabulary-statistics-demo-data';
+import './vocabulary-statistics-font.css';import './vocabulary-statistics-preview.css';
+export function CourseMasteryReviewPreview(){const state=new URLSearchParams(location.search).get('state'),[message,setMessage]=useState('');return <main className="lh-vocabulary-statistics-demo"><CourseMasteryReview {...masteryCopy} course={state==='empty'?null:masteryCourse} disabled={state==='disabled'} busy={state==='busy'} error={state==='error'?'復習を準備できませんでした。':undefined} onReview={id=>setMessage(id+'を復習するリクエストです。予定は呼び出し元が管理します。')}/><p role="status">{message}</p></main>;}
+createRoot(document.getElementById('root')!).render(<CourseMasteryReviewPreview/>);

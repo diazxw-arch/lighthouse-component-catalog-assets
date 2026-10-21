@@ -1,0 +1,5 @@
+import * as Dialog from '@radix-ui/react-dialog';
+import './study-settings.css';
+type Props={open:boolean;container:HTMLElement|null;returnFocus:HTMLElement|null;title:string;descriptionLines:readonly string[];actionLabel:string;onDismiss:()=>void};
+/** Existing Radix modal owns focus containment, Escape, outside dismissal and scroll-lock cleanup. */
+export function MinimumAnswerNotice({open,container,returnFocus,title,descriptionLines,actionLabel,onDismiss}:Props){if(!container)return null;return <Dialog.Root open={open} onOpenChange={next=>{if(!next)onDismiss();}}><Dialog.Portal container={container}><Dialog.Overlay className="lh-minimum-answer-notice__overlay"/><Dialog.Content className="lh-minimum-answer-notice" onCloseAutoFocus={event=>{if(returnFocus?.isConnected){event.preventDefault();returnFocus.focus();}}}><Dialog.Title>{title}</Dialog.Title><Dialog.Description>{descriptionLines.map((line,index)=><span key={index}>{line}</span>)}</Dialog.Description><Dialog.Close asChild><button type="button">{actionLabel}</button></Dialog.Close></Dialog.Content></Dialog.Portal></Dialog.Root>;}

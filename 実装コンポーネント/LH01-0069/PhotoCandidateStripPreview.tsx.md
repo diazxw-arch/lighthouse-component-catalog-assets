@@ -1,0 +1,3 @@
+import {useState} from 'react';import {createRoot} from 'react-dom/client';import {PhotoCandidateStrip} from './PhotoCandidateStrip';import orchid from './assets/candidate-original-orchid.svg';import tulip from './assets/candidate-original-tulip.svg';import './discovery-preview.css';
+const photos=[{id:'orchid',photo:orchid,alt:'胡蝶蘭の写真'},{id:'tulip',photo:tulip,alt:'チューリップの写真'}];
+export function Preview(){const[selected,setSelected]=useState('orchid');return <main className="lh-discovery-preview lh-visual-search-preview--candidates"><PhotoCandidateStrip photos={photos} selectedId={selected} onSelect={setSelected}/></main>;}createRoot(document.getElementById('root')!).render(<Preview/>);

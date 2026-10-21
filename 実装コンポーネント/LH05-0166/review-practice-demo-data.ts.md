@@ -1,0 +1,10 @@
+import type {AudioChapter} from './AudiobookChapterList';
+import type {UndoVocabulary,VocabularyDeletion} from './VocabularyUndoCard';
+import targetArtwork from './review-practice-media/review-target.png';
+export {masteryCopy,masteryCourse} from './vocabulary-statistics-demo-data';
+export const overviewCopy={heading:'習得したことを復習',description:'今回の内容をすべて習得しました。\n次のレッスンで新しい内容に進みましょう。',listeningTitle:'聞き取りを復習',listeningDescription:'学んだ内容を音声でもう一度'};
+export const dailyReviewCopy={activityLabel:'今日の学習',positionLabel:'1／7',completed:1,total:7,courseId:'intro-course-1',courseTitle:'入門・コース1',heading:'復習の時間です',artSrc:targetArtwork,artLabel:'復習を表す黄色い的とクリーム色の矢印',actionLabel:'復習する',emptyLabel:'復習する内容はありません。'};
+export const undoVocabulary:UndoVocabulary={id:'cat',word:'ねこ',partOfSpeech:'名詞',definition:'ネコ科に属する、\n人と暮らす小さな動物。',example:'「灰色のねこと暮らしています。」',progress:12,progressLabel:'12％の進み具合'};
+export const vocabularyDeletion:VocabularyDeletion={id:'previous-word',message:'単語を削除しました'};
+export const reviewResultCopy={heading:'今回学んだことば',wordCountLabel:'4語',successLabel:'75％',knownLabel:'覚えた：3',reviewLabel:'復習する語：1',actionLabel:'もう一度復習する'};
+export const audiobookChapters:readonly AudioChapter[]=[{id:'credits',title:'はじめのクレジット',durationLabel:'39秒'},{id:'dedication',title:'献辞',durationLabel:'39秒'},{id:'epigraph',title:'巻頭のことば',durationLabel:'14秒'},{id:'letter',title:'読者への手紙',durationLabel:'4分'},{id:'part-1',title:'第1部：自分らしく走り始める',durationLabel:'6秒'},{id:'chapter-1',title:'第1章：走り切る力',durationLabel:'11分'},{id:'chapter-2',title:'第2章：子どもの頃の好きなこと',durationLabel:'7分'},{id:'chapter-3',title:'第3章：弱さを受け入れる',durationLabel:'3分'},{id:'chapter-4',title:'第4章：大切な人に声をかける',durationLabel:'7分'},{id:'chapter-5',title:'第5章：私たちは似ている',durationLabel:'6分'}];

@@ -1,0 +1,1 @@
+html,body,#root{margin:0;min-height:100%;background:white}#root{width:100%}.lh-learning-challenge-demo{width:100%;max-width:390px;margin:0 auto;font:400 14px/24px Meiryo,'Lighthouse Learning Challenge Sans',sans-serif;color:#1d1d1d}.lh-learning-challenge-demo>p{margin:12px 16px;font-size:12px;line-height:20px}.lh-learning-challenge-demo>p:empty{display:none}

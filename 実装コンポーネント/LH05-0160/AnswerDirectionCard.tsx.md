@@ -1,0 +1,6 @@
+import {useRef} from 'react';
+import {StudyToggleRow} from './StudyToggleRow';
+import './study-settings.css';
+export type AnswerDirectionValue={term:boolean;definition:boolean};
+type Props={heading:string;value:AnswerDirectionValue;onChange:(value:AnswerDirectionValue)=>void;onInvalid:(trigger:HTMLButtonElement|null)=>void;disabled?:boolean};
+export function AnswerDirectionCard({heading,value,onChange,onInvalid,disabled=false}:Props){const term=useRef<HTMLButtonElement>(null),definition=useRef<HTMLButtonElement>(null);const change=(key:keyof AnswerDirectionValue,checked:boolean)=>{const next={...value,[key]:checked};if(!next.term&&!next.definition){onInvalid(key==='term'?term.current:definition.current);return;}onChange(next);};return <section className="lh-answer-direction" aria-label="用語と定義の解答方向を選ぶ"><div className="lh-study-settings-card"><h3>{heading}</h3><div className="lh-study-settings-card__rows"><StudyToggleRow label="用語を答える" checked={value.term} onChange={checked=>change('term',checked)} controlRef={term} disabled={disabled}/><StudyToggleRow label="定義を答える" checked={value.definition} onChange={checked=>change('definition',checked)} controlRef={definition} disabled={disabled}/></div></div></section>;}
