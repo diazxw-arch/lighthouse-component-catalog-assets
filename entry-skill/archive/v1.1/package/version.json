@@ -1,0 +1,21 @@
+{
+  "name": "lighthouse-catalog-entry",
+  "version": "1.1",
+  "review_interval": 10,
+  "version_increment_tenths": 1,
+  "measured_completions_at_release": 6,
+  "historical_reference_time_ms": null,
+  "historical_crop_time_ms": null,
+  "historical_quality_score": null,
+  "runtime": {
+    "python": ">=3.11",
+    "pillow_reviewed": "12.3.0",
+    "dependency_installation": "none"
+  },
+  "automation": "none",
+  "publication_interval": 30,
+  "next_review_at_total": 20,
+  "release_basis": "Owner requested current1.1 now;8previouslyaccepted,2revoked onactualcrop audit,6valid;1.2at20 cumulativevalid",
+  "accepted_at_owner_request": 8,
+  "release_audit_revocations": 2
+}

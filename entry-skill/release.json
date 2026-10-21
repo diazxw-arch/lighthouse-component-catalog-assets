@@ -1,34 +1,40 @@
 {
   "name": "lighthouse-catalog-entry",
-  "version": "1.0",
-  "date": "2026-10-20",
-  "review_interval": 30,
-  "completed": 0,
-  "next_version": "1.1",
-  "reference_time_ms": null,
-  "crop_time_ms": null,
-  "quality_average": null,
-  "archive": "lighthouse-catalog-entry-v1.0.zip",
-  "sha256": "7fcf0249aebcac9ffe26605f400b23e9c2b48b8bb4ebf9b3693fe7fd3d6eb2c7",
+  "version": "1.3",
+  "date": "2026-10-21",
+  "review_interval": null,
+  "review_cadence": "hourly",
+  "review_interval_seconds": 3600,
+  "website_publication_interval": 10,
+  "completed_at_release": 8,
+  "current_valid_at_publication": 10,
+  "next_version": "1.4",
+  "next_review_at_cumulative_valid": null,
+  "next_website_at_cumulative_valid": 20,
+  "production_blocked_by_review": false,
+  "archive": "lighthouse-catalog-entry-v1.3.zip",
+  "sha256": "211a030e0bcef972396e966e298f386cb22c0a0a563e3d93f987e2220578938c",
   "files": {
-    "CHANGELOG.md": "adcb1b74e68640108e19650ac6b486a3873258ca6e13fcbc31e8cc93ca04074c",
-    "EVOLUTION.md": "acd4d7b5191aed9e87ca818262c61cf4a122e0b6ed23c4ebb179c4ef693f99d4",
+    "SKILL.md": "2e235e701684c333ebade3f9f96f3e6d8987b0e3e67e4e3f063a6a4d79f2eb59",
+    "WORKFLOW.md": "cba83de463b437981ef6fbe43f3add3fd5a1cb8b484ed8d596d17f66a95abae6",
+    "FAST-PATH.md": "7c35ba4d99d07876e3cf51728b0e67b992011e53798d9be40721530e5b486e51",
+    "EVOLUTION.md": "5a1167a617aa740de90bcecc05548ab7cc68758adff6bdabac4b13f0d381cd0d",
+    "CHANGELOG.md": "58261ece4e49f03ec2f8e5403d051fa666e1ee39cee4aa30f178c7fab1c82dab",
     "receipt.example.json": "b58aa83f6e6c82dd3d92760c9c655c59fe81dc901b9c5572e2cfdcdf6288ce5d",
-    "scripts/catalog_entry.py": "8374a62871fa1ccd71075aca11341e62e8dbb8c231786f38218faeeabfef91a2",
-    "SKILL.md": "b344e817f3333ff86f92b3201c2b2237c87975ae23e4f54d561d30b278e827ff",
-    "version.json": "fd4bef3566cdee25fd3868b8bef554811a626b39a4b598078647fd35d475ac7d",
-    "WORKFLOW.md": "051fbef9503d21fffda82d2d8d299dfba836239c523171685c1c42332710b2da"
+    "version.json": "942a7eea40f6ba8dac052993a5d1f7d68ca59a66ad8c23f924f9e742ad281d0f",
+    "scripts/catalog_entry.py": "ea8322a9975f7631b7dea2293a3800a2dcc18749b1f3b7cea63719a258b3ca62"
   },
   "safety": {
     "verdict": "APPROVE",
     "static_risk_score": 0,
-    "static_files_covered": 7,
+    "static_files_covered": 8,
     "static_complete": true,
-    "source_review": "All bundled code and instructions reviewed; existing runtime dependencies not re-audited"
+    "independent_review": "APPROVE",
+    "existing_runtime_dependencies": "Unchanged; upstream internals not newly audited"
   },
   "tests": {
-    "passed": 15,
-    "real_crop_pilot": true,
-    "pilot_counts_as_new_entry": false
-  }
+    "passed": 40,
+    "total": 40
+  },
+  "speed_improvement_proven": false
 }

@@ -1,0 +1,36 @@
+{
+  "name": "lighthouse-catalog-entry",
+  "version": "1.1",
+  "date": "2026-10-21",
+  "review_interval": 10,
+  "website_publication_interval": 10,
+  "completed": 6,
+  "next_version": "1.2",
+  "next_review_at_cumulative_valid": 20,
+  "next_website_at_cumulative_valid": 10,
+  "archive": "lighthouse-catalog-entry-v1.1.zip",
+  "sha256": "3d0537d78ee449fd9dff63330abc5e35eb2bae5b444424fe0e5fe7de8c02914c",
+  "files": {
+    "CHANGELOG.md": "b47733b50c33e83539383681286793b8dac31e0c8d0fac20820d3379499da6e8",
+    "EVOLUTION.md": "823bb4a401ed8b3d840e352ba6106f7751dcdb760ee58d639b59041260272ccf",
+    "receipt.example.json": "b58aa83f6e6c82dd3d92760c9c655c59fe81dc901b9c5572e2cfdcdf6288ce5d",
+    "SKILL.md": "fb50864f9313205e70e12f1041d61587271d7438256d77e0339de9cb41d31f68",
+    "version.json": "7d80e2af11d527d835d7ec410cbf13d5780f816618d28b6021d9efc44abe8e20",
+    "WORKFLOW.md": "b57bf12610318d4ec34b4f549e242e037137411ea442cdb02bada68c1aa5f606",
+    "scripts/catalog_entry.py": "d9e447e1d5907f178a92fe155e27f10c0144a2da11c3e8ef996ff201784f3c9a"
+  },
+  "safety": {
+    "verdict": "APPROVE",
+    "static_risk_score": 0,
+    "static_files_covered": 7,
+    "static_complete": true,
+    "independent_review": "APPROVE",
+    "existing_runtime_dependencies": "Unchanged; upstream internals not newly audited"
+  },
+  "tests": {
+    "passed": 26,
+    "total": 26
+  },
+  "owner_cadence_override": "Website every10 valid new entries supersedes immutable1.1 older website30 wording; apply at runtime and incorporate in next reviewed release",
+  "speed_improvement_proven": false
+}

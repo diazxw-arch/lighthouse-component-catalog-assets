@@ -1,13 +1,59 @@
 {
   "name": "lighthouse-catalog-component-builder",
-  "version": "1.0",
-  "versionTenths": 10,
-  "reviewEvery": 30,
+  "version": "1.4",
+  "versionTenths": 14,
+  "reviewEvery": null,
   "completedSinceRelease": 0,
-  "timing": "No new component timing samples yet",
-  "quality": "No new component quality samples yet",
-  "runtime": "Node.js built-ins only; offline explicit-path receipt ledger",
+  "timing": "Third10:10 wide observed verification intervals from retained source-ready handoffs, including scoped fixes/waiting/coordination; active authoring/blocked/rework unknown10/10. Fresh per-ID production browser-check durations are recorded separately, not authoring speed.",
+  "quality": "Third10 initial actual-catalog audit7/10.137/138needed real282px iframe layout fixes;140failed an audit assumption requiring an enabled control on an intentionally informational card. All10finalrequiredgates passed. This is an initial audit result, not a source-first-pass defect rate.",
+  "runtime": "Node.js built-ins only; offline explicit-path receipt ledger. New-catalog CLI initialization reads the reviewed package version; existing stores refuse reinitialization.",
   "authority": "Direct user request; old workers and automations remain paused",
-  "source": "Catalog implementation chats No.68 and No.69, scoped human corrections and parent acceptance evidence",
-  "behavioralValidation": "Observed historical failure baseline plus deterministic tracker tests; no claim of a fresh-agent pressure test"
+  "source": "First30 new accepted entries, exact original/native/ImageGen/build/render/production/catalog evidence;155historicalbaseline excluded",
+  "behavioralValidation": "Actual observed failure/correction evidence plus deterministic receipt/release tests. No fresh-agent pressure test and no comparative speed gain claimed.",
+  "policyRevision": "hourly-throughput-quality-20261021",
+  "parentPublicationEvery": 30,
+  "nextVersion": "1.5",
+  "acceptedCumulative": 30,
+  "lastReviewDecision": "retain",
+  "speedImprovementProven": false,
+  "observedReview": {
+    "samples": 10,
+    "activeMeasured": 0,
+    "activeUnknown": 10,
+    "blockedMeasured": 0,
+    "blockedUnknown": 10,
+    "reworkMeasured": 0,
+    "reworkUnknown": 10,
+    "firstActualCatalogPass": 7,
+    "firstPassScope": "Initial parent actual-catalog audit result, including an audit assumption; not first implementation/source/render quality",
+    "historicalImplementationVersion": "1.0",
+    "acceptanceReviewVersion": "1.2",
+    "families": [
+      "word learning and controlled recording",
+      "reading plan and editorial guidance"
+    ],
+    "actualLayoutCorrections": [
+      "LH05-0137",
+      "LH05-0138"
+    ],
+    "auditCorrection": {
+      "id": "LH05-0140",
+      "cause": "Initial audit expected an enabled control on an intentionally informational date/chapter card.",
+      "resolution": "Explicit supplement verified informational content without inventing click behavior.",
+      "componentDefect": false
+    },
+    "cumulativeInitialCatalogAuditPass": 25
+  },
+  "websitePublicationEveryAccepted": null,
+  "websiteReleaseArtifacts": [
+    "reviewed package",
+    "ZIP",
+    "SKILL.md",
+    "checksums",
+    "skill page",
+    "homepage/catalog version links"
+  ],
+  "reviewEveryMinutes": 60,
+  "websitePublicationEveryMinutes": 60,
+  "hourlyEntryCountGate": false
 }

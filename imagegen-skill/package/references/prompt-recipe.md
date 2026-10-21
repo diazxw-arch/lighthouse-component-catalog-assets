@@ -1,3 +1,7 @@
+# Current ready-only policy
+
+This quality revision supersedes earlier language permitting failed registrations/counts. New failures stay private; two failed calls stop the entry. Only digest-bound parent-approved ready candidates may register via register-ready.mjs. Historical rows/statuses remain intact.
+
 # Prompt recipe
 
 Write one concise prompt with these parts in this order:

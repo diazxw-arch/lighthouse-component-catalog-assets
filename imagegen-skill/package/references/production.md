@@ -1,3 +1,13 @@
+Hourly skill review runs concurrently with production; no10-entry or hourly-due pause. Parent reviews actual per-entry completion time, quality and workflow every60minutes. Catalog/image batch publication remains every30 accepted entries.
+
+## Current throughput direction
+
+The human requires continuous worker production with quality. Produce the assigned small batch privately, up to two calls per fresh entry. A deferred entry does not block other assigned entries. Parent reviews candidates concurrently and remains the only publisher; register/count only accepted ready results through the existing gate. Inspect visible output against original and current render. Source fields are diagnostics, not automatic visual verdicts. Never start a new service or audit loop for each entry.
+
+# Current ready-only policy
+
+This quality revision supersedes earlier language permitting failed registrations/counts. New failures stay private; two failed calls stop the entry. Only digest-bound parent-approved ready candidates may register via register-ready.mjs. Historical rows/statuses remain intact.
+
 # Production contract
 
 Read the catalog's current `デザイン基準/DESIGN.md` and the entry's scoped corrections. They override older palette experiments. Preserve established Japanese/English font family, weight, size, line height, tracking and wrapping; do not infer new typography from generated pixels.

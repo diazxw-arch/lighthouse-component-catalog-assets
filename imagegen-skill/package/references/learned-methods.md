@@ -1,3 +1,11 @@
+## Hourly-1 observed improvements
+
+Compare source and candidate at actual display width before judging text/icon scale. The LH12 support-card review separated excess canvas height from readable content scale; only the genuine missing multi-sparkle anatomy justified deferral. Original icons control multiplicity, silhouette and stroke even when the mock is simplified. Keep known call timing conflicts unknown. Continuous private production and concurrent parent reviews avoid per-entry waits. These are workflow corrections; one accepted case does not establish a speedup.
+
+# Current ready-only policy
+
+This quality revision supersedes earlier language permitting failed registrations/counts. New failures stay private; two failed calls stop the entry. Only digest-bound parent-approved ready candidates may register via register-ready.mjs. Historical rows/statuses remain intact.
+
 # Starting methods and known errors
 
 This is a qualitative selection from10 existing worker histories, durable checkpoints and sampled tool events. The sample contains34 ImageGen calls and33 matched tool waits. Those waits include orchestration overhead and are not comparable end-to-end production measurements. No claim of globally optimal speed or measured improvement is made.
@@ -25,3 +33,21 @@ Ten distinct valid tasks:2ready on first call,8needs-correction,18calls. Worker-
 Promote evidence/accounting safeguards: separate reference/mock state inventories, verify authoritative stored status/hash before counting, direct-await timing with canonical units, explicit assignment-order lookup and compare both attempts before selection. Existing failures justify these checks; they do not establish improved generated-image quality or speed. Keep reference-first ImageGen, one scoped correction and raw-output retention. Do not modify a final candidate with a non-ImageGen crop to make it fit. Analysis/reference crops remain separate evidence.
 
 Repeated unresolved issues: redrawn protected artwork, broad or subtle tint/texture, wrong aspect/framing, typography/hierarchy drift and retry regressions. Do not promote alternative generation recipes without matched rendered evidence. Numeric rubric averages cannot waive artwork/state failures.
+
+## Second 10-entry review, version 1.2
+
+Window11–20 contains10 processed entries,0first-pass ready and10needs-correction, with19ImageGen calls. Worker elapsed median403742.5ms/p90798314ms (10samples); generation median29219ms/p9067467ms (9samples); active0samples. Some initial preparation is omitted and one elapsed interval includes a long interruption. These are descriptive, mixed-scope data, not evidence of a speedup.
+
+Promote read-only checks supported by actual failures: compute input digests from bytes instead of copying strings, validate draft0–4 scores and supported defect names before saving, and read mixed JSON-object history without rewriting it. Test both malformed-length and wrong64-character hashes. Preserve historical mistakes and separately attest recovered current inputs. Crop provenance analysis converts to RGB before cropping to avoid chroma rounding; this is reference inspection, never editing a final candidate.
+
+Original/mock authority and native type roles still need explicit conflict decisions before the first prompt. A second call sometimes improves placement while leaving icons, missing source information or typography unresolved. Retain the generation method and one-correction budget. Defer alternative aspect, prompt or generation recipes until matched rendered evidence supports them.
+
+Version 1.2 computes the conventional median: average the two central observations for an even sample; p90 remains nearest-rank. Earlier released median labels used nearest-rank p50. Preserve those historical releases and do not compare them as identical statistics.
+
+## Immediate source-contract quality revision
+
+Private native-first trials still failed: an ultra-wide result changed frame/state; a card edit corrected white badge surfaces but introduced an underline from the parent correction prompt and left type drift. Neither trial registered or counted. Extract native text facts from exact bytes before prompting; use typed original-icon reconciliation, and compare output at native size. This prevents unsupported prompt facts but has not established a generated-quality or speed improvement. Keep actual call, total elapsed and parent inspection timing separate; unknown active time stays unknown.
+
+## Throughput correction from rendered evidence
+
+Serial parent holds prevented production. A preview and later readback visibly underline a link even though its native text decoration field is none. Source consistency cannot establish rendered truth. Prioritize original/current rendered comparison, use native fields only to resolve actual uncertainty, and do not spend calls correcting unsupported parent assumptions. Worker produces small private batches while parent reviews; defer exhausted cases without stopping unrelated entries. Keep timing, visible defect notes, ready-only registration and honest lifetime attempts. No new speed or quality improvement is claimed before measurement.

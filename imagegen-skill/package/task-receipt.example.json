@@ -1,6 +1,6 @@
 {
   "entryId": "LH07-0115",
-  "skillVersion": "1.1",
+  "skillVersion": "1.2",
   "method": "reference-first-scoped-imagegen",
   "difficulty": "standard",
   "startedAt": "2026-10-20T01:00:00.000Z",
@@ -33,5 +33,6 @@
     "elapsedScope": "full",
     "preparationMeasured": true,
     "unknownIntervals": []
-  }
+  },
+  "acceptanceJob": "<absolute-private-parent-approved-job.json>"
 }

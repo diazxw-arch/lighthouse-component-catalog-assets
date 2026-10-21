@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v1.0
+# Catalog implementation workflow, v1.4
 
 ## Authority and recovery
 
@@ -36,6 +36,8 @@ During edits use focused tests/lint/typecheck. At a batch boundary run required 
 
 ## Release and cleanup
 
+For the parent's authorized child workflow, the worker hands off local source/checks only. The parent collects 30 distinct source candidates for aggregate publication and owns independent review, CI, production and actual-catalog gates. This supersedes per-five release timing. The parent writes learning notes per entry and performs a +0.1 skill and matching website release every60minutes, without waiting for10 acceptances or blocking entry completion. Keep the two cadences and pending versus accepted evidence separate.
+
 Under current release authorization, commit/push/integrate/deploy and verify immutable production URL, alias, source/build hash mapping and actual catalog route. HTTP 200 returning the SPA shell is not a component. Wait for the relevant deployment terminal state. If Windows CRLF differs from Git LF, prove normalization explicitly instead of claiming raw byte identity.
 
 Record coded, local verified, catalog published, production verified, actual-catalog verified and cleanup disposition independently. Missing/shared publication gates stay pending while independent implementation proceeds. Do not retry a failed launch without a changed prerequisite. Diagnose effective permissions and exact errors; do not revive a resolved access blocker.
@@ -43,3 +45,9 @@ Record coded, local verified, catalog published, production verified, actual-cat
 FigCraft cleanup follows verified replacements, shared-file dependency and active-writer checks, retained original/generated media and recoverable source. Shared libraries with unreplaced siblings remain retained/deferred with a reason. Do not claim native edit/save/reopen, pixel identity or human acceptance without that exact proof.
 
 Record the qualified delivery once with `cycle.mjs`. Save the next unfinished step. Stop and wait for temporary children; retain a preview only with its owner, PID/session, port, command, cwd and shutdown procedure recorded. Respect a human stop immediately, including during incomplete publication.
+
+## Actual catalog and publication boundaries
+
+Read the actual iframe content width before assessing overflow or hit targets. For iframe-local geometry, read getBoundingClientRect inside that frame; browser page-coordinate bounds need an explicit translation. In a fixed-height preview, verify that internal scrolling and keyboard focus reach lower content/actions. A viewport screenshot does not show the entire component. Recheck only changed and concretely at-risk inputs, preserving the dates of reused proof.
+
+When text source pins differ across Windows/Git, verify lossless UTF-8 and CRLF-only normalization for the specific text file, including SVG/TXT. Font and photographic payloads remain exact bytes. If hosting publication fails, preserve the version/artifact, diagnose once and perform only a bounded attempt after a relevant prerequisite changes. Keep public source documents recoverable and hash-verifiable in the existing immutable asset workflow; a successful transport experiment does not establish the cause of an earlier generic failure.

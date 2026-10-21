@@ -3,47 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mobbin調査・部品登録スキル v1.0 | ライトハウス</title>
-<meta name="description" content="Mobbinの原画像を保存し、実際の部品画像を切り出して目録へ登録する、版管理されたエージェント用スキル。30部品ごとに時間と品質を見直します。">
+<title>Mobbin調査・部品登録スキル v1.3 | ライトハウス</title>
+<meta name="description" content="Mobbinの原画像を保存し、実際の部品画像を切り出して目録へ登録する、版管理されたエージェント用スキル。1時間ごとに、1部品の完了時間と品質を見直します。">
 <style>
 :root{font-family:Meiryo,"Yu Gothic",sans-serif;color:#17251d;background:#fff;line-height:1.75;color-scheme:light}*{box-sizing:border-box}body{margin:0}main{max-width:1040px;margin:auto;padding:28px 24px 56px}a{color:#086544;text-underline-offset:3px}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid #087c54;outline-offset:4px}nav{display:flex;flex-wrap:wrap;gap:12px 24px;font-size:.9rem;margin-bottom:28px}.eyebrow{font-size:.85rem;font-weight:bold;color:#37634c;letter-spacing:.05em}h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.4;margin:8px 0 14px;letter-spacing:-.025em}h2{font-size:1.25rem;margin:0 0 12px}p{margin:10px 0}.lead{max-width:800px}.version{display:inline-block;padding:3px 12px;border:1px solid #226747;border-radius:30px;font-size:.85rem;white-space:nowrap;vertical-align:middle}.downloads{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 30px}.button{display:inline-flex;align-items:center;min-height:44px;padding:9px 18px;border:2px solid #245a40;border-radius:9px;text-decoration:none;font-weight:bold}.primary{background:#245a40;color:#fff}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}.stat,section{border:2px solid #254b35;border-radius:12px;padding:20px}.stat strong{display:block;font-size:1.55rem;line-height:1.5}.stat span{font-size:.85rem;color:#43554a}section{margin:18px 0}ol{padding-left:1.5em}li{margin:10px 0}.muted{color:#4c5d52;font-size:.9rem}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{border-bottom:1px solid #cdd9d0;padding:11px 10px;vertical-align:top}th{white-space:nowrap}code{font-family:Consolas,monospace;font-size:.9em;overflow-wrap:anywhere}.checksum{font-size:.78rem;word-break:break-all}details{border-top:1px solid #cdd9d0;padding:14px 0}summary{cursor:pointer;font-weight:bold;min-height:36px}footer{margin-top:32px;font-size:.85rem;color:#4c5d52}@media(max-width:640px){main{padding:20px 16px 40px}.stats{grid-template-columns:1fr;gap:10px}.stat{padding:14px 18px}.stat strong{font-size:1.3rem}section{padding:18px}th,td{padding:10px 8px}.button{width:100%;justify-content:center}}
 </style>
 </head>
 <body><main>
-<nav aria-label="ページ移動"><a href="/">部品カタログ</a><a href="/component-skill/">部品実装スキル</a><a href="#workflow">登録の手順</a><a href="#evolution">30部品ごとの更新</a></nav>
+<nav aria-label="ページ移動"><a href="/">部品カタログ</a><a href="/component-skill/">部品実装スキル</a><a href="#workflow">登録の手順</a><a href="#evolution">1時間ごとの更新</a></nav>
 <header>
 <p class="eyebrow">LIGHTHOUSE · CATALOG RESEARCH</p>
-<h1>Mobbin調査・部品登録スキル <span class="version">v1.0</span></h1>
+<h1>Mobbin調査・部品登録スキル <span class="version">v1.3</span></h1>
 <p class="lead">原画像を残し、使える部品の範囲を見極め、実際の画像を切り出して目録に登録します。参照の保存・切り出しにかかった時間と、新しい登録の品質を記録するエージェント用スキルです。</p>
-<div class="downloads"><a class="button primary" href="lighthouse-catalog-entry-v1.0.zip" download>スキル v1.0 をダウンロード</a><a class="button" href="package/SKILL.md">SKILL.md を読む</a></div>
-</header>
-<div class="stats" aria-label="初期リリース時点の記録">
-<div class="stat"><strong>0 / 30 部品</strong><span>このスキルによる計測済み完了数</span></div>
-<div class="stat"><strong>参照・切り出し：未計測</strong><span>実作業のステージ計測から蓄積</span></div>
-<div class="stat"><strong>次の版：v1.1</strong><span>30件の時間・品質を審査して更新</span></div>
+<div class="downloads"><a class="button primary" href="lighthouse-catalog-entry-v1.3.zip" download>スキル v1.3 をダウンロード</a><a class="button" href="package/SKILL.md">SKILL.md を読む</a></div>
+<p class="muted">スキルは1時間ごとに時間と品質を審査し、確認済みの改善を取り込みます。作業者は候補の事前承認を待たずに進めます。サイトは有効な新規登録10件ごとに、最新の審査済みスキルと目録を更新します。</p></header>
+<div class="stats" aria-label="v1.3 リリース時点の記録">
+<div class="stat"><strong>8 部品</strong><span>v1.3リリース時点の有効な計測済み完了数</span></div>
+<div class="stat"><strong>40 / 40 テスト合格</strong><span>安全検査 0/100・8ファイル全件確認</span></div>
+<div class="stat"><strong>1時間ごとに審査</strong><span>次版はv1.4。審査時刻だけで登録作業を止めません</span></div>
 </div>
-<p class="muted">既存の目録件数と、このスキルの計測済み完了数は別です。初版の検証用データは実際の新規登録に数えていません。過去のチャットの経過時間から作業速度を推定していません。</p>
+<p class="muted">既存の目録件数と、このスキルの計測済み完了数は別です。再切り出しや修正は新しい完了に数えません。公開は10件ごとに行います。過去のチャットの経過時間から作業速度を推定していません。</p>
 <section id="workflow"><h2>1部品を登録する手順</h2>
 <ol>
 <li><strong>出典と構造を調べる。</strong>保存済みのMobbin参照を優先し、許可された範囲で新たに調査。全分野の既存部品と比較し、状態・文言・色だけの違いを除外します。</li>
 <li><strong>原画像を保存する。</strong>URL・アプリ・画面ID・元の寸法・ハッシュと、部品の正確な範囲を残します。</li>
-<li><strong>実際の部品画像を切り出して見る。</strong>原画像を変えずにPNGを保存。画面全体や隣の部品を含めず、切り出した実ファイルの全辺と内容を確認します。</li>
+<li><strong>実際の部品画像を切り出して見る。</strong>原画像を変えずにPNGを保存。用途がまとまったセクションや複数の操作を含むパネルも対象です。無関係な画面ナビゲーションや隣の部品を除き、切り出した実ファイルの全辺と内容を確認します。</li>
 <li><strong>用途と品質を確かめて登録する。</strong>教会アプリでの使い方と構造上の違いを記録。既存形式と履歴を保ち、保存後に読み戻します。</li>
 </ol><p class="muted">参照登録・画像切り出し・ネイティブ実装・ビルド・忠実度審査・公開は、それぞれ別の確認です。</p></section>
-<section id="evolution"><h2>30部品ごとに、時間と品質で手順を見直す</h2>
-<p>異なる部品の完了が30件に達すると、次のバッチへ進む前に審査します。再試行・切り直し・重複・無効な登録は件数を増やしません。版は <strong>1.0 → 1.1 → 1.2</strong> と0.1ずつ進みます。</p>
+<section id="evolution"><h2>1時間ごとに、1部品の完了時間と品質を見直す</h2>
+<p>1時間ごとに、完了1件あたりの実測時間、失敗や待ち時間を含む有効登録数、切り直しと品質を審査します。担当作業者の有用な作業を続けながら、改善案を準備・検証し、安全な区切りで独立レビューを受けます。検証済みの版は <strong>1.2 → 1.3 → 1.4</strong> と0.1ずつ進みます。サイト公開は有効な新規登録10件ごとです。再試行・切り直し・重複・永久に取り消された登録は、新しい完了に数えません。</p>
 <div class="table-wrap"><table><thead><tr><th scope="col">記録</th><th scope="col">審査で見ること</th></tr></thead><tbody>
 <tr><th scope="row">時間</th><td>参照保存・切り出し・目視確認・登録・全体の中央値とp90。新規参照と保存済み参照を分け、待ち時間や失敗も確認します。</td></tr>
 <tr><th scope="row">品質</th><td>出典と実画像の確認に加え、境界・構造の独自性・教会アプリでの有用性を6点満点で評価。5点以上かつ失敗項目なしが完了条件です。</td></tr>
 <tr><th scope="row">改善</th><td>実際のエラーと遅い工程を調べ、比較できる事例で検証。品質が下がる短縮方法を採用しません。証拠が不足する場合は動いている方法を維持します。</td></tr>
 </tbody></table></div>
-<p class="muted">新しい版は再テスト・安全検査を通し、公開ダウンロードまで照合します。バックグラウンドの自動実行や、停止中のチャットを起こす仕組みは含みません。</p></section>
+<p class="muted">新しい版は再テスト・安全検査を通し、公開ダウンロードまで照合します。スキルの配布物自体は自動実行を設定しません。既存の担当コーディネーターが審査と公開を管理し、停止中の別チャットは起こしません。</p></section>
 <section><h2>既存の作業から取り込んだ修正</h2>
 <details><summary>新しい画面IDでも、同じ部品構造なら重複</summary><p>全分野の近い部品を目視で比較します。スクロール位置や開閉状態の差だけでは新しい部品にしません。</p></details>
 <details><summary>座標やファイル名だけでは切り出し完了にならない</summary><p>実ファイルの存在・寸法・ハッシュ・元の画素との一致を検証し、その画像自体を確認します。</p></details>
 <details><summary>検索でエラーが出ても、検証済みの保存参照は再利用できる</summary><p>新しいアクセスの失敗と、以前保存した正当な証拠を分けて扱います。認証や利用制限の回避は行いません。</p></details>
 <details><summary>目録の形式と、3つの集計フラグを保持</summary><p>実際の各分野のcatalog.jsonだけを読みます。バックアップや参照リストを件数に含めず、既存の制作・検証履歴を変更しません。</p></details>
 </section>
-<section><h2>ファイルと版の履歴</h2><p><a href="package/WORKFLOW.md">実行手順とコマンド</a> · <a href="package/EVOLUTION.md">30件審査の詳細</a> · <a href="package/receipt.example.json">登録記録のひな形</a> · <a href="package/CHANGELOG.md">変更履歴</a> · <a href="release.json">版情報とハッシュ</a></p><p><strong>v1.0 · 2026年10月20日</strong> — 既存8分野の記録を調査して初版を作成。新たな実登録の時間・品質は、今後の実行から計測します。</p><p class="muted">ダウンロードはエージェント用の手順書とローカル補助ツールです。Mobbin接続と既存のPython/Pillow環境が必要です。</p></section>
+<section><h2>ファイルと版の履歴</h2><p><a href="package/WORKFLOW.md">実行手順とコマンド</a> · <a href="package/EVOLUTION.md">1時間ごとの審査の詳細</a> · <a href="package/receipt.example.json">登録記録のひな形</a> · <a href="package/CHANGELOG.md">変更履歴</a> · <a href="release.json">版情報とハッシュ</a></p><p><strong>v1.3 · 2026年10月21日</strong> — 1時間ごとの時間・品質レビュー、登録件数による作業停止の解除、有用なまとまりを持つパネルの扱いを検証。40テスト合格、安全検査0/100・8/8ファイル、独立レビューAPPROVE。比較可能な十分な実績がまだなく、速度改善は未証明です。</p><p><a href="archive/v1.1/">v1.1の保存版</a> · <strong>v1.1 · 2026年10月21日</strong> — 実画像の全辺審査、計測ステージ必須化、無効完了の永久除外を検証。26テスト合格、安全検査0/100・7/7ファイル、独立レビューAPPROVE。速度改善は未証明です。</p><p><a href="archive/v1.0/">v1.0の保存版</a> · <strong>v1.0 · 2026年10月20日</strong> — 既存8分野の記録を調査して初版を作成。新たな実登録の時間・品質は、今後の実行から計測します。</p><p class="muted">ダウンロードはエージェント用の手順書とローカル補助ツールです。Mobbin接続と既存のPython/Pillow環境が必要です。</p></section>
 <footer>ライトハウス・日本語コンポーネント集 · 元の参照と履歴を保ち、確認できた結果だけを記録します。</footer>
 </main></body></html>

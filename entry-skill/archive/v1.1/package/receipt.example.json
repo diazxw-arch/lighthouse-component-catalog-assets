@@ -1,0 +1,21 @@
+{
+  "id": "LH03-0560",
+  "area": "03-community",
+  "name": "REPLACE with the observed component name",
+  "source": {
+    "id": "REPLACE-SCREEN-ID",
+    "app_name": "REPLACE-APP",
+    "mobbin_url": "https://mobbin.com/screens/REPLACE-SCREEN-ID",
+    "evidence_path": "research/saved-result.json",
+    "notice": "REPLACE with actual source notice or explicitly absent"
+  },
+  "original": {"path": "references/original.webp", "sha256": "REPLACE-ACTUAL-HASH", "dimensions": [1920, 1320]},
+  "crop": {"path": "references/component.png", "sha256": "REPLACE-ACTUAL-HASH", "dimensions": [600, 320], "xywh": [120, 240, 600, 320]},
+  "boundary": "REPLACE: exact included component edges and excluded neighbors",
+  "visible_state": "REPLACE: only the visible controls/state; unobserved interactions remain unverified",
+  "use_case": "REPLACE: concrete church-app user task and placement",
+  "reference_mode": "fresh",
+  "distinctness": {"nearest_ids": ["REPLACE-REAL-NEAREST-ID"], "rationale": "REPLACE: structural differences, not text/state/color", "reviewed": true},
+  "inspection": {"original_sha256": "REPLACE-ACTUAL-HASH", "crop_sha256": "REPLACE-ACTUAL-HASH", "at": "REPLACE-ACTUAL-UTC-TIME", "notes": "REPLACE: observations after viewing both actual images"},
+  "quality": {"boundary": 2, "distinctness": 2, "usefulness": 1, "notes": "REPLACE: evidence for these subjective rubric scores"}
+}

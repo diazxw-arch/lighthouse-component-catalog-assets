@@ -1,69 +1,84 @@
 {
-  "version": "1.1",
+  "version": "1.3",
   "initialVersionTenths": 10,
-  "entriesPerRevision": 10,
-  "completedEntriesAtRelease": 10,
-  "releasedOn": "2026-10-20",
+  "entriesPerRevision": null,
+  "completedEntriesAtRelease": 27,
+  "releasedOn": "2026-10-21",
   "method": "reference-first-scoped-imagegen",
-  "baseline": "First10 valid entries:2 first-pass ready,8 need correction,18 calls; mixed timing scopes, no comparable speedup.",
+  "baseline": "Window11–20:0first-pass-ready,10needs-correction,19calls; mixed/partial timing scopes, no comparable speedup.",
   "timingBaseline": {
     "elapsedSamples": 10,
-    "elapsedMedianMs": 530000,
-    "elapsedP90Ms": 747000,
+    "elapsedMedianMs": 403742.5,
+    "elapsedP90Ms": 798314,
     "generationSamples": 9,
-    "generationMedianMs": 31100,
-    "generationP90Ms": 51600,
+    "generationMedianMs": 29219,
+    "generationP90Ms": 67467,
     "activeSamples": 0,
-    "coverage": "Mixed historical measurement scopes; not a comparable end-to-end benchmark"
+    "coverage": "Window11–20; partial/interrupted measurement scopes; not comparable end-to-end timing"
   },
   "qualityBaseline": {
     "entries": 10,
-    "firstPassReady": 2,
-    "needsCorrection": 8,
-    "attempts": 18,
-    "ratings": "Worker ratings; parent residuals kept separately"
+    "firstPassReady": 0,
+    "needsCorrection": 10,
+    "attempts": 19,
+    "ratings": "Worker ratings; parent observations retained separately"
   },
   "metrics": {
-    "entries": 10,
+    "entries": 1,
     "elapsed": {
-      "samples": 10,
-      "medianMs": 530000,
-      "p90Ms": 747000
+      "samples": 1,
+      "medianMs": 810383,
+      "p90Ms": 810383
     },
     "generation": {
-      "samples": 9,
-      "medianMs": 31100,
-      "p90Ms": 51600
+      "samples": 0,
+      "medianMs": null,
+      "p90Ms": null
     },
     "active": {
       "samples": 0,
       "medianMs": null,
       "p90Ms": null
     },
-    "firstPassReadyRate": 0.2,
-    "correctionRate": 0.8,
-    "attemptsPerEntry": 1.8,
+    "firstPassReadyRate": 0,
+    "correctionRate": 0,
+    "attemptsPerEntry": 2,
     "quality": {
-      "geometryIcons": 3.5,
-      "typography": 3.5,
-      "contentState": 3.8,
-      "paletteSurfaces": 3,
-      "protectedMedia": 3.6
+      "geometryIcons": 3,
+      "typography": 3,
+      "contentState": 4,
+      "paletteSurfaces": 4,
+      "protectedMedia": 4
     },
     "defects": {
-      "glyph": 1,
+      "glyph": 0,
       "icon": 0,
-      "media-redrawn": 2,
+      "media-redrawn": 0,
       "crop": 0,
       "state": 0,
       "missing-content": 0,
       "tint": 0,
-      "palette": 4,
-      "margins": 3,
-      "geometry": 4,
+      "palette": 0,
+      "margins": 0,
+      "geometry": 0,
       "registration": 0,
-      "other": 1
-    }
+      "other": 0
+    },
+    "correctedReadyRate": 1
   },
-  "metricsNotice": "Worker-reported first10-entry descriptive metrics. Timing scopes differ; no comparable end-to-end speedup or quality improvement established. Parent observations are separate."
+  "metricsNotice": "One newly parent-accepted entry after two calls; partial elapsed measurement. Accepted-entry metrics exclude unresolved attempts and are not an overall throughput denominator. Generation timing conflicts; active time unknown. No measured speedup established.",
+  "workflowRevision": "hourly-1",
+  "qualityPolicy": "parent-ready-v1",
+  "qualityRevisionReason": "Human changed cadence to hourly; remove count stalls, compare native-width scale and verify original icon multiplicity",
+  "qualityRevisionHistoricalProcessed": 27,
+  "qualityRevisionHistoricalReady": 3,
+  "qualityRevisionReleasedOn": "2026-10-21",
+  "sourceContract": {
+    "scope": "Optional diagnostic; saved fields are not proof of rendered appearance",
+    "pilotReady": 0,
+    "pilotRegistered": 0,
+    "generatedImprovementEstablished": false
+  },
+  "reviewIntervalMinutes": 60,
+  "reviewCadence": "hourly-nonblocking"
 }

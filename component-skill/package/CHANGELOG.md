@@ -1,4 +1,35 @@
+# Version1.4 — hourly measured workflow improvement
+
+Direct human policy replaces10-accepted-entry releases with hourly skill+website releases. Offline ledger migration preserves historical records; due review no longer blocks completions, and due reviews may include zero accepted entries. Per-entry source-ready/acceptance timing, active/check/review/wait/rework and stage-specific quality/workflow evidence guide bottleneck improvements. No measured speed improvement claimed. All acceptance, source/hash, locking and release-inspection protections remain.
+
 # Changelog
+
+## 1.3 — 2026-10-21
+
+- Third10 accepted entries reviewed; cumulative30,nextcycle0/10. Retain the method; active/wait/rework authoring time remains unknown.
+- Initial catalog-audit7/10: two real narrow-layout repairs and one informational-card audit assumption, all resolved before final acceptance. Preserve earlier source recording/hit-routing repairs separately.
+- Check the complete render-input graph before evidence reuse. A stale139capture triggered fresh current immutable production282/390captures for10entries; no old observation dates were refreshed.
+- Keep shared native files recoverable and retain same10-cycle skill/ZIP/page/checksum/catalog-link publication; no runtime or dependency changes.
+
+
+## 1.2 — 2026-10-21
+
+- Second10 genuinely accepted entries reviewed; cumulative20, nextcycle0/10. Retain the existing method; no comparable measured active-time improvement is established.
+- Record9/10 initial parent actual-catalog audit passes and the135audit-assumption correction for this cycle separately from earlier source/render defects and unknown active/wait/rework authoring time.
+- Reconcile exact dated empty-state supplements and use the earliest real responsive/interaction observation for the verification interval. Keep historical implementation1.0 separate from acceptance1.1.
+- Keep same10-cycle website/package/ZIP/checksum/page/catalog-link publication and preserve original media, baseline and required gates. No runtime or dependency changes.
+
+
+## 1.1 — 2026-10-21
+
+First 10 distinct newly accepted components reviewed. Retain the existing method: active authoring/wait/rework remain unknown for all 10, so no speed improvement is claimed. Nine passed their first parent actual-catalog audit; the narrow-layout failure was corrected before acceptance. This is a scoped integration-quality observation, not a first-source-pass score.
+
+Clarify actual iframe width and scroll reachability, iframe-local coordinates, bounded UTF-8 text normalization, source-document publication transport and truthful per-stage metrics. Publish the reviewed skill, ZIP, checksums, page and homepage/catalog links in the same 10-entry cycle; component publication remains every 30 source candidates. New-catalog initialization now reads the reviewed package version rather than hardcoding1.0; existing ledgers now refuse reinitialization based on file existence under the lock, including invalid ledger values null/false/0. The receipt example and current headers carry1.1; historical1.0statements are labelled. Baseline exclusions, runtime dependencies and required gates are unchanged.
+
+
+## Policy revision — 2026-10-20
+
+Direct human instruction changes skill review to every 10 newly accepted distinct components, with exactly +0.1 per completed review. Parent component publication remains every 30 source candidates. Parent owns per-entry learning notes and releases; the worker implements and checks locally. Version stays 1.0 with zero accepted components; this rule change is not a completed learning cycle. Original v1.0 release archives/checksums remain historical.
 
 ## 1.0 — 2026-10-20
 

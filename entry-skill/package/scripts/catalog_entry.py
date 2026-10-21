@@ -187,6 +187,10 @@ def register(root, receipt, expected_sha256):
             if len(matches) == 1 and matches[0]['row'] == row and matches[0]['area'] == receipt['area']:
                 return {'status': 'already_registered', 'id': receipt['id']}
             raise ValueError('Technical ID already registered with different evidence')
+        state = progress(ledger_events(folder))
+        if state['blocks_new_entries']:
+            raise ValueError('Skill review due; release before registering another entry')
+        measured_timeline(ledger_events(folder), receipt['id'])
         if any(receipt['source']['id'].lower() in item['sources'] for item in index['rows']):
             raise ValueError('Duplicate source screen across existing catalog rows, including excluded rows')
         catalog = under(root, receipt['area']) / 'catalog.json'
@@ -224,6 +228,7 @@ def version_after(version):
 
 def progress(events):
     completed, revoked, released, version = {}, set(), set(), '1.0'
+    next_review_at_total, cadence, next_review_at_ms = 10, 'entries', None
     for event in events:
         if event['event'] == 'complete':
             completed.setdefault(event['id'], event)
@@ -232,10 +237,20 @@ def progress(events):
         elif event['event'] == 'release':
             released.update(event['entry_ids'])
             version = event['version']
+            if event.get('review_cadence') == 'hourly':
+                cadence, next_review_at_total = 'hourly', None
+                at = event.get('wall_ms')
+                next_review_at_ms = at + 3600000 if type(at) is int else None
+            elif cadence != 'hourly':
+                next_review_at_total = event.get('next_review_at_total', len(released) + 10)
     valid = set(completed) - revoked
     pending = sorted(valid - released)
+    due = ((next_review_at_ms is None or time.time_ns() // 1000000 >= next_review_at_ms)
+           if cadence == 'hourly' else len(valid) >= next_review_at_total)
     return {'version': version, 'next_version': version_after(version), 'valid_completed': len(valid),
-            'pending_ids': pending, 'pending_count': len(pending), 'review_due': len(pending) >= 30}
+            'pending_ids': pending, 'pending_count': len(pending), 'next_review_at_total': next_review_at_total,
+            'review_due': due, 'review_cadence': cadence, 'next_review_at_ms': next_review_at_ms,
+            'blocks_new_entries': cadence != 'hourly' and due}
 
 
 def ledger_events(folder):
@@ -274,14 +289,24 @@ def append_event(folder, event):
         os.fsync(stream.fileno())
 
 
+def measured_timeline(events, entry_id):
+    timeline = [event for event in events if event.get('id') == entry_id and event['event'] in ('start', 'mark')]
+    if [event.get('stage') for event in timeline] != ['start', *STAGES]:
+        raise ValueError('Use start and the four measured stage marks once, in order; never reconstruct historical times')
+    times = [event['wall_ms'] for event in timeline]
+    if times != sorted(times) or times[-1] > time.time_ns() // 1000000:
+        raise ValueError('Invalid measured clock; preserve the attempt without completion')
+    return times
+
+
 def record(root, receipt):
     with locked(root) as folder:
         events = ledger_events(folder)
         state = progress(events)
         if any(event.get('id') == receipt['id'] and event['event'] == 'complete' for event in events):
             raise ValueError('Already completed; retries and re-crops never increase the counter')
-        if state['review_due']:
-            raise ValueError('30 completed: review and release the next skill version before starting another batch')
+        if state['blocks_new_entries']:
+            raise ValueError('Skill review due: release the next version before starting another batch')
         index = validate_receipt(root, receipt)
         if not any(item['row'] == row_from(receipt) for item in index['rows']):
             raise ValueError('Complete only after exact catalog readback')
@@ -289,13 +314,9 @@ def record(root, receipt):
         scores = [quality[key] for key in ('boundary', 'distinctness', 'usefulness')]
         if any(type(score) is not int or score not in (1, 2) for score in scores) or sum(scores) < 5 or not quality.get('notes'):
             raise ValueError('Quality rubric needs at least 5/6 and no failed dimension')
-        timeline = [event for event in events if event.get('id') == receipt['id'] and event['event'] in ('start', 'mark')]
-        stages = [event.get('stage') for event in timeline]
-        if stages != ['start', *STAGES]:
-            raise ValueError('Use start and the four measured stage marks once, in order; never reconstruct historical times')
-        times = [event['wall_ms'] for event in timeline] + [time.time_ns() // 1000000]
+        times = measured_timeline(events, receipt['id']) + [time.time_ns() // 1000000]
         if times != sorted(times):
-            raise ValueError('Clock moved backwards; timing invalid, retain attempt and start a new measured task')
+            raise ValueError('Clock moved backwards; timing invalid; preserve the attempt without completion')
         durations = dict(zip(('research_ms', 'reference_ms', 'crop_ms', 'inspection_ms', 'registration_ms'), [b - a for a, b in zip(times, times[1:])]))
         append_event(folder, {'event': 'complete', 'id': receipt['id'], 'skill_version': state['version'], 'timing': durations,
                               'total_wall_ms': times[-1] - times[0], 'quality': quality, 'reference_mode': receipt.get('reference_mode', 'fresh'),
@@ -306,8 +327,45 @@ def record(root, receipt):
 def release(root, report):
     with locked(root) as folder:
         state = progress(ledger_events(folder))
-        if state['pending_count'] != 30 or set(report['entry_ids']) != set(state['pending_ids']) or len(report['entry_ids']) != 30:
-            raise ValueError('Release must review exactly the 30 unique valid pending entries')
+        early = (state['version'] == '1.0' and 0 < state['valid_completed'] < 10
+                 and type(report.get('accepted_at_release')) is int
+                 and report['accepted_at_release'] == state['valid_completed']
+                 and report.get('owner_override') == 'Owner requested 1.1 now; 1.2 at 20 total'
+                 and report.get('next_review_at_total') == 20)
+        corrective = (state['version'] == '1.1' and report.get('version') == '1.2'
+                      and 0 < state['valid_completed'] < 20
+                      and state['next_review_at_total'] == 20
+                      and type(report.get('accepted_at_release')) is int
+                      and report['accepted_at_release'] == state['valid_completed']
+                      and report.get('owner_override') == 'Owner requested corrective 1.2 now; next review at 20 total'
+                      and report.get('review_kind') == 'owner_requested_corrective'
+                      and report.get('next_review_at_total') == 20)
+        hourly_requested = report.get('review_cadence') == 'hourly'
+        hourly_shape = (hourly_requested and type(report.get('review_interval_ms')) is int
+                        and report['review_interval_ms'] == 3600000
+                        and report.get('next_review_at_total') is None
+                        and type(report.get('accepted_at_release')) is int
+                        and report['accepted_at_release'] == state['valid_completed'])
+        hourly_transition = (state['version'] == '1.2' and report.get('version') == '1.3'
+                             and hourly_shape
+                             and report.get('review_kind') == 'owner_requested_hourly'
+                             and report.get('owner_override') == 'Owner requested hourly skill updates; 1.3 now')
+        hourly_review = (state['review_cadence'] == 'hourly' and state['review_due']
+                         and hourly_shape and report.get('review_kind') == 'hourly_measured_review')
+        if hourly_requested and not (hourly_transition or hourly_review):
+            raise ValueError('Hourly review not due or missing exact owner transition authorization')
+        legacy_due = state['review_cadence'] != 'hourly' and state['review_due']
+        if not (legacy_due or early or corrective or hourly_transition or hourly_review):
+            raise ValueError('Release milestone not reached; no authorized early release')
+        if (not state['pending_ids'] and not (corrective or hourly_transition or hourly_review)) or set(report['entry_ids']) != set(state['pending_ids']) or len(report['entry_ids']) != len(state['pending_ids']):
+            raise ValueError('Release must review every unique valid pending entry exactly once')
+        if hourly_requested:
+            if not hourly_shape:
+                raise ValueError('Hourly release must preserve one-hour cadence and actual live count')
+        else:
+            expected_next = 20 if (early or corrective) else ((state['next_review_at_total'] // 10) + 1) * 10
+            if report.get('next_review_at_total') != expected_next:
+                raise ValueError('Next cumulative review milestone must preserve owner cadence')
         if report['version'] != state['next_version']:
             raise ValueError('Version must increase by exactly 0.1')
         index = index_library(root)
@@ -319,11 +377,16 @@ def release(root, report):
             validate_receipt(root, receipt, index)
             if sum(receipt['source']['id'].lower() in item['sources'] for item in index['rows']) != 1:
                 raise ValueError('Cohort source duplicated in current catalog')
-        for key in ('errors_reviewed', 'timing_analysis', 'quality_analysis', 'method_decision', 'regression_evidence', 'security_review', 'installed_package_sha256', 'public_download_sha256', 'published_url'):
+        for key in ('errors_reviewed', 'timing_analysis', 'quality_analysis', 'method_decision', 'regression_evidence', 'security_review', 'independent_review', 'installed_package_sha256'):
             if not isinstance(report.get(key), str) or not report[key].strip():
                 raise ValueError('Missing release evidence: ' + key)
-        if report['installed_package_sha256'] != report['public_download_sha256'] or not report['published_url'].startswith('https://'):
-            raise ValueError('Installed and publicly verified package hashes must match')
+        if report.get('publication_status') not in ('pending', 'verified'):
+            raise ValueError('Record publication separately as pending or verified')
+        if report['publication_status'] == 'verified':
+            if report['installed_package_sha256'] != report.get('public_download_sha256') or not report.get('published_url', '').startswith('https://'):
+                raise ValueError('Installed and publicly verified package hashes must match')
+        elif report.get('public_download_sha256') is not None or report.get('published_url') is not None:
+            raise ValueError('Pending publication cannot claim live delivery')
         if not re.fullmatch('[0-9a-fA-F]{64}', report['installed_package_sha256']):
             raise ValueError('Release requires actual SHA-256 evidence')
         append_event(folder, dict(report, event='release'))
@@ -380,8 +443,8 @@ def main():
                 if args.command in ('status', 'report'):
                     result = measurements(events) if args.command == 'report' else state
                 else:
-                    if state['review_due'] and args.command == 'start':
-                        raise ValueError('30 completed; release review is due')
+                    if state['blocks_new_entries'] and args.command == 'start':
+                        raise ValueError('Skill review due; release before starting another entry')
                     if args.command == 'start' and any(e.get('id') == args.id and e['event'] in ('start', 'complete') for e in events):
                         raise ValueError('Task already started; preserve its clock and retries')
                     if args.command == 'mark':

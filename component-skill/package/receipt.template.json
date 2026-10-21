@@ -4,7 +4,7 @@
   "complexity": "small/medium/large",
   "implementer": "actual implementation owner",
   "reviewer": "different actual reviewer",
-  "skillVersion": "1.0",
+  "skillVersion": "1.4",
   "startedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
   "completedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
   "activeMinutes": null,
@@ -110,5 +110,27 @@
   "cleanup": {
     "status": "retained",
     "reason": "Replace with actual reviewed disposition"
+  },
+  "measurement": {
+    "actualWorkStartedAt": null,
+    "sourceReadyAt": null,
+    "acceptedAt": null,
+    "activeImplementationMinutes": null,
+    "checksMinutes": null,
+    "parentReviewMinutes": null,
+    "waitingMinutes": null,
+    "activeReworkMinutes": null,
+    "scope": "Fill only actual observations; source-ready and acceptance intervals are distinct. Historical verification startedAt is not necessarily work start.",
+    "sharedOverhead": {
+      "minutes": null,
+      "allocationMethod": null
+    },
+    "workflowStages": [],
+    "firstPassByStage": {
+      "source": null,
+      "preview": null,
+      "production": null,
+      "actualCatalog": null
+    }
   }
 }
