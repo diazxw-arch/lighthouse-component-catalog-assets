@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **2.1** · hourly workflow and website updates · next version **2.2**.
+Version **2.2** · hourly workflow and website updates · next version **2.3**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -45,6 +45,8 @@ For preview-only Site batches, prepare one route change set before export: catal
 Before another Site preview batch, open one existing live catalog card and trace the complete load chain: client, parsed catalog JSON, selected card bundle, then sandboxed preview. Reuse this observation only for unchanged dependency bytes. Build and runtime must cover every relative card URL with an exact immutable mapping; do not assume an ASSETS binding exists. Record the actual iframe innerWidth before using a responsive capture. See workflow.md for the transport and viewport preflight.
 
 For the Site preview batch, derive Worker routes from the reviewed source-byte manifest and reject invalid, duplicate or mismatched entries during build. Avoid replacing a route list by its first component ID, which changes between batches. Persist each browser observation before optional follow-up requests so one unrelated failure cannot discard completed evidence. Source emission timestamps are not measured authoring starts.
+
+Before coding a draft form or embedded preview, write its contract fields: draft values committed by the primary action; intrinsic text growth; visible copy included in accessible names; readable semantic text/icon contrast; and who owns focus on embedded load. Primary actions commit all visible draft input. Text fields use minimum heights and intrinsic sizing; control groups wrap when labels grow. Embedded previews take focus after explicit activation. Review shared control logic once, then each entry’s wording, artwork and callbacks. See workflow.md for the contract.
 
 ## Evolve every hour
 

@@ -1,3 +1,7 @@
+# Version2.2 — draft and embedded preview preflight
+
+Record draft commit, intrinsic text growth, accessible content, semantic contrast and embedded focus ownership before implementation. The last published30 had seven affected IDs in initial independent review (23/30), then30/30 after scoped corrections. Retain120final/28superseded render observations,49local host requests,105production routes and30actual catalog previews with their original dates. No new acceptance, paired skill test or comparable speed gain is claimed. This is one current overdue review after interruption; missed hourly releases are not invented.
+
 # Version2.1 — manifest-driven preview routes and durable observations
 
 Build Worker preview routes directly from the reviewed byte manifest, checking exact source/dist bytes and rejecting duplicate or invalid routes. This replaces a stale first-ID update anchor that omitted the next batch before publication. Persist each browser observation before optional requests so unrelated failures retain completed work. Merge parallel catalog registrations normally and reuse component evidence only when exact inputs match. Current30have independent static review,120final responsive renders,74byte-exact production routes and30visible actual-catalog previews. Full acceptance and comparable speed improvement remain unproven; no fresh paired skill test was run.

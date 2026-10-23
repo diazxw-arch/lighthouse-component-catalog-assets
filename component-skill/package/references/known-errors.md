@@ -77,3 +77,12 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - An optional final IPv6 request failed after38catalog observations and before report persistence. The rerun completed; new helpers persist each observation and omit unrelated optional requests.
 - Scoped static review repaired0120narrowtabcontent,0126mainwidth,0140text-growth flow and0008photo-stop hit coverage. Separate visual inspection caught0120dropdowncharacter wrapping and0003composer control covering the pill border. Final120renders and25interactive previews had no observed overflow/page errors; full acceptance remains pending.
 - A parallel source registration added50images while previews were queued. An ordinary rebase retained upstream records and all30unchanged component inputs. Rebuild the conflicted generated bundle from merged source; do not overwrite upstream catalog data or repeat byte-identical component proof.
+
+## Draft and embedded preview observations
+
+- A poll primary action ignored text still in its add-option field. Commit visible draft values before validation and request creation.
+- Fixed input heights and fractional filter tracks constrained enlarged text. Minimum heights, intrinsic sizing and wrapping preserve readable labels and fields.
+- A conversation button’s explicit accessible label omitted its visible preview and time. Reference those visible text owners in its accessible name or description.
+- A white14px report label on source-like red and a white X on a pale neutral circle lacked contrast. Keep red/neutral meanings while deepening only the affected colors.
+- Unconditional focus in a lazily loaded editor iframe stole parent focus. Embedded focus starts from explicit activation; standalone focus can keep its own editing state.
+- These findings affected seven distinct IDs in the last30 (initial23/30, final30/30) and led to28scoped replacement render observations. No comparable active-time or accepted-throughput improvement is measured.

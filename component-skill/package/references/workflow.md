@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.1
+# Catalog implementation workflow, v2.2
 
 ## Authority and recovery
 
@@ -58,6 +58,22 @@ Prefer existing typed primitives and accessible patterns. Batch five compatible 
 Start the component preview with the component itself. Do not add unrelated reader content, dimension labels, demo chrome or visible credit UI. Preserve required attribution and licenses in deliverables. Preserve meaningful swatch fills and authored themes.
 
 For gestures, capture one pointer, track its actual grab point, cancel safely on disable/capture loss, clamp bounds, provide keyboard controls and accessible boundary feedback. Avoid repetitive live announcements during dragging and no-op undo entries. For dialogs, reuse the installed focus-containment primitive; check outside press, Escape, reopen, focus return and scroll-lock teardown.
+
+For a Component Builder-only release, run `node scripts/export-skills.mjs --component-only`. This preserves the separately maintained entry-skill distribution and its current navigation link; export both skills only when both releases are in scope.
+
+## Draft and embedded preview contract
+
+Before implementation, fill these fields in the private per-entry contract. Review shared control logic once and keep per-ID copy, artwork, state and callback checks separate.
+
+| Field | Required decision |
+| --- | --- |
+| Primary action and draft | List every visible editable value and how Save/Send commits it. Include text still in an add-row field; preserve invalid drafts and show specific feedback. |
+| Text growth | Use minimum heights and intrinsic input sizing. Let labels size their controls and wrap the control group. Preserve reference font roles and default geometry. |
+| Accessible content | Include visible identifying copy, preview text, time and state in a row’s accessible name or description. |
+| Semantic contrast | Check normal text at4.5:1 and enabled non-text controls at3:1. Keep source functional color meanings, using the smallest necessary color adjustment. |
+| Embedded focus | Parent focus stays where it is on iframe load. Focus enters an embedded editor after explicit activation; standalone editing may initialize its own caret. |
+
+Observe draft submission with pending add-row text, keyboard and pointer behavior, text growth and actual iframe focus. Apply scoped fixes before the final four-width render so review repairs do not repeat unaffected captures. Native informational entries need their reading/geometry checks and no invented action.
 
 ## Verify only what needs fresh proof
 
