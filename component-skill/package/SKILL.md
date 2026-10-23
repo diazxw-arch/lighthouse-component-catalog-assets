@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **2.4** · hourly workflow and website updates · next version **2.5**.
+Version **2.5** · hourly workflow and website updates · next version **2.6**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -51,6 +51,8 @@ Before coding a draft form or embedded preview, write its contract fields: draft
 For media attachments with duration badges, let the editable label participate in intrinsic control width and let the media row wrap. Keep artwork positioned behind a normal-flow badge; preserve readable text when it grows. Observe the longest supplied duration at the narrow width before the final four-width capture. See workflow.md for the concrete pattern.
 
 For headers with side actions and lists with index rails, reserve each complete pointer footprint in its own intrinsic column. Put the index beside the list in the same normal-flow layout after growing headers and chips. Observe enlarged labels at the narrow iframe width before final capture; see workflow.md.
+
+Before a query field handles Enter, Escape or arrow/focus commands, return when the keyboard event is composing or has keyCode229. Use one common guard before the command branches so native IME candidate navigation and cancellation keep their input focus. See workflow.md.
 
 ## Evolve every hour
 

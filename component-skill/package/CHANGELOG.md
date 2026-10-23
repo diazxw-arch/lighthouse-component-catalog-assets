@@ -1,3 +1,7 @@
+# Version2.5 — query composition command guard
+
+Guard every query keyboard command during composition, including Escape and arrow/focus commands as well as Enter. A source review found that only Enter was protected in one suggestion field. The repaired five-entry group passed4/5initial and5/5final Important-level review. Current published30passed23/30initial and30/30final; following10passed8/10initial and10/10final. Five more source-ready candidates have review/captures in progress at this dated snapshot. No new acceptance, paired skill experiment or measured speed gain is claimed. Prior release histories remain unchanged.
+
 # Version2.4 — intrinsic auxiliary columns
 
 Reserve side actions and list index rails in intrinsic columns that move with growing content. This bounded workflow change addresses three observed header/rail layout risks. Six200%text observations at320/390 document the repairs. Current published30 passed22/30initial Important-level review and30/30final; following10passed9/10initially and10/10final. No new acceptance, paired skill experiment or measured speed gain is claimed. Earlier review snapshots remain unchanged.

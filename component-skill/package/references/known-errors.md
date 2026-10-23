@@ -97,3 +97,9 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - Absolute Clear actions beside a fixed74px title inset could collide with200%text. Intrinsic action/title columns preserve separate readable content in both affected tag headers.
 - A contacts rail fixed at top310 did not move when the header/chips grew, and its44px pointer footprint overlapped a neighboring checkbox by7px. A normal-flow grid with a separate26px compact rail and2px gap preserved native glyph positions and separate hit areas.
 - These repairs have six actual200%text observations at320/390. Compact-target and exact-pixel residuals remain documented; they are not proof of complete accessibility acceptance or measured speed gains.
+
+## Query composition command observation
+
+- In LH01-0165, Enter checked isComposing/keyCode229, while Escape and ArrowDown still cancelled or moved focus during composition. One early guard now protects all query commands. Ordinary input events remain available.
+- Selecting a suggestion changed the visible query without refreshing its fixed suggestion list; the selection path now refreshes that same fixture before reporting the query.
+- The affected five-entry group moved from4/5initial to5/5final Important-level static review. Exact repaired-source render/interaction observations are retained; no fresh paired skill experiment, complete accessibility acceptance or measured speed gain is claimed.

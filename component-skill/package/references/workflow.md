@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.4
+# Catalog implementation workflow, v2.5
 
 ## Authority and recovery
 
@@ -88,6 +88,14 @@ For a header with a side Clear action, use an intrinsic side column and a wrappi
 For a list with a reading index, put the content and index in one normal-flow grid after the header and selected chips. Reserve the rail's complete interactive width plus a gap. Do not position the rail at a fixed vertical offset through a header that can grow. Check both visible glyphs and actual pointer footprints; preserving glyph spacing does not prove that neighboring hit areas are separate.
 
 At actual320/390 iframe widths, observe enlarged header/chip labels before final four-width captures. Read the rendered text and inspect neighboring control bounds as well as overflow. Reuse unchanged captures by exact source hash and replay only the affected entries after a repair.
+
+## Query composition command boundary
+
+For a query field with custom Enter, Escape or arrow/focus behavior, put a shared early return for event.isComposing or event.keyCode===229 before all command branches. Protecting only Enter still lets native IME Escape cancellation or candidate arrows dispatch host commands or leave the field. Keep ordinary input/draft events intact.
+
+After choosing a fixed-fixture suggestion, assign the visible query and refresh that fixture before reporting the selected query. Review the current query, visible suggestions and host payload together. Inspect the exact repaired source and replay only the affected field observations; retain unchanged proof by source identity.
+
+This is a bounded quality repair grounded in one observed query field. No paired experiment or measured authoring-speed gain is claimed.
 
 ## Verify only what needs fresh proof
 
