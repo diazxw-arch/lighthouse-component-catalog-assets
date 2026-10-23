@@ -8,6 +8,14 @@ Before each batch, save objective, assigned IDs, exact unfinished step, branch/H
 
 Existing project production rules and CI remain required. Identify overlap before editing shared infrastructure. Reuse a healthy owned preview. A's historical infrastructure ownership is assignment-specific, not a permanent grant to another worker. No background service or recurring automation belongs in the skill.
 
+## Site identity and registration source
+
+Resolve a ChatGPT Site by its exact URL and opaque project ID, then record its current published version and configured source repository/branch before writing. Preserve its current audience. Keep the Site, the authoritative component library, generated-image staging and any component runtime separate. Do not redirect a Site-only request into another application that happens to share the Lighthouse name.
+
+`generated=yes` is only a search/index facet. Read the component detail and check `catalogPresentation.status`, the latest `generatedImages` record and its actual file/hash, `latestImageMissing`, and `implementation.status`. `finished` means image generation is complete; it does not mean a coded component is implemented or accepted. `needs-correction`, `review-pending`, and `waiting` remain distinct. Reuse an existing verified implementation and accepted proof when inputs are unchanged.
+
+Treat `hosted-generation` and other parent-ready folders as staging. Before importing, compare the candidate image hash and the `sourceEntrySha256`/`sourceCatalogSha256` pins with the current authoritative library, and perform the parent review. Preserve the candidate bytes. If the source entry, source catalog, or review evidence cannot be reconciled, keep the candidate staged and report the exact blocker; do not promote it or manually edit the exported `dist` snapshot. For registration, run the library's existing `目録を更新.mjs` workflow, export from that same authoritative library, validate the export, then commit and publish the exact resulting Site source.
+
 ## Select and measure
 
 Read the actual catalog record and its selected original/Image Gen paths. Inspect images at useful size. Confirm eligibility, current revision and whether a reusable coded implementation already exists. Hash changed source/reference records at acceptance boundaries, not every asset on every poll. Keep provenance and licensed originals. Never replace a working component with an image.
@@ -59,4 +67,3 @@ Freeze the exact final source and reuse its valid independent source/build proof
 Reuse the complete existing audit helper closure when moving tests into the actual strict catalog iframe. Probe one representative case per affected family before the full audit, then execute every required per-ID/state case. Native radio groups normally have one Tab stop and Arrow navigation. Capture pointer target metadata before an action can hide its underlay. If frame-specific CDP is unsupported for a same-process iframe, inspect that exact iframe document through its parent target; do not alter origin or sandbox restrictions. Verify actual active font embedding separately from unused declared provenance font files. Pin all retained inputs, and never exempt an active font from loading/render checks.
 
 Retain initial failed reports and diagnose whether the failure belongs to the component, audit harness, publication input or external boundary. Rerun only failed and concretely affected scopes, then reconcile successful supplements by exact ID/state/input and observation date. All final visual, keyboard, responsive, accessibility, independent review, build/CI, production and actual-catalog gates remain mandatory. No before/after active-time improvement has yet been measured.
-

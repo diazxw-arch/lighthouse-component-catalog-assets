@@ -5,9 +5,15 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **1.6** · hourly workflow and website updates · next version **1.7**.
+Version **1.7** · hourly workflow and website updates · next version **1.8**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
+
+## Resolve destination and eligibility
+
+Resolve the requested destination before choosing code or records. For a ChatGPT Sites catalog task, identify the exact Site URL and project ID, current published version, configured source repository and branch. Preserve the current audience. The catalog Site, authoritative component library, generated-image staging area and any component runtime are separate targets. A request to update the ChatGPT Site does not authorize changes to a similarly named application unless the user also scopes that implementation target.
+
+Do not select work from the public `generated=yes` facet alone. Read the entry detail and verify `catalogPresentation.status`, the latest generated image status and file/hash, `latestImageMissing`, and the implementation status. A finished image candidate is separate from owner acceptance and coded implementation. Reuse already accepted unchanged work. For `hosted-generation` handoffs, verify the candidate, source-entry and source-catalog hashes against the current authoritative source and perform the parent review before promotion. A staging label is not approval.
 
 ## Restore before building
 
@@ -19,7 +25,7 @@ Before a parent aggregate release, restore the canonical committed-byte stage an
 
 ## Deliver a component
 
-1. Inspect the original, selected Image Gen version, catalog manifest, existing implementation and acceptance hashes. Missing Image Gen stays waiting. Already accepted unchanged work is reused.
+1. Inspect the original, selected Image Gen version, catalog manifest, existing implementation and acceptance hashes. Missing Image Gen stays waiting. Already accepted unchanged work is reused. If the authoritative library or hash-pinned source entry is unavailable, do not patch the exported Site snapshot or `data/components` by hand; record the blocker and keep staged candidates unpromoted.
 2. Reuse suitable typed primitives and installed dependencies. Implement reusable controlled UI and real host callbacks. Preserve sandbox/security, accessibility, original artwork and font licenses.
 3. Compare the rendered result to the references. Check interactions, keyboard/focus, error/empty/disabled states, overflow and responsive widths, including the actual catalog iframe. Record actual observations and residual differences per ID.
 4. The worker implements and checks locally in coherent groups of 5, up to 10. Hand off exact source/input hashes, checks and missing gates to the parent. Source-ready/render-pending stays distinct from accepted. Recheck changed paths; preserve valid unchanged proof.
