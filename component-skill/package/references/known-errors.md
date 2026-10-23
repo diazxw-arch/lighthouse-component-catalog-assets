@@ -62,3 +62,10 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - Immediate Radix selection checks raced controlled activation, and a Tab assertion omitted the intentional tabpanel stop. Condition waits and exact native focus-sequence assertions resolved the harness failures without product changes.
 - Font probes on wrappers returned no direct glyphs; inspect the visible direct text owner. A roving toolbar has one current Tab stop; collapsed-panel radios with existing labels are still hidden. These are audit selection errors, not demonstrated component defects.
 - One screenshot timed out after font readiness. Preserve its report and rerun only the same pinned ID/width in an isolated context; the successful followup does not erase the original failure.
+
+## 2026-10-23 catalog transport and viewport observations
+
+- Standalone preview routes returned200 while catalog JSON contained gzip bytes without Content-Encoding. Decompress the embedded response before dispatch; a parsed catalog and visible actual card are required evidence. v63 repaired JSON parsing.
+- Selected relative card URLs then returned404 because ASSETS was unavailable in this Site dispatch. v64 added61 immutable size/hash-checked routes. Catalog rows and D1 stayed unchanged; actual cards0076/0162 appeared afterward. Preserve the intermediate failure.
+- An initial responsive helper labelled captures320/720 while both used a default1280px iframe. This is a harness error, not30 component defects. The corrected pass explicitly set the viewport and recorded matching innerWidth on60 renders. No horizontal overflow or browser errors were observed. A blank clipped iframe-element capture from the first helper was also replaced with the actual iframe capture.
+- Static review found a blocked native submit button in the allow-scripts sandbox, a narrow tab-content overlap, and small state/IME/payload issues. Scoped fixes are retained. These observations do not establish full acceptance or a comparative speed gain.

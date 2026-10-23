@@ -89,3 +89,9 @@ Measure aggregate command/check overhead once, per-ID browser case wall time sep
 ## v1.9 preview-only batch evidence
 
 Five Airbnb discovery-filter previews were prepared locally as a coherent batch. The five source files render, and their bytes match the explicit Worker route map. A missing exporter overlay allowlist was noticed before export/build and added to the change set. No independent acceptance, production or actual-catalog interaction gates are included in this observation. Per-entry active time, comparable authoring time and speed improvement remain unknown.
+
+## v2.0 observed batch review
+
+Thirty new preview candidates were prepared in six coherent groups of five, preserving original/generated media and implementation status. Independent static review covered30/30; scoped findings were fixed. Corrected local sandbox observations cover60/60 renders at actual320/720px, with zero observed horizontal overflow or browser errors. The initial wrong-viewport observations remain retained as harness rework and are excluded from the60. Production and actual-catalog gates for the new30 are separate, and no newly accepted entry is counted.
+
+Active implementation/check/review/wait/rework minutes remain unknown30/30; do not derive them from file-write, batch or render durations. Current source-ready IDs are listed in manifest.json's scoped1h observation; global3h/24h histories remain unknown. The transport preflight addresses two observed release repairs and one viewport-harness retry. There is no comparable before/after timing sample or measured speed improvement.

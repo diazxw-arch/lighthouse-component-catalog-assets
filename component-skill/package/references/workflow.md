@@ -27,6 +27,14 @@ Use this path when the assigned work adds coded previews while catalog rows, sou
 
 This path removes repeat discovery, full-catalog export and archive/route retries when their inputs are unchanged. It does not remove source identity, interaction, accessibility, independent review, CI, production or actual-catalog gates.
 
+## Catalog transport and viewport preflight
+
+At resume, inspect one existing live card before coding the next group. Trace its client load, parse `/catalog.json`, resolve the selected row's exact card-bundle URL, and confirm its sandboxed component appears. Save the deployed version and dependency hashes once; reuse unchanged proof. If the data chain is broken, repair it independently while retaining queued component source.
+
+Do not rely on archive membership or a configured ASSETS binding. Every relative card URL must have a supported route. In this repository, `.openai/card-assets.json` pins the immutable card files; `scripts/build-worker.mjs` verifies local bytes and emits `PINNED_CARD_ASSETS`; `src/worker/index.js` checks fetched size/SHA before serving. Never turn this into an arbitrary upstream proxy. Preserve native/hosted overrides and catalog data. Return directly parseable JSON: Site dispatch was observed stripping Content-Encoding from a compressed response. Keep HEAD responses empty, including errors.
+
+For browser captures, set the page viewport explicitly and record the iframe's observed `innerWidth`. Compare requested and observed widths before counting responsive evidence. A requested-width label is insufficient: the initial helper passed viewport options to a context page factory that ignored them. Retain invalid observations with the exact harness cause, then replace only affected captures. Capture the actual iframe after its load/resize settles; a blank clipped capture is not visual proof.
+
 ## Select and measure
 
 Read the actual catalog record and its selected original/Image Gen paths. Inspect images at useful size. Confirm eligibility, current revision and whether a reusable coded implementation already exists. Hash changed source/reference records at acceptance boundaries, not every asset on every poll. Keep provenance and licensed originals. Never replace a working component with an image.

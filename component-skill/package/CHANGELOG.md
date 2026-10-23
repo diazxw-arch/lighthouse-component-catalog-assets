@@ -1,3 +1,7 @@
+# Version2.0 — catalog transport and measured viewport preflight
+
+Trace the actual catalog load chain before the next preview batch. A reachable preview URL did not reveal unreadable compressed catalog JSON or missing card bundles. Build now requires immutable routes for all61 relative bundles and runtime verifies their exact size/hash. Actual cards loaded after the v63/v64 repairs. Record real iframe widths before using responsive captures: one initial helper used the default viewport; the corrected30-candidate pass observed320/720px across60renders. Preserve that harness failure separately from component defects. Thirty current candidates have independent static review; full acceptance and comparable speed improvement remain unproven. No fresh paired skill test was run.
+
 # Version1.7 — release recipes, native audit contracts and Site-target preflight
 
 Hourly review addresses observed parent command and browser-harness rework. Restore the current public build target and successful phase recipe, bound full-suite concurrency without changing timeouts, inspect fixture receipt visibility and actual native focus stops, and sample visible direct text for font proof. Resolve the exact ChatGPT Site and source repository; check assigned-entry eligibility from the detail record and image/hash; keep hosted-generation candidates staged until parent review and source pins match. Preserve failed attempts and scoped supplements. Runtime/dependencies unchanged; no new acceptance or measured speed gain.

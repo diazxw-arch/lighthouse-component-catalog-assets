@@ -1,20 +1,20 @@
 {
   "name": "lighthouse-catalog-component-builder",
-  "version": "1.9",
-  "versionTenths": 19,
+  "version": "2.0",
+  "versionTenths": 20,
   "reviewEvery": null,
   "completedSinceRelease": 0,
-  "timing": "Latest30 historical source-ready-to-acceptance intervals measured; active authoring unknown30/30. Current five-preview batch has no per-entry active-time sample; no speed improvement proven.",
-  "quality": "Latest30 combined initial actual-catalog audit26/30 including4parent harness/instrumentation errors; final120renders/139functional/30accessibility/30desktop cases passed. Earlier real preview corrections153/154/161 retained.",
+  "timing": "Current30 previews source-prepared and statically reviewed; active authoring/review/wait/rework minutes are unknown30/30. Sixty corrected-width render observations are separate from implementation time. No comparable speed gain is measured.",
+  "quality": "Current30 static reviews have no remaining Critical/Important findings after scoped corrections. Sixty local sandbox renders at actual320/720px have no observed horizontal overflow or page errors. Full acceptance remains pending.",
   "runtime": "Node.js built-ins only; offline explicit-path receipt ledger. New-catalog CLI initialization reads the reviewed package version; existing stores refuse reinitialization.",
   "authority": "Direct user request; old workers and automations remain paused",
-  "source": "60 historical accepted entries; 30 historical source-reviewed candidates and five current local previews pending acceptance; 155 historical baseline excluded",
-  "behavioralValidation": "Five current local preview pages rendered; their source bytes match the built Worker route map. The exporter overlay-list omission was caught before build. Current previews remain acceptance-pending; no new accepted component, per-entry timing sample or comparative speed gain. One paired fresh-context retrieval check: baseline omitted the exporter allowlist; revised guidance included it. This is a reference retrieval check, not broad pressure validation.",
-  "policyRevision": "preview-overlay-change-set-preflight-20261023",
+  "source": "60 historical accepted entries; 30 historical source-reviewed candidates, eight previously published preview candidates and 30 current local preview candidates remain distinct. Historical155 baseline excluded.",
+  "behavioralValidation": "Observed production failures drove this update: gzip JSON without Content-Encoding, then missing relative card bundles despite successful standalone preview URLs. v63 restored parseable catalog JSON; v64 mapped61 exact card bundles and actual cards0076/0162 visibly loaded. Current30 have independent static review and60 local renders. An initial screenshot helper ignored requested widths; retained evidence is superseded by measured innerWidth320/720. This is scoped observed evidence, not a fresh paired skill test or broad pressure validation.",
+  "policyRevision": "catalog-transport-and-batch-preflight-20261023",
   "parentPublicationEvery": 30,
-  "nextVersion": "2.0",
+  "nextVersion": "2.1",
   "acceptedCumulative": 60,
-  "lastReviewDecision": "update all five preview source maps as one change set; no measured speed gain",
+  "lastReviewDecision": "Check the actual catalog load chain before starting a batch; fail build on unmapped relative cards; verify actual iframe width before counting responsive evidence.",
   "speedImprovementProven": false,
   "observedReview": {
     "samples": 30,
@@ -28,7 +28,8 @@
       "LH05-0161"
     ],
     "finalAccepted": 30,
-    "speedImprovementProven": false
+    "speedImprovementProven": false,
+    "scope": "Historical accepted30 from the earlier1.5 review; this is not the current v2.0 preview batch."
   },
   "websitePublicationEveryAccepted": null,
   "websiteReleaseArtifacts": [
@@ -46,33 +47,129 @@
   "targetMetric": "distinct fully accepted entries / elapsed wall-clock hour",
   "targetAchieved": false,
   "currentHourlyReview": {
+    "reviewedAt": "2026-10-23T09:04:40.787400+00:00",
+    "nextReviewAt": "2026-10-23T10:04:40.787400+00:00",
     "newAccepted": 0,
     "acceptedCumulative": 60,
-    "sourceReviewedPending": 30,
-    "workflowImprovement": "Prepare catalog-client injection, exporter allowlist, Worker routes, validator list and byte/hash manifest together, then build once and compare route bytes.",
-    "speedImprovementProven": false,
-    "publishedPreviewsPendingAcceptance": [
-      "LH01-0161",
-      "LH01-0162",
-      "LH01-0172",
+    "historicalSourceReviewedPending": 30,
+    "previousPublishedPreviewsPendingAcceptance": [
       "LH01-0076",
       "LH01-0077",
       "LH01-0079",
       "LH01-0081",
-      "LH01-0088"
+      "LH01-0088",
+      "LH01-0161",
+      "LH01-0162",
+      "LH01-0172"
     ],
-    "previewBatch": {
+    "currentPreviewBatch": {
       "ids": [
-        "LH01-0076",
-        "LH01-0077",
-        "LH01-0079",
-        "LH01-0081",
-        "LH01-0088"
+        "LH01-0071",
+        "LH01-0072",
+        "LH01-0074",
+        "LH01-0082",
+        "LH01-0086",
+        "LH01-0089",
+        "LH01-0090",
+        "LH01-0091",
+        "LH01-0093",
+        "LH01-0095",
+        "LH01-0096",
+        "LH01-0098",
+        "LH01-0103",
+        "LH01-0104",
+        "LH01-0105",
+        "LH01-0106",
+        "LH01-0107",
+        "LH01-0108",
+        "LH01-0110",
+        "LH01-0111",
+        "LH01-0112",
+        "LH01-0114",
+        "LH01-0116",
+        "LH01-0118",
+        "LH01-0130",
+        "LH01-0131",
+        "LH01-0132",
+        "LH01-0133",
+        "LH01-0134",
+        "LH01-0135"
       ],
-      "sourceReady": 5,
+      "sourceReady": 30,
+      "independentStaticReview": 30,
+      "localRenders": 60,
+      "requestedAndObservedWidths": [
+        320,
+        720
+      ],
+      "observedHorizontalOverflow": 0,
+      "browserErrors": 0,
       "newlyAccepted": 0,
       "perEntryActiveTime": "unknown",
       "speedImprovementProven": false
-    }
-  }
+    },
+    "workflowImprovement": "Trace client -> parsed catalog JSON -> mapped card bundle -> sandboxed preview before new work; reuse valid byte-identical evidence. Guard real iframe viewport dimensions.",
+    "rollingThroughput": {
+      "scope": "current30 preview candidates only; no global historical reconstruction",
+      "window1h": {
+        "start": "2026-10-23T08:04:40.787400+00:00",
+        "end": "2026-10-23T09:04:40.787400+00:00",
+        "observedSourceReadyIds": [
+          "LH01-0071",
+          "LH01-0072",
+          "LH01-0074",
+          "LH01-0082",
+          "LH01-0086",
+          "LH01-0089",
+          "LH01-0090",
+          "LH01-0091",
+          "LH01-0093",
+          "LH01-0095",
+          "LH01-0096",
+          "LH01-0098",
+          "LH01-0103",
+          "LH01-0104",
+          "LH01-0105",
+          "LH01-0106",
+          "LH01-0107",
+          "LH01-0108",
+          "LH01-0110",
+          "LH01-0111",
+          "LH01-0112",
+          "LH01-0114",
+          "LH01-0116",
+          "LH01-0118",
+          "LH01-0130",
+          "LH01-0131",
+          "LH01-0132",
+          "LH01-0133",
+          "LH01-0134",
+          "LH01-0135"
+        ],
+        "acceptedIds": []
+      },
+      "window3h": {
+        "start": "2026-10-23T06:04:40.787400+00:00",
+        "end": "2026-10-23T09:04:40.787400+00:00",
+        "globalSourceReadyCount": null,
+        "globalAcceptedCount": null
+      },
+      "window24h": {
+        "start": "2026-10-22T09:04:40.787400+00:00",
+        "end": "2026-10-23T09:04:40.787400+00:00",
+        "globalSourceReadyCount": null,
+        "globalAcceptedCount": null
+      }
+    },
+    "timingUnknownCounts": {
+      "activeImplementation": 30,
+      "checking": 30,
+      "review": 30,
+      "waiting": 30,
+      "rework": 30
+    },
+    "speedImprovementProven": false
+  },
+  "lastReviewedAt": "2026-10-23T09:04:40.787400+00:00",
+  "nextReviewAt": "2026-10-23T10:04:40.787400+00:00"
 }
