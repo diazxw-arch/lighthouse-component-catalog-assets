@@ -4,7 +4,7 @@
   "complexity": "small/medium/large",
   "implementer": "actual implementation owner",
   "reviewer": "different actual reviewer",
-  "skillVersion": "2.0",
+  "skillVersion": "2.1",
   "startedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
   "completedAt": "REPLACE_WITH_OBSERVED_ISO_DATE",
   "activeMinutes": null,

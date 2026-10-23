@@ -1,3 +1,7 @@
+# Version2.1 — manifest-driven preview routes and durable observations
+
+Build Worker preview routes directly from the reviewed byte manifest, checking exact source/dist bytes and rejecting duplicate or invalid routes. This replaces a stale first-ID update anchor that omitted the next batch before publication. Persist each browser observation before optional requests so unrelated failures retain completed work. Merge parallel catalog registrations normally and reuse component evidence only when exact inputs match. Current30have independent static review,120final responsive renders,74byte-exact production routes and30visible actual-catalog previews. Full acceptance and comparable speed improvement remain unproven; no fresh paired skill test was run.
+
 # Version2.0 — catalog transport and measured viewport preflight
 
 Trace the actual catalog load chain before the next preview batch. A reachable preview URL did not reveal unreadable compressed catalog JSON or missing card bundles. Build now requires immutable routes for all61 relative bundles and runtime verifies their exact size/hash. Actual cards loaded after the v63/v64 repairs. Record real iframe widths before using responsive captures: one initial helper used the default viewport; the corrected30-candidate pass observed320/720px across60renders. Preserve that harness failure separately from component defects. Thirty current candidates have independent static review; full acceptance and comparable speed improvement remain unproven. No fresh paired skill test was run.

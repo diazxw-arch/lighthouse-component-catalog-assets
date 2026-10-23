@@ -1,15 +1,15 @@
 {
-  "version": "2.0",
-  "policyRevision": "catalog-transport-and-batch-preflight-20261023",
-  "archive": "lighthouse-catalog-component-builder-v2.0-catalog-transport-and-batch-preflight-20261023.zip",
+  "version": "2.1",
+  "policyRevision": "manifest-driven-preview-routes-20261023",
+  "archive": "lighthouse-catalog-component-builder-v2.1-manifest-driven-preview-routes-20261023.zip",
   "files": [
     {
       "file": "CHANGELOG.md",
-      "sha256": "5f0de9562e1b2ffbb3cf02107faba4b2c70402592992388a27ea3e001652294b"
+      "sha256": "204acb65df0d0cc07d27a16ab6b7faa293018a08f7593a36201d06bff493ac1f"
     },
     {
       "file": "SKILL.md",
-      "sha256": "455f88f3897c32325dfc12631de3a033450af19c6d2f6b8dfade007002c01ed6"
+      "sha256": "eb037b32539c3815876e0e6055107b99a9f8a8f60996fe03b9c94aed7dc06462"
     },
     {
       "file": "baseline.json",
@@ -17,23 +17,23 @@
     },
     {
       "file": "manifest.json",
-      "sha256": "b624a3772ccf33f9c5120fc4f42127fba3c6c435a92bebc2e2c0253f0c035073"
+      "sha256": "2b69b7cef863a3c2318e277f635b60e49e01cef08fb2b00a95e83b95516be23a"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "551980cd20e0f69142fd6c9ac6a41b2c752a11a42ac37f850df6db429a19e9b1"
+      "sha256": "df3706e18c09366999287b0dfaec10ac6aab51b8e7edab6b63aa2b5479b0eca5"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "e7574e4ee4b0e51c6463335db1e85b82c4192f6633306dfed1e82188d7912063"
+      "sha256": "29c44f205d6e8eb60d8c58c156805f54edf89084bfb61d177cb32c6b394aadbd"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "a73a9ebc00084cabec372e7af02b8f323c4ce1455bfac7de70ad705a804108b6"
+      "sha256": "e80dc487db926581d5b8de6800c1cb486837bcde3941ffecfcbf9c7f8626088f"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "43a5bfd2b65a6344b783da28351b02a49a31bbe3266724fab16e5e3637b87557"
+      "sha256": "2f84bf81bc6fccfd20c959d924550453a359305631255cd0d0861f42b079a9d4"
     },
     {
       "file": "scripts/cycle.mjs",

@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v1.8
+# Catalog implementation workflow, v2.1
 
 ## Authority and recovery
 
@@ -34,6 +34,14 @@ At resume, inspect one existing live card before coding the next group. Trace it
 Do not rely on archive membership or a configured ASSETS binding. Every relative card URL must have a supported route. In this repository, `.openai/card-assets.json` pins the immutable card files; `scripts/build-worker.mjs` verifies local bytes and emits `PINNED_CARD_ASSETS`; `src/worker/index.js` checks fetched size/SHA before serving. Never turn this into an arbitrary upstream proxy. Preserve native/hosted overrides and catalog data. Return directly parseable JSON: Site dispatch was observed stripping Content-Encoding from a compressed response. Keep HEAD responses empty, including errors.
 
 For browser captures, set the page viewport explicitly and record the iframe's observed `innerWidth`. Compare requested and observed widths before counting responsive evidence. A requested-width label is insufficient: the initial helper passed viewport options to a context page factory that ignored them. Retain invalid observations with the exact harness cause, then replace only affected captures. Capture the actual iframe after its load/resize settles; a blank clipped capture is not visual proof.
+
+## Manifest-driven routes and durable batch observations
+
+The Worker preview map is generated from `.openai/component-previews.json`. The build validates ID/path shape, duplicate routes, regular source files, exact source/dist bytes, size and SHA-256. Add final source files and regenerate the manifest before building; do not maintain a second Worker ID list or replace a list by its first ID. Exporter/validator allowlists and client callbacks still need the scoped batch update. Inspect the generated `site-assets.js` payload rather than searching only the importing Worker entry point.
+
+Write each browser observation as it completes, including its exact ID/input identity. Optional unrelated network requests must not discard completed observations. Preserve failed reports; replace only affected ID/state/width captures. A script's source emission start is not measured active implementation start.
+
+If the source branch advances during ImageGen registration, keep a recoverable local candidate commit, fetch and rebase normally. Regenerate conflicted build artifacts from combined source, then check selected source/detail hashes and upstream catalog/hosted mappings. Reuse unchanged component renders instead of rebuilding their evidence. Never force push or overwrite parallel media/registration work.
 
 ## Select and measure
 
