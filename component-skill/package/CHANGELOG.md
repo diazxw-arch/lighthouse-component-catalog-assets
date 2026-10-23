@@ -1,3 +1,11 @@
+# Version1.7 — release recipes, native audit contracts and Site-target preflight
+
+Hourly review addresses observed parent command and browser-harness rework. Restore the current public build target and successful phase recipe, bound full-suite concurrency without changing timeouts, inspect fixture receipt visibility and actual native focus stops, and sample visible direct text for font proof. Resolve the exact ChatGPT Site and source repository; check assigned-entry eligibility from the detail record and image/hash; keep hosted-generation candidates staged until parent review and source pins match. Preserve failed attempts and scoped supplements. Runtime/dependencies unchanged; no new acceptance or measured speed gain.
+
+# Version1.8 — static preview route and archive preflight
+
+For existing-Site preview batches, verify the Worker route map and route bytes before packaging, keep `.openai/hosting.json` at archive root with `dist/` nested, and check every live route after deployment. This batch exposed and fixed three production 404s and one rejected archive layout. Three previews are published, with acceptance still pending. No comparable authoring-time sample or speed gain is claimed.
+
 # Version1.6 —100accepted entries/hour target
 
 Human throughput objective100fullyaccepted entries per wall-clock hour; hourly reviews compare rolling1h/3h/24h source and acceptance throughput separately. Target is not achieved speed. Remove repeated parent inventory/serialization and reuse exact validated evidence; retain all quality and publication gates. Correct workflow heading; runtime/dependencies unchanged from inspected1.5. Exact independent review and publication are required for release.
@@ -44,6 +52,3 @@ Direct human instruction changes skill review to every 10 newly accepted distinc
 Initial catalog implementation skill, based on the saved implementation chats, parent acceptance and corrections. Adds exact task restoration, reusable coherent batches, scoped visual rules, actual-catalog sandbox checks, evidence reuse by unchanged input hashes, real release checks and explicit cleanup disposition.
 
 Adds an offline receipt ledger for timing/quality, distinct new component counting and the 30-completion review boundary. Historical deliveries are excluded; no new timing/speed/quality improvement is claimed yet. Next reviewed release is 1.1 after 30 newly verified deliveries. No worker, timer or automation is started.
-# Version1.7 — explicit ChatGPT Site target and generation handoff checks
-
-Resolve the exact ChatGPT Site/project and repository before selecting work; keep the catalog, authoritative library, hosted generation staging and any implementation runtime distinct. `generated=yes` alone is not eligibility: inspect the detail status, actual image/hash, latest-image state and implementation record. Require parent review and matching source-entry/source-catalog hashes before importing staged generation. If the authoritative source is unavailable or hashes do not match, leave the export untouched and record the blocker. This cycle adds no accepted component, no new time sample and no new quality sample; speed improvement remains unproven.

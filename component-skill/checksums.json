@@ -1,15 +1,15 @@
 {
-  "version": "1.7",
-  "policyRevision": "site-target-and-generation-handoff-preflight-20261023",
-  "archive": "lighthouse-catalog-component-builder-v1.7.zip",
+  "version": "1.8",
+  "policyRevision": "worker-preview-route-and-archive-preflight-20261023",
+  "archive": "lighthouse-catalog-component-builder-v1.8-worker-preview-route-and-archive-preflight-20261023.zip",
   "files": [
     {
       "file": "CHANGELOG.md",
-      "sha256": "bef5a19841f14c3431ab4083030ba584bd6c5c96de0d068aeeeb72e707d7073c"
+      "sha256": "0d8d9eb5892e37657433c657a70b8e734222a5b7db5c3ac001e93d077028a05a"
     },
     {
       "file": "SKILL.md",
-      "sha256": "95812c5c74ad6a4d7d18f0e7a182baec5be657c06e218acdd5565db41772b1a4"
+      "sha256": "bcade44ba6a1f558d10d009fb4767407f5632338cdb8969548fb9ee59dcbf645"
     },
     {
       "file": "baseline.json",
@@ -17,23 +17,23 @@
     },
     {
       "file": "manifest.json",
-      "sha256": "d71dade0d4362b465b2f56ae38cd1a517554fc19e7bd7841fb15a2a766b31f67"
+      "sha256": "6a1e2b1d8309edd8ec47239d32e306ee49eb8a0879e98d81ddec3e96089e565a"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "f3b2d36dbd9e6e23d629ca2ae26cb75d482bee7f972540c01c53c62cdd96e27b"
+      "sha256": "1cb12d824841174d68fd520e63db8ff6c911e8028902dc79fc78632af64f6884"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "7091bad4b70412bc0d3567f27ae7156b6b28c558a143d057c344ddf837d0cf2b"
+      "sha256": "be874b3dd41adb28f0032fa92a7f5424b7cb9330ce24e78e1ddaf7847eb8f0dc"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "699aaa98a4cc9a340055dbe8cd302a2bf187253a194bf6cfb0fecfd50eee32cf"
+      "sha256": "2411437c3622522b3d5c26cf47ff393fa1e6b6532b2f77add1c4151a51a115c6"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "ecfba71471441560365ca90561785136a606bcad5f6b39dc670c8fbb6a80b230"
+      "sha256": "d1bd5936968d873607de4bc89726180402a0d4b7670e95b9173b291fe4ecc997"
     },
     {
       "file": "scripts/cycle.mjs",

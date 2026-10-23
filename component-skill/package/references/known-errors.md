@@ -15,6 +15,7 @@ These are historical observations from the two catalog implementation chats and 
 | Source, numeric scores, font-family assertions and screenshots were overclaimed. | Separate actual visual, interaction, font load, native reopen, physical device and production evidence. | All families. State residuals and unknowns; preserve licensed available font choices. |
 | Native stderr notices or missing browser crypto triggered repeated wrappers. | Check real exit codes; hash outside the browser with reviewed native tools; one diagnosis and a prerequisite-based retry. | Native Windows only; no WSL/dependency/helper fallback. |
 | Fresh deployment 404 or SPA fallback 200 was treated as a valid component. | Verify terminal deployment, exact immutable HTML/build hashes, alias and actual-catalog response. | Release evidence. CRLF normalization and byte identity are distinct. |
+| A preview existed in `dist` and the saved archive but its production URL returned 404 because the Worker route map omitted it; a first archive also placed `dist` contents at the root. | Check route-map/content equality before packaging; package `.openai/hosting.json` at archive root with the build output under `dist/`; after deployment verify each exact route's status, bytes and content type. | Observed on LH01-0161, LH01-0162 and LH01-0172 in the 2026-10-23 Site release. All three routes returned 200 after the route-map fix. This is release-workflow rework, not a component defect or a speed measurement. |
 
 ## First reviewed-cycle observations
 
@@ -51,3 +52,12 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - The parent initially invoked a generic full-export validator without its required snapshot argument. Restore the scoped additive validator and exact inputs; never validate a snapshot against itself or refresh unrelated public counts/dates.
 - Three earlier real preview corrections remain defects/rework:153/154badge contours and161narrow-frame text bounds. The later strict catalog audit passed after scoped supplements; this does not erase those earlier failures or establish improved authoring speed.
 
+
+## Third30 parent preparation observations
+
+- A repeated parent production command omitted the already documented public build target. Restore current CI variables and the exact successful recipe before launch; preserve successful source builds and resume only unfinished Vite/guards.
+- Concurrent full tests/build/lint coincided with five unrelated5000ms timeouts. Serial affected tests and a full2891test run bounded to two workers passed without changing assertions/timeouts. Contention is an inference; the failed run stays retained. Do not claim an authoring speed gain from this recovery.
+- A parent audit assumed an initially empty status and a query-echo receipt. The fixture actually omits status until the request and supplies a generic request-only receipt. Inspect that fixture before defining assertions.
+- Immediate Radix selection checks raced controlled activation, and a Tab assertion omitted the intentional tabpanel stop. Condition waits and exact native focus-sequence assertions resolved the harness failures without product changes.
+- Font probes on wrappers returned no direct glyphs; inspect the visible direct text owner. A roving toolbar has one current Tab stop; collapsed-panel radios with existing labels are still hidden. These are audit selection errors, not demonstrated component defects.
+- One screenshot timed out after font readiness. Preserve its report and rerun only the same pinned ID/width in an isolated context; the successful followup does not erase the original failure.

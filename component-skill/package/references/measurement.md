@@ -75,3 +75,13 @@ At each hourly review report rolling1h/3h/24h accepted throughput and source-rea
 
 Use the largest evidenced bottleneck for one bounded improvement: restore exact scoped commands and reusable deterministic source/receipt helpers; reuse validated primitives and unchanged source/font/media/render proof by exact identity; review shared source once and per-ID contracts separately; avoid full checkpoint serialization, guessed paths and repeated completed checks. Keep worker implementation running while parent independently reviews the queued aggregate. Record before/after comparable measurements and residuals before claiming gains. This target authorizes no additional workers, services, dependencies, WSL, other-chat outreach or relaxed fidelity/accessibility/security/review/CI/production/catalog/retention gates.
 
+## v1.8 evidence scope
+
+On 2026-10-23, three Site-local previews were published for LH01-0161, LH01-0162 and LH01-0172. The first live-route inspection found all three URLs missing from the Worker route map; a follow-up release added exact route/content checks. Version 60 then returned HTTP 200, `text/html`, and the pinned source byte counts for all three routes. The initial save also rejected an archive whose root was the `dist` contents; the corrected archive kept `.openai/hosting.json` at root and `dist/` nested. Preserve these failed attempts and fixes as publication rework evidence. They do not establish a component defect rate, a per-entry coding duration or a before/after speed gain. The three catalog implementation records remain pending acceptance; no newly accepted component is counted.
+
+
+## Hourly1.7 evidence scope
+
+The next30 remain source-reviewed candidates, not new accepted entries. Their exact aggregate has416files/2891tests passing,30immutable preview HTML/input maps matching, and150distinct default-width captures passing after one preserved screenshot retry. Preliminary standalone keyboard and accessibility/font probes have explicit harness failures and scoped successful supplements. These are stage-specific denominators, not a final component acceptance or defect rate. Accepted cumulative remains60 until every required gate actually passes.
+
+Measure aggregate command/check overhead once, per-ID browser case wall time separately, and active authoring/review/wait/rework only when observed. The validated command/fixture/native-focus preflight addresses evidenced parent rework; its effect on comparable median/p90 accepted completion time and rolling accepted throughput is unproven. Keep actual1h/3h/24h windows and unknown timestamp counts in the private hourly receipt.

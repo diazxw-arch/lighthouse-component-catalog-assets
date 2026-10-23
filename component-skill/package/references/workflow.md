@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v1.6
+# Catalog implementation workflow, v1.8
 
 ## Authority and recovery
 
@@ -10,11 +10,22 @@ Existing project production rules and CI remain required. Identify overlap befor
 
 ## Site identity and registration source
 
-Resolve a ChatGPT Site by its exact URL and opaque project ID, then record its current published version and configured source repository/branch before writing. Preserve its current audience. Keep the Site, the authoritative component library, generated-image staging and any component runtime separate. Do not redirect a Site-only request into another application that happens to share the Lighthouse name.
+Resolve a ChatGPT Site by its exact URL and opaque project ID. Record its current published version, source repository/branch and audience before writing. Keep the Site, authoritative component library, generated-image staging and component runtime separate. Do not redirect a Site-only request into another Lighthouse application.
 
-`generated=yes` is only a search/index facet. Read the component detail and check `catalogPresentation.status`, the latest `generatedImages` record and its actual file/hash, `latestImageMissing`, and `implementation.status`. `finished` means image generation is complete; it does not mean a coded component is implemented or accepted. `needs-correction`, `review-pending`, and `waiting` remain distinct. Reuse an existing verified implementation and accepted proof when inputs are unchanged.
+`generated=yes` is an index facet, not an eligibility decision. Check the assigned record's `catalogPresentation.status`, latest `generatedImages` status/file/hash, `latestImageMissing` and `implementation.status`. Reuse verified unchanged work. Treat `hosted-generation` as staging: compare candidate-image, source-entry and source-catalog hashes with the current authoritative library and complete the parent review before promotion. If a source or pin cannot be reconciled, leave the candidate staged and report the blocker.
 
-Treat `hosted-generation` and other parent-ready folders as staging. Before importing, compare the candidate image hash and the `sourceEntrySha256`/`sourceCatalogSha256` pins with the current authoritative library, and perform the parent review. Preserve the candidate bytes. If the source entry, source catalog, or review evidence cannot be reconciled, keep the candidate staged and report the exact blocker; do not promote it or manually edit the exported `dist` snapshot. For registration, run the library's existing `目録を更新.mjs` workflow, export from that same authoritative library, validate the export, then commit and publish the exact resulting Site source.
+## Fast path for an existing-Site preview batch
+
+Use this path when the assigned work adds coded previews while catalog rows, source images and native files stay unchanged.
+
+1. Resolve only the assigned IDs and their exact source records. Do not scan or re-export the full catalog unless registration data actually changes. Save the source commit, Site version and completed-work checkpoint once.
+2. Before coding, trace the real request route through the Worker. A file copied into `dist` or an archive is not necessarily served. Add each preview URL to the build's explicit route map and have the existing validator compare mapped content with pinned source bytes.
+3. Keep previews self-contained where the sandbox requires it. Batch compatible IDs, reuse unchanged host messaging and resize behavior, and change only affected shared code. Leave catalog implementation status pending until all acceptance gates pass.
+4. Build once after the batch is ready. Check every source-to-dist hash and Worker route/content pair. Use the full-export validator only when its pinned full-snapshot argument is available; do not invoke it with a missing or invented path.
+5. Package from a root that contains `.openai/hosting.json` and a nested `dist/` tree, including the supported Worker entry point or declared static directory. Inspect archive member paths before saving the Site version. Push the exact commit used to build that archive.
+6. After deployment succeeds, request each new URL and verify status, byte count and content type, then open the actual catalog card and exercise the preview in its iframe. A successful site shell does not prove component routes loaded. If a route fails, fix the route map and publish a new commit before reporting it live.
+
+This path removes repeat discovery, full-catalog export and archive/route retries when their inputs are unchanged. It does not remove source identity, interaction, accessibility, independent review, CI, production or actual-catalog gates.
 
 ## Select and measure
 
@@ -67,3 +78,14 @@ Freeze the exact final source and reuse its valid independent source/build proof
 Reuse the complete existing audit helper closure when moving tests into the actual strict catalog iframe. Probe one representative case per affected family before the full audit, then execute every required per-ID/state case. Native radio groups normally have one Tab stop and Arrow navigation. Capture pointer target metadata before an action can hide its underlay. If frame-specific CDP is unsupported for a same-process iframe, inspect that exact iframe document through its parent target; do not alter origin or sandbox restrictions. Verify actual active font embedding separately from unused declared provenance font files. Pin all retained inputs, and never exempt an active font from loading/render checks.
 
 Retain initial failed reports and diagnose whether the failure belongs to the component, audit harness, publication input or external boundary. Rerun only failed and concretely affected scopes, then reconcile successful supplements by exact ID/state/input and observation date. All final visual, keyboard, responsive, accessibility, independent review, build/CI, production and actual-catalog gates remain mandatory. No before/after active-time improvement has yet been measured.
+
+
+## Restore the release recipe and native audit contract
+
+Restore the last successful command, current CI public build-target variables and exact unfinished phase before launching an aggregate release. Read current CI/environment policy; never print or publish credentials. If the component builds passed but Vite rejected a missing public target, retain the failure and resume only Vite and required delivery guards with the documented target. Do not rebuild unchanged component previews. Avoid overlapping the full test suite with CPU-heavy build/lint/browser phases after observed timeouts. A bounded worker count can preserve assertions and timeouts; retain the initial failures, verify affected tests and obtain one clean required full-suite run before release. This is process concurrency, not authorization for more implementation workers or services.
+
+Before a new browser family audit, inspect the actual preview fixture, visible controls and authored receipt. A conditional status may be absent initially, and a request receipt need not echo the submitted value. Assert the real host-request contract without inventing backend success. Wait for the requested aria-selected/focus state instead of sampling before controlled activation settles. Radix Tabs can include an intentional tabpanel Tab stop; native radio groups and roving toolbars do not have one Tab stop per enabled control. Count actual visible tabbable stops, then verify the family Arrow/Home/End behavior separately. Inputs with labels inside a hidden panel remain hidden; visible-label geometry does not authorize counting hidden controls.
+
+For platform-font inspection, sample an actually visible direct text run. A wrapper with descendant text may report zero direct glyphs; that is not proof of a missing font. Retain the failed probe and sample the rendered text node or owning element. Record active font families/glyph usage separately from computed declarations and source font provenance. Capture available geometry/focus/target metadata before any assertion or screenshot that can fail, preserving useful observations with the failed case. A viewport screenshot tail is not authored component height.
+
+Use distinct immutable report names for failed and successful attempts. Rerun only failed ID/state/width cases, verify exact inputs and retain true observation dates when reconciling supplements. Generic language/name/font/Tab probes supplement the required visual, full functional/state, keyboard/accessibility, strict catalog, production and retention gates; they cannot replace them. The observed parent preparation fixes have no measured accepted-throughput or active-authoring gain yet.

@@ -1,7 +1,7 @@
 {
   "name": "lighthouse-catalog-component-builder",
-  "version": "1.7",
-  "versionTenths": 17,
+  "version": "1.8",
+  "versionTenths": 18,
   "reviewEvery": null,
   "completedSinceRelease": 0,
   "timing": "Latest30 source-ready-to-acceptance intervals measured; active authoring unknown30/30. Comparable private family/complexity median/p90 and explicit acceptance-throughput window; no speed improvement proven.",
@@ -9,12 +9,12 @@
   "runtime": "Node.js built-ins only; offline explicit-path receipt ledger. New-catalog CLI initialization reads the reviewed package version; existing stores refuse reinitialization.",
   "authority": "Direct user request; old workers and automations remain paused",
   "source": "60new accepted entries; latest30 production/actual-catalog receipts,155historicalbaseline excluded",
-  "behavioralValidation": "Observed Site-target clarification, catalog index/detail status mismatch, and hash-pinned parent-ready generation staging. This release adds destination, eligibility, and source-reconciliation preflight. No new component acceptance or time/quality sample; no comparative speed gain claimed. No fresh-agent pressure test.",
-  "policyRevision": "site-target-and-generation-handoff-preflight-20261023",
+  "behavioralValidation": "Observed three Site preview URLs return 404 when omitted from the Worker static route map and one Site save rejection for an archive rooted at dist contents; version 60 fixes route mapping and returns 200 with exact bytes/content type for all three. Three preview implementations remain acceptance-pending. No new accepted component, per-entry time sample, or comparative speed gain.",
+  "policyRevision": "worker-preview-route-and-archive-preflight-20261023",
   "parentPublicationEvery": 30,
-  "nextVersion": "1.8",
+  "nextVersion": "1.9",
   "acceptedCumulative": 60,
-  "lastReviewDecision": "bounded destination-and-eligibility update",
+  "lastReviewDecision": "add Worker route and Site archive preflight; no measured speed gain",
   "speedImprovementProven": false,
   "observedReview": {
     "samples": 30,
@@ -44,5 +44,17 @@
   "hourlyEntryCountGate": false,
   "targetAcceptedPerHour": 100,
   "targetMetric": "distinct fully accepted entries / elapsed wall-clock hour",
-  "targetAchieved": false
+  "targetAchieved": false,
+  "currentHourlyReview": {
+    "newAccepted": 0,
+    "acceptedCumulative": 60,
+    "sourceReviewedPending": 30,
+    "workflowImprovement": "Trace every preview through the Worker route map before building; validate route bytes and nested dist archive layout before Site save; confirm each live route after deployment.",
+    "speedImprovementProven": false,
+    "publishedPreviewsPendingAcceptance": [
+      "LH01-0161",
+      "LH01-0162",
+      "LH01-0172"
+    ]
+  }
 }
