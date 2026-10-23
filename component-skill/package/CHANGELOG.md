@@ -1,3 +1,7 @@
+# Version2.6 — sandbox form command dispatch
+
+Use one current-draft callback for explicit buttons and guarded Enter in the actual preview sandbox. Native form submission may be blocked before a submit listener executes. Preserve sandbox permissions and record the received host request. This bounded repair comes from two file-search forms. Current30passed21/30initial and30/30final Important-level review;225live routes match and all30actual-catalog frames were observed. Following5are source-ready with review in progress at this dated snapshot. No new acceptance, paired skill experiment or measured speed gain. Prior review snapshots and release archives remain unchanged.
+
 # Version2.5 — query composition command guard
 
 Guard every query keyboard command during composition, including Escape and arrow/focus commands as well as Enter. A source review found that only Enter was protected in one suggestion field. The repaired five-entry group passed4/5initial and5/5final Important-level review. Current published30passed23/30initial and30/30final; following10passed8/10initial and10/10final. Five more source-ready candidates have review/captures in progress at this dated snapshot. No new acceptance, paired skill experiment or measured speed gain is claimed. Prior release histories remain unchanged.

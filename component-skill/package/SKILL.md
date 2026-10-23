@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **2.5** · hourly workflow and website updates · next version **2.6**.
+Version **2.6** · hourly workflow and website updates · next version **2.7**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -53,6 +53,8 @@ For media attachments with duration badges, let the editable label participate i
 For headers with side actions and lists with index rails, reserve each complete pointer footprint in its own intrinsic column. Put the index beside the list in the same normal-flow layout after growing headers and chips. Observe enlarged labels at the narrow iframe width before final capture; see workflow.md.
 
 Before a query field handles Enter, Escape or arrow/focus commands, return when the keyboard event is composing or has keyCode229. Use one common guard before the command branches so native IME candidate navigation and cancellation keep their input focus. See workflow.md.
+
+For a form inside a catalog preview, inspect the actual sandbox permissions. Route custom Enter and explicit button activation through the same current-draft command, with the composition guard before keyboard dispatch. Native submission may be blocked before submit listeners run; preserve the sandbox and observe the real iframe. See workflow.md.
 
 ## Evolve every hour
 

@@ -103,3 +103,9 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - In LH01-0165, Enter checked isComposing/keyCode229, while Escape and ArrowDown still cancelled or moved focus during composition. One early guard now protects all query commands. Ordinary input events remain available.
 - Selecting a suggestion changed the visible query without refreshing its fixed suggestion list; the selection path now refreshes that same fixture before reporting the query.
 - The affected five-entry group moved from4/5initial to5/5final Important-level static review. Exact repaired-source render/interaction observations are retained; no fresh paired skill experiment, complete accessibility acceptance or measured speed gain is claimed.
+
+## Embedded form dispatch observation
+
+- LH01-0187/0188 search forms depended on native submit. In the actual allow-scripts sandbox, the browser blocked native form submission before their submit listeners ran, leaving Enter without the intended host request.
+- Explicit guarded Enter dispatch now calls each search form's current-draft function. These two search forms have no explicit search button. Existing sandbox permissions remain unchanged; current-source local and live catalog request observations are retained. The following LH01-0221/0222/0225 column forms provide the explicit-button/shared-command example.
+- The five-entry family passed1/5initial and5/5final Important-level review across several separate issues; that denominator is not attributed solely to this repair. No fresh paired skill experiment or authoring-speed measurement is claimed.

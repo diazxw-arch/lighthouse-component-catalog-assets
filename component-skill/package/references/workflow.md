@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.5
+# Catalog implementation workflow, v2.6
 
 ## Authority and recovery
 
@@ -96,6 +96,14 @@ For a query field with custom Enter, Escape or arrow/focus behavior, put a share
 After choosing a fixed-fixture suggestion, assign the visible query and refresh that fixture before reporting the selected query. Review the current query, visible suggestions and host payload together. Inspect the exact repaired source and replay only the affected field observations; retain unchanged proof by source identity.
 
 This is a bounded quality repair grounded in one observed query field. No paired experiment or measured authoring-speed gain is claimed.
+
+## Embedded form command dispatch
+
+Inspect the actual catalog iframe permissions before choosing a form event path. With allow-scripts and without allow-forms, the browser can block native form submission before a submit event reaches its listener. A submit-only handler can therefore leave Enter inert even though a standalone page works.
+
+Keep one command function that reads and validates every current visible draft field. Call it from a type=button click and an explicit input keydown Enter path. Return first for event.isComposing or event.keyCode===229, ignore repeated commands, prevent the native Enter default, then call the shared command. Retain a submit preventDefault guard as appropriate, without depending on it as the only dispatch path. Preserve the existing sandbox permissions.
+
+Observe the real allow-scripts iframe and the host message: the current query/filter/selection must reach the matching component envelope once. Keep composing Enter silent. Reuse unchanged source proof, and replay changed form observations only. The LH01-0187/0188 repair and following shared column editor provide scoped evidence; full acceptance and timing remain separate. No measured speed claim.
 
 ## Verify only what needs fresh proof
 

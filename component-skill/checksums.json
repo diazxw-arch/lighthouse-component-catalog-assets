@@ -1,15 +1,15 @@
 {
-  "version": "2.5",
-  "policyRevision": "composition-command-guard-20261023",
-  "archive": "lighthouse-catalog-component-builder-v2.5-composition-command-guard-20261023.zip",
+  "version": "2.6",
+  "policyRevision": "sandbox-form-command-dispatch-20261023",
+  "archive": "lighthouse-catalog-component-builder-v2.6-sandbox-form-command-dispatch-20261023.zip",
   "files": [
     {
       "file": "CHANGELOG.md",
-      "sha256": "2bfc36285423d5b95969feaa5706a7556d768520e62528f99274bb683a755e44"
+      "sha256": "897c07eec480eea2e7ee9169ca0a1c64a8c015f2772e73e3e1d0f8028af33e28"
     },
     {
       "file": "SKILL.md",
-      "sha256": "c0e08e9b544259483f1ef9953246d415b1e687e7b749ef42b27b5c5ebd5ac699"
+      "sha256": "ab228e9043c87d3ffc6949f46892122d33c01103c903b330ab944fc270db70bb"
     },
     {
       "file": "baseline.json",
@@ -17,23 +17,23 @@
     },
     {
       "file": "manifest.json",
-      "sha256": "ccb240f9a1b734b671563e9cc81c9ee9ac3364bb2704482a5b2215ae72e545aa"
+      "sha256": "e22594f14d29f1ebf80527521d7924b37644072ea8b9f4a58d0bcc85d9bb3f7b"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "d3522050ef44857f2f6a887de69daa6c1ba9509e40ad3b1b1decab84910672f3"
+      "sha256": "784698c97ffe3cf635aaa594ea1dd5188119ccbd0f2974b327b91ba81a73b960"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "e49d0761ec726df14a0baffe53e7d58d8f4c28a9a6ad75b2f15ef609e4e93191"
+      "sha256": "72e628f2ca81bb68e0952a7a13c2d1295435f11824c34aaae0d2808aa1f63603"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "314c13e99f08c1bd764393f63c0cdc618226e548739edaf113ab4d1bc849e10e"
+      "sha256": "e3645ba79ef30d933bb4170b236419fa2327e727a90073f4dcb4a26d0fde05ae"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "aaabb8fcb8956b097a7b8f99c5894b3dd5c5c55f376939beb2e9ce9ea2be1cd6"
+      "sha256": "0388ba12db8ffc0826b0ae77ac5968b9ad932e61d81c58dc69a5aea60e4377da"
     },
     {
       "file": "scripts/cycle.mjs",
