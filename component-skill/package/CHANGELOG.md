@@ -1,3 +1,7 @@
+# Version2.4 — intrinsic auxiliary columns
+
+Reserve side actions and list index rails in intrinsic columns that move with growing content. This bounded workflow change addresses three observed header/rail layout risks. Six200%text observations at320/390 document the repairs. Current published30 passed22/30initial Important-level review and30/30final; following10passed9/10initially and10/10final. No new acceptance, paired skill experiment or measured speed gain is claimed. Earlier review snapshots remain unchanged.
+
 # Version2.3 — intrinsic media labels
 
 Size attachment controls from editable duration labels and wrap the media row as labels grow. This bounded change addresses two observed clipped-caption risks in the current30. Final observations include24px labels at320/390. Retain initial25/30 and final30/30 source review,120final/40superseded render observations,102local requests,135exact live routes and30actual-catalog frames with their actual dates. No new acceptance, paired skill test or measured speed gain is claimed.

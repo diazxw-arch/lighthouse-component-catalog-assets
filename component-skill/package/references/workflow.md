@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.3
+# Catalog implementation workflow, v2.4
 
 ## Authority and recovery
 
@@ -80,6 +80,14 @@ Observe draft submission with pending add-row text, keyboard and pointer behavio
 For a duration badge over a thumbnail, place the artwork behind the control content and keep the badge in normal flow. Its label and play glyph determine the control's minimum intrinsic width. Use a wrapping media row so a longer caption can create another row instead of being clipped by a fixed quarter-width cell. Keep the source font roles and ordinary four-item geometry when the supplied labels fit.
 
 Observe the longest supplied duration at the actual narrow iframe width with enlarged text before the final four-width captures. Read the rendered text as well as the overflow measurement. Keep any reconstructed opaque badge that covers a baked source label scoped to that artwork, and record its fidelity difference.
+
+## Intrinsic auxiliary columns
+
+For a header with a side Clear action, use an intrinsic side column and a wrapping title/count column. Reserve the action's rendered text and complete pointer target; fixed title padding does not reserve a growing action label. Keep focus indicators visible.
+
+For a list with a reading index, put the content and index in one normal-flow grid after the header and selected chips. Reserve the rail's complete interactive width plus a gap. Do not position the rail at a fixed vertical offset through a header that can grow. Check both visible glyphs and actual pointer footprints; preserving glyph spacing does not prove that neighboring hit areas are separate.
+
+At actual320/390 iframe widths, observe enlarged header/chip labels before final four-width captures. Read the rendered text and inspect neighboring control bounds as well as overflow. Reuse unchanged captures by exact source hash and replay only the affected entries after a repair.
 
 ## Verify only what needs fresh proof
 

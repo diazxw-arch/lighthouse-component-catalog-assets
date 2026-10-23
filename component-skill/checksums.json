@@ -1,15 +1,15 @@
 {
-  "version": "2.3",
-  "policyRevision": "intrinsic-media-labels-20261023",
-  "archive": "lighthouse-catalog-component-builder-v2.3-intrinsic-media-labels-20261023.zip",
+  "version": "2.4",
+  "policyRevision": "intrinsic-auxiliary-columns-20261023",
+  "archive": "lighthouse-catalog-component-builder-v2.4-intrinsic-auxiliary-columns-20261023.zip",
   "files": [
     {
       "file": "CHANGELOG.md",
-      "sha256": "229fceea94d27c91b126f5e266d48f4b5489d204b0facf157777bf230c5463e2"
+      "sha256": "2d5d570ad18f9d022f2e111483e3b0f12d23bdbbbf522591a71cc1dc419a9d87"
     },
     {
       "file": "SKILL.md",
-      "sha256": "7d79fde9606aee9472429655db2ea76443c5fe0843b547185caf188d2be3e0c9"
+      "sha256": "4e509e61b3a3b4a61d210d6b7ae2bb5e3c1d7fedccb1fe35e1381e7c3ec5f42b"
     },
     {
       "file": "baseline.json",
@@ -17,23 +17,23 @@
     },
     {
       "file": "manifest.json",
-      "sha256": "abd286ad65702f667989bf27f86d2ae716382cef0754af9ed87bef6b0ce56073"
+      "sha256": "da3ccfde0f226b94fa3466944938041e45a97b261bb76c34ab563c7ca5e2800e"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "8e7917a8f02c096acc03ba89af5e8a0a911726b0a7138dc8d5ad6877d673f07f"
+      "sha256": "dd2abea3c761b55d4b202c0ef2de20c77c9fc8d8e9da92f9c72b3a7347a1d8db"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "3055210798b4cded7de3a11019e9efe8525237fb2c9f9ff636831615fd4340fc"
+      "sha256": "241ad15208aea0e7f0c7ec8ebe8287421c5f5667fee57b3e485dff183a8c40e3"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "1e7c2791a155f0650934a32bdf8ca66f72385d0b0440ae105756be9f93f4575f"
+      "sha256": "6f4c40b9e861d5acd5e244913e5dfa0d5f12abeea2e0e499d5a825408f38a5b9"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "d5a3889021ed257147c1e22abf16136620e4623dc3bfece6480e004fc0991bd7"
+      "sha256": "52ab1ef991db210507170b051246704456a6e39ce99a6e1603de942b6a5c19d0"
     },
     {
       "file": "scripts/cycle.mjs",

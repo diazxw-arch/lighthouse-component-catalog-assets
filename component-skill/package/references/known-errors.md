@@ -91,3 +91,9 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 
 - A duration pill was absolutely positioned inside a clipped quarter-width thumbnail. Ordinary labels fit, while enlarged labels had no intrinsic expansion path. Normal-flow pills plus minimum intrinsic control width and a wrapping media row preserve the label.
 - Both affected cards were repaired before publication. Their final24px labels reflowed at320/390 without horizontal overflow. This is observed repair evidence, not a paired skill experiment or measured speed improvement.
+
+## Auxiliary-column observations
+
+- Absolute Clear actions beside a fixed74px title inset could collide with200%text. Intrinsic action/title columns preserve separate readable content in both affected tag headers.
+- A contacts rail fixed at top310 did not move when the header/chips grew, and its44px pointer footprint overlapped a neighboring checkbox by7px. A normal-flow grid with a separate26px compact rail and2px gap preserved native glyph positions and separate hit areas.
+- These repairs have six actual200%text observations at320/390. Compact-target and exact-pixel residuals remain documented; they are not proof of complete accessibility acceptance or measured speed gains.
