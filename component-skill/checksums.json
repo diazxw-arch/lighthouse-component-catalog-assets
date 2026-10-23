@@ -1,15 +1,15 @@
 {
-  "version": "2.2",
-  "policyRevision": "draft-and-embedded-preview-preflight-20261023",
-  "archive": "lighthouse-catalog-component-builder-v2.2-draft-and-embedded-preview-preflight-20261023.zip",
+  "version": "2.3",
+  "policyRevision": "intrinsic-media-labels-20261023",
+  "archive": "lighthouse-catalog-component-builder-v2.3-intrinsic-media-labels-20261023.zip",
   "files": [
     {
       "file": "CHANGELOG.md",
-      "sha256": "d3d037abf0752e8807bdab8d9689e2dd56878d39216c6a0fa7a3f2578b3024fc"
+      "sha256": "229fceea94d27c91b126f5e266d48f4b5489d204b0facf157777bf230c5463e2"
     },
     {
       "file": "SKILL.md",
-      "sha256": "4908e8d172bd854827e848c065f5ab0f74b53c35434169d63edbf49f15afcd19"
+      "sha256": "7d79fde9606aee9472429655db2ea76443c5fe0843b547185caf188d2be3e0c9"
     },
     {
       "file": "baseline.json",
@@ -17,23 +17,23 @@
     },
     {
       "file": "manifest.json",
-      "sha256": "dab879dfc5d21454353e38e514fa39c27fe3892b9f18a2e8f56932c3fb006ab8"
+      "sha256": "abd286ad65702f667989bf27f86d2ae716382cef0754af9ed87bef6b0ce56073"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "1aae3ec397075811ad8f793139f56cacd870b61c007df21f0d992e9390d12545"
+      "sha256": "8e7917a8f02c096acc03ba89af5e8a0a911726b0a7138dc8d5ad6877d673f07f"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "a193699e10cd94a819169a9940fc58000f37d9acee409b1b7aa44266db2c6aa6"
+      "sha256": "3055210798b4cded7de3a11019e9efe8525237fb2c9f9ff636831615fd4340fc"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "98c9bdfc5b26152a33e77b33b0c5e1e27b673b8862cae264ba92dd3d10f5410f"
+      "sha256": "1e7c2791a155f0650934a32bdf8ca66f72385d0b0440ae105756be9f93f4575f"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "6799477587536c52e9d0d85f01af6c492cef716b353179a67f93e536f5ed67a6"
+      "sha256": "d5a3889021ed257147c1e22abf16136620e4623dc3bfece6480e004fc0991bd7"
     },
     {
       "file": "scripts/cycle.mjs",

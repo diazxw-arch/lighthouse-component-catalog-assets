@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.2
+# Catalog implementation workflow, v2.3
 
 ## Authority and recovery
 
@@ -74,6 +74,12 @@ Before implementation, fill these fields in the private per-entry contract. Revi
 | Embedded focus | Parent focus stays where it is on iframe load. Focus enters an embedded editor after explicit activation; standalone editing may initialize its own caret. |
 
 Observe draft submission with pending add-row text, keyboard and pointer behavior, text growth and actual iframe focus. Apply scoped fixes before the final four-width render so review repairs do not repeat unaffected captures. Native informational entries need their reading/geometry checks and no invented action.
+
+## Intrinsic media captions
+
+For a duration badge over a thumbnail, place the artwork behind the control content and keep the badge in normal flow. Its label and play glyph determine the control's minimum intrinsic width. Use a wrapping media row so a longer caption can create another row instead of being clipped by a fixed quarter-width cell. Keep the source font roles and ordinary four-item geometry when the supplied labels fit.
+
+Observe the longest supplied duration at the actual narrow iframe width with enlarged text before the final four-width captures. Read the rendered text as well as the overflow measurement. Keep any reconstructed opaque badge that covers a baked source label scoped to that artwork, and record its fidelity difference.
 
 ## Verify only what needs fresh proof
 

@@ -1,3 +1,7 @@
+# Version2.3 — intrinsic media labels
+
+Size attachment controls from editable duration labels and wrap the media row as labels grow. This bounded change addresses two observed clipped-caption risks in the current30. Final observations include24px labels at320/390. Retain initial25/30 and final30/30 source review,120final/40superseded render observations,102local requests,135exact live routes and30actual-catalog frames with their actual dates. No new acceptance, paired skill test or measured speed gain is claimed.
+
 # Version2.2 — draft and embedded preview preflight
 
 Record draft commit, intrinsic text growth, accessible content, semantic contrast and embedded focus ownership before implementation. The last published30 had seven affected IDs in initial independent review (23/30), then30/30 after scoped corrections. Retain120final/28superseded render observations,49local host requests,105production routes and30actual catalog previews with their original dates. No new acceptance, paired skill test or comparable speed gain is claimed. This is one current overdue review after interruption; missed hourly releases are not invented.

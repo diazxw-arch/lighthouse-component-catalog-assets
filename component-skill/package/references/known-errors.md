@@ -86,3 +86,8 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - A white14px report label on source-like red and a white X on a pale neutral circle lacked contrast. Keep red/neutral meanings while deepening only the affected colors.
 - Unconditional focus in a lazily loaded editor iframe stole parent focus. Embedded focus starts from explicit activation; standalone focus can keep its own editing state.
 - These findings affected seven distinct IDs in the last30 (initial23/30, final30/30) and led to28scoped replacement render observations. No comparable active-time or accepted-throughput improvement is measured.
+
+## Intrinsic attachment-label observations
+
+- A duration pill was absolutely positioned inside a clipped quarter-width thumbnail. Ordinary labels fit, while enlarged labels had no intrinsic expansion path. Normal-flow pills plus minimum intrinsic control width and a wrapping media row preserve the label.
+- Both affected cards were repaired before publication. Their final24px labels reflowed at320/390 without horizontal overflow. This is observed repair evidence, not a paired skill experiment or measured speed improvement.

@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **2.2** · hourly workflow and website updates · next version **2.3**.
+Version **2.3** · hourly workflow and website updates · next version **2.4**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -47,6 +47,8 @@ Before another Site preview batch, open one existing live catalog card and trace
 For the Site preview batch, derive Worker routes from the reviewed source-byte manifest and reject invalid, duplicate or mismatched entries during build. Avoid replacing a route list by its first component ID, which changes between batches. Persist each browser observation before optional follow-up requests so one unrelated failure cannot discard completed evidence. Source emission timestamps are not measured authoring starts.
 
 Before coding a draft form or embedded preview, write its contract fields: draft values committed by the primary action; intrinsic text growth; visible copy included in accessible names; readable semantic text/icon contrast; and who owns focus on embedded load. Primary actions commit all visible draft input. Text fields use minimum heights and intrinsic sizing; control groups wrap when labels grow. Embedded previews take focus after explicit activation. Review shared control logic once, then each entry’s wording, artwork and callbacks. See workflow.md for the contract.
+
+For media attachments with duration badges, let the editable label participate in intrinsic control width and let the media row wrap. Keep artwork positioned behind a normal-flow badge; preserve readable text when it grows. Observe the longest supplied duration at the narrow width before the final four-width capture. See workflow.md for the concrete pattern.
 
 ## Evolve every hour
 
