@@ -19,7 +19,7 @@ Resolve a ChatGPT Site by its exact URL and opaque project ID. Record its curren
 Use this path when the assigned work adds coded previews while catalog rows, source images and native files stay unchanged.
 
 1. Resolve only the assigned IDs and their exact source records. Do not scan or re-export the full catalog unless registration data actually changes. Save the source commit, Site version and completed-work checkpoint once.
-2. Before coding, trace the real request route through the Worker. A file copied into `dist` or an archive is not necessarily served. Add each preview URL to the build's explicit route map and have the existing validator compare mapped content with pinned source bytes.
+2. Before coding, trace the real request route through the Worker. A file copied into `dist` or an archive is not necessarily served. For each ID update the catalog-client injection, exporter overlay allowlist, Worker route map, validator's expected overlays and byte/hash manifest in one pass; the exporter allowlist is easy to overlook. Have the validator compare mapped content with pinned source bytes.
 3. Keep previews self-contained where the sandbox requires it. Batch compatible IDs, reuse unchanged host messaging and resize behavior, and change only affected shared code. Leave catalog implementation status pending until all acceptance gates pass.
 4. Build once after the batch is ready. Check every source-to-dist hash and Worker route/content pair. Use the full-export validator only when its pinned full-snapshot argument is available; do not invoke it with a missing or invented path.
 5. Package from a root that contains `.openai/hosting.json` and a nested `dist/` tree, including the supported Worker entry point or declared static directory. Inspect archive member paths before saving the Site version. Push the exact commit used to build that archive.
@@ -89,3 +89,15 @@ Before a new browser family audit, inspect the actual preview fixture, visible c
 For platform-font inspection, sample an actually visible direct text run. A wrapper with descendant text may report zero direct glyphs; that is not proof of a missing font. Retain the failed probe and sample the rendered text node or owning element. Record active font families/glyph usage separately from computed declarations and source font provenance. Capture available geometry/focus/target metadata before any assertion or screenshot that can fail, preserving useful observations with the failed case. A viewport screenshot tail is not authored component height.
 
 Use distinct immutable report names for failed and successful attempts. Rerun only failed ID/state/width cases, verify exact inputs and retain true observation dates when reconciling supplements. Generic language/name/font/Tab probes supplement the required visual, full functional/state, keyboard/accessibility, strict catalog, production and retention gates; they cannot replace them. The observed parent preparation fixes have no measured accepted-throughput or active-authoring gain yet.
+
+## Existing catalog source map
+
+| Preview registry role | Current source |
+| --- | --- |
+| Catalog card injection and initial heights | `src/catalog-client.js` |
+| Exporter overlay allowlist | `scripts/export-light.mjs` |
+| Worker URL map | `scripts/build-worker.mjs` |
+| Expected overlays and exact-byte checks | `scripts/validate-light.mjs` |
+| Source sizes and SHA-256 pins | `.openai/component-previews.json` |
+
+Update this map when the repository changes. Regenerate pins from final source bytes.

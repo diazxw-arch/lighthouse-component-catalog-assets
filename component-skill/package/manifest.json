@@ -1,20 +1,20 @@
 {
   "name": "lighthouse-catalog-component-builder",
-  "version": "1.8",
-  "versionTenths": 18,
+  "version": "1.9",
+  "versionTenths": 19,
   "reviewEvery": null,
   "completedSinceRelease": 0,
-  "timing": "Latest30 source-ready-to-acceptance intervals measured; active authoring unknown30/30. Comparable private family/complexity median/p90 and explicit acceptance-throughput window; no speed improvement proven.",
+  "timing": "Latest30 historical source-ready-to-acceptance intervals measured; active authoring unknown30/30. Current five-preview batch has no per-entry active-time sample; no speed improvement proven.",
   "quality": "Latest30 combined initial actual-catalog audit26/30 including4parent harness/instrumentation errors; final120renders/139functional/30accessibility/30desktop cases passed. Earlier real preview corrections153/154/161 retained.",
   "runtime": "Node.js built-ins only; offline explicit-path receipt ledger. New-catalog CLI initialization reads the reviewed package version; existing stores refuse reinitialization.",
   "authority": "Direct user request; old workers and automations remain paused",
-  "source": "60new accepted entries; latest30 production/actual-catalog receipts,155historicalbaseline excluded",
-  "behavioralValidation": "Observed three Site preview URLs return 404 when omitted from the Worker static route map and one Site save rejection for an archive rooted at dist contents; version 60 fixes route mapping and returns 200 with exact bytes/content type for all three. Three preview implementations remain acceptance-pending. No new accepted component, per-entry time sample, or comparative speed gain.",
-  "policyRevision": "worker-preview-route-and-archive-preflight-20261023",
+  "source": "60 historical accepted entries; 30 historical source-reviewed candidates and five current local previews pending acceptance; 155 historical baseline excluded",
+  "behavioralValidation": "Five current local preview pages rendered; their source bytes match the built Worker route map. The exporter overlay-list omission was caught before build. Current previews remain acceptance-pending; no new accepted component, per-entry timing sample or comparative speed gain. One paired fresh-context retrieval check: baseline omitted the exporter allowlist; revised guidance included it. This is a reference retrieval check, not broad pressure validation.",
+  "policyRevision": "preview-overlay-change-set-preflight-20261023",
   "parentPublicationEvery": 30,
-  "nextVersion": "1.9",
+  "nextVersion": "2.0",
   "acceptedCumulative": 60,
-  "lastReviewDecision": "add Worker route and Site archive preflight; no measured speed gain",
+  "lastReviewDecision": "update all five preview source maps as one change set; no measured speed gain",
   "speedImprovementProven": false,
   "observedReview": {
     "samples": 30,
@@ -49,12 +49,30 @@
     "newAccepted": 0,
     "acceptedCumulative": 60,
     "sourceReviewedPending": 30,
-    "workflowImprovement": "Trace every preview through the Worker route map before building; validate route bytes and nested dist archive layout before Site save; confirm each live route after deployment.",
+    "workflowImprovement": "Prepare catalog-client injection, exporter allowlist, Worker routes, validator list and byte/hash manifest together, then build once and compare route bytes.",
     "speedImprovementProven": false,
     "publishedPreviewsPendingAcceptance": [
       "LH01-0161",
       "LH01-0162",
-      "LH01-0172"
-    ]
+      "LH01-0172",
+      "LH01-0076",
+      "LH01-0077",
+      "LH01-0079",
+      "LH01-0081",
+      "LH01-0088"
+    ],
+    "previewBatch": {
+      "ids": [
+        "LH01-0076",
+        "LH01-0077",
+        "LH01-0079",
+        "LH01-0081",
+        "LH01-0088"
+      ],
+      "sourceReady": 5,
+      "newlyAccepted": 0,
+      "perEntryActiveTime": "unknown",
+      "speedImprovementProven": false
+    }
   }
 }

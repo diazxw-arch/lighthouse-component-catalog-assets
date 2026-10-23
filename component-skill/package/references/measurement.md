@@ -85,3 +85,7 @@ On 2026-10-23, three Site-local previews were published for LH01-0161, LH01-0162
 The next30 remain source-reviewed candidates, not new accepted entries. Their exact aggregate has416files/2891tests passing,30immutable preview HTML/input maps matching, and150distinct default-width captures passing after one preserved screenshot retry. Preliminary standalone keyboard and accessibility/font probes have explicit harness failures and scoped successful supplements. These are stage-specific denominators, not a final component acceptance or defect rate. Accepted cumulative remains60 until every required gate actually passes.
 
 Measure aggregate command/check overhead once, per-ID browser case wall time separately, and active authoring/review/wait/rework only when observed. The validated command/fixture/native-focus preflight addresses evidenced parent rework; its effect on comparable median/p90 accepted completion time and rolling accepted throughput is unproven. Keep actual1h/3h/24h windows and unknown timestamp counts in the private hourly receipt.
+
+## v1.9 preview-only batch evidence
+
+Five Airbnb discovery-filter previews were prepared locally as a coherent batch. The five source files render, and their bytes match the explicit Worker route map. A missing exporter overlay allowlist was noticed before export/build and added to the change set. No independent acceptance, production or actual-catalog interaction gates are included in this observation. Per-entry active time, comparable authoring time and speed improvement remain unknown.

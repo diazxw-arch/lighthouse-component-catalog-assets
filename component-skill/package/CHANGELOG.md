@@ -6,6 +6,10 @@ Hourly review addresses observed parent command and browser-harness rework. Rest
 
 For existing-Site preview batches, verify the Worker route map and route bytes before packaging, keep `.openai/hosting.json` at archive root with `dist/` nested, and check every live route after deployment. This batch exposed and fixed three production 404s and one rejected archive layout. Three previews are published, with acceptance still pending. No comparable authoring-time sample or speed gain is claimed.
 
+# Version1.9 — preview overlay change-set preflight
+
+Keep catalog-client injection, exporter allowlist, Worker route map, validator overlay list and byte/hash manifest in one preview-ID change set. This batch caught the exporter-list omission before build. Five local preview pages and route-byte checks are complete; all five catalog records remain acceptance-pending. Active authoring time is unknown, and no speed gain is claimed.
+
 # Version1.6 —100accepted entries/hour target
 
 Human throughput objective100fullyaccepted entries per wall-clock hour; hourly reviews compare rolling1h/3h/24h source and acceptance throughput separately. Target is not achieved speed. Remove repeated parent inventory/serialization and reuse exact validated evidence; retain all quality and publication gates. Correct workflow heading; runtime/dependencies unchanged from inspected1.5. Exact independent review and publication are required for release.
