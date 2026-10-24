@@ -5,7 +5,7 @@ description: Use when implementing an existing Lighthouse catalog entry as a reu
 
 # Lighthouse catalog component builder
 
-Version **2.7** · hourly workflow and website updates · next version **2.8**.
+Version **2.8** · hourly workflow and website updates · next version **2.9**.
 
 Create the real component, publish it in the actual catalog, and preserve its reference media. Start with one requested ID or an explicitly assigned eligible batch. This skill does not start research, image generation, old workers, or automations.
 
@@ -57,6 +57,8 @@ Before a query field handles Enter, Escape or arrow/focus commands, return when 
 For a form inside a catalog preview, inspect the actual sandbox permissions. Route custom Enter and explicit button activation through the same current-draft command, with the composition guard before keyboard dispatch. Native submission may be blocked before submit listeners run; preserve the sandbox and observe the real iframe. See workflow.md.
 
 Before positioning chart annotations or timestamp rails, make their text dimensions part of layout. Use line-height-relative annotation geometry and max-content timestamp tracks; give irreducible content a named keyboard-scrollable region. Observe enlarged text in the narrow iframe, then recapture only changed sources and retain unchanged exact-hash proof. See workflow.md.
+
+Before uploading a deployment archive, budget its actual expanded tar bytes including headers and padding. Use supported USTAR with integer metadata for required committed build files, preserve every payload byte and prior archive, and reconcile saved versions before retrying. Payload-size sums alone do not prove the hosting limit. See workflow.md.
 
 ## Evolve every hour
 

@@ -115,3 +115,10 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - LH01-0295 used fixed pixel annotation offsets. With40pxline-height, label rectangles intersected the plotted markers. Relative line-height geometry plus a named bounded chart scroll region now keeps them separate at320/390. Round markers are separate fixed-size HTML shapes rather than stretched SVG circles.
 - LH01-0298 used40/48px timestamp tracks; enlarged24pxtext exceeded the rail. max-content plus nowrap now reserves the actual59.953px time footprint before the heading gap. Supplied text and native/static fixture content remain unchanged.
 - Group5Important review was3/5initial and5/5final. Eight changed renders were refreshed and twelve unchanged current-hash renders reused. This denominator is source review, not owner acceptance or a speed experiment.
+
+## Expanded archive observations, v2.8
+
+- A preflight checked only summed file sizes. Fractional mtimes caused one PAX header per file; the8412-file tar expanded to268994560bytes and two save attempts failed before any version was created.
+- File payloads totaled253805526bytes. USTAR with integer metadata retained every required committed path/byte in260382720expanded bytes; unchanged source119f7d9 saved asSite86 and deployed. The failed archive and byte manifest remain available. No component/render proof was repeated for a metadata-only packaging change.
+- A parallel50image publication was fast-forwarded before source commit, preserving506hosted mappings and catalog/media/skill2.7. Exact version checks prevented publication of an older source over it.
+- Following10local candidates passed5/10initial and10/10final Important review. Distinct repairs include bounded range footprints, search caret ArrowLeft ownership, contrast and numeric native-date ordering. These quality observations are retained separately from the archive workflow lesson and do not prove speed gains.

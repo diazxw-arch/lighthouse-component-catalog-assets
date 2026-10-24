@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.7
+# Catalog implementation workflow, v2.8
 
 ## Authority and recovery
 
@@ -112,6 +112,14 @@ Before placing an annotation over a chart or assigning a narrow timestamp rail, 
 For the tide fixture, use line-height-relative label, marker and chart geometry; preserve round marker dimensions separately from stretched SVG paths. If exact supplied labels require a minimum width, place the chart in a named, keyboard-focusable horizontal scroll region while keeping document width bounded. For a timestamp beside a heading, use max-content for its grid track and nowrap for the supplied time; let the heading occupy minmax(0,1fr).
 
 Observe enlarged text at the actual narrow iframe width. Retain label/marker rectangles, time/heading boundaries, scroll-region dimensions, current source hashes and original observation dates. Re-render the affected two entries at four widths after repair; reuse the other twelve unchanged observations by exact identity. This is scoped evidence reuse, not a measured authoring-speed gain. Preserve font, semantic content and existing accessibility/security gates.
+
+## Expanded deployment archive budget
+
+Before saving a Site version, enumerate only the required committed build output and hosting configuration. Keep a byte/hash manifest, verify that packaged files correspond to the exact pushed source, and measure the full expanded tar stream. A sum of file payload sizes excludes headers, padding and extended metadata.
+
+For this catalog's many small files, supported USTAR with integer mtime/uid/gid metadata avoids an unnecessary PAX record per file. Retain all required file paths and bytes; do not delete components, reference media or historical skill ZIPs to force a release through. Preserve the failed archive and failure response. If upload/save returns an error or ambiguous outcome, inspect saved versions before retrying. When source and build bytes are unchanged, repair packaging alone and retain existing exact-source component proof. If content must change, build a new reviewable committed state and refresh affected proof.
+
+The observed catalog had253805526file bytes across8412files, but268994560expanded PAX tar bytes exceeded256MiB. USTAR preserved the same payloads in260382720expanded bytes. The provider's normalized saved archive metadata has its own hash/size; retain it separately from the local gzip/tar hashes. This operation scope is observed evidence, not a measured speed gain or a complete acceptance claim.
 
 ## Verify only what needs fresh proof
 

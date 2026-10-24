@@ -1,3 +1,7 @@
+# Version2.8 — expanded deployment archive budget
+
+Budget actual expanded tar bytes before upload. Required committed file payloads can fit while per-file PAX metadata and padding exceed the hosting limit. USTAR with integer metadata preserved all8412file payloads and allowed the unchanged source release to save/deploy asSite86. Keep failed packaging and byte manifests, inspect version state before retrying, and retain prior media/archives. Latest30passed29/30combinedInitial→30/30final; following10passed5/10initial→10/10final.130distinct source-ready candidates are deduplicated from hourly overlap. No new acceptance, paired skill experiment or measured speed gain.
+
 # Version2.7 — text growth in chart and timestamp geometry
 
 Include text dimensions before placing annotations or timestamp rails. Line-height-relative chart positions, max-content timestamp columns and a named keyboard-scrollable region preserve enlarged text without overlap. This bounded lesson comes from LH01-0295/0298, with narrow before/after observations and scoped source repairs. Eight changed group renders were refreshed; twelve unchanged exact-source observations were reused. Current30published candidates passed24/30initial and30/30final Important review, with255exact live routes and30actual-catalog frames. Four host contract keys have static-only aggregate coverage. Following15are source-ready; their dated review state is recorded in manifest.json. No new acceptance, paired skill experiment or measured speed gain. Prior dated snapshots and release archives stay unchanged.
