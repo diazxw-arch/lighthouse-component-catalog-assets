@@ -109,3 +109,9 @@ Private source receipts remain in the catalog's existing coordination checkpoint
 - LH01-0187/0188 search forms depended on native submit. In the actual allow-scripts sandbox, the browser blocked native form submission before their submit listeners ran, leaving Enter without the intended host request.
 - Explicit guarded Enter dispatch now calls each search form's current-draft function. These two search forms have no explicit search button. Existing sandbox permissions remain unchanged; current-source local and live catalog request observations are retained. The following LH01-0221/0222/0225 column forms provide the explicit-button/shared-command example.
 - The five-entry family passed1/5initial and5/5final Important-level review across several separate issues; that denominator is not attributed solely to this repair. No fresh paired skill experiment or authoring-speed measurement is claimed.
+
+## Text growth geometry observations, v2.7
+
+- LH01-0295 used fixed pixel annotation offsets. With40pxline-height, label rectangles intersected the plotted markers. Relative line-height geometry plus a named bounded chart scroll region now keeps them separate at320/390. Round markers are separate fixed-size HTML shapes rather than stretched SVG circles.
+- LH01-0298 used40/48px timestamp tracks; enlarged24pxtext exceeded the rail. max-content plus nowrap now reserves the actual59.953px time footprint before the heading gap. Supplied text and native/static fixture content remain unchanged.
+- Group5Important review was3/5initial and5/5final. Eight changed renders were refreshed and twelve unchanged current-hash renders reused. This denominator is source review, not owner acceptance or a speed experiment.

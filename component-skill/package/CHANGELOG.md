@@ -1,3 +1,7 @@
+# Version2.7 — text growth in chart and timestamp geometry
+
+Include text dimensions before placing annotations or timestamp rails. Line-height-relative chart positions, max-content timestamp columns and a named keyboard-scrollable region preserve enlarged text without overlap. This bounded lesson comes from LH01-0295/0298, with narrow before/after observations and scoped source repairs. Eight changed group renders were refreshed; twelve unchanged exact-source observations were reused. Current30published candidates passed24/30initial and30/30final Important review, with255exact live routes and30actual-catalog frames. Four host contract keys have static-only aggregate coverage. Following15are source-ready; their dated review state is recorded in manifest.json. No new acceptance, paired skill experiment or measured speed gain. Prior dated snapshots and release archives stay unchanged.
+
 # Version2.6 — sandbox form command dispatch
 
 Use one current-draft callback for explicit buttons and guarded Enter in the actual preview sandbox. Native form submission may be blocked before a submit listener executes. Preserve sandbox permissions and record the received host request. This bounded repair comes from two file-search forms. Current30passed21/30initial and30/30final Important-level review;225live routes match and all30actual-catalog frames were observed. Following5are source-ready with review in progress at this dated snapshot. No new acceptance, paired skill experiment or measured speed gain. Prior review snapshots and release archives remain unchanged.

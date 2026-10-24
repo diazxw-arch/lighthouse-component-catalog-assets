@@ -1,4 +1,4 @@
-# Catalog implementation workflow, v2.6
+# Catalog implementation workflow, v2.7
 
 ## Authority and recovery
 
@@ -104,6 +104,14 @@ Inspect the actual catalog iframe permissions before choosing a form event path.
 Keep one command function that reads and validates every current visible draft field. Call it from a type=button click and an explicit input keydown Enter path. Return first for event.isComposing or event.keyCode===229, ignore repeated commands, prevent the native Enter default, then call the shared command. Retain a submit preventDefault guard as appropriate, without depending on it as the only dispatch path. Preserve the existing sandbox permissions.
 
 Observe the real allow-scripts iframe and the host message: the current query/filter/selection must reach the matching component envelope once. Keep composing Enter silent. Reuse unchanged source proof, and replay changed form observations only. The LH01-0187/0188 repair and following shared column editor provide scoped evidence; full acceptance and timing remain separate. No measured speed claim.
+
+## Text dimensions in chart and timestamp geometry
+
+Before placing an annotation over a chart or assigning a narrow timestamp rail, include the editable text's actual dimensions. A fixed pixel top offset can overlap a marker after line-height grows; a fixed narrow time column can wrap or collide while adjacent content remains in its own column.
+
+For the tide fixture, use line-height-relative label, marker and chart geometry; preserve round marker dimensions separately from stretched SVG paths. If exact supplied labels require a minimum width, place the chart in a named, keyboard-focusable horizontal scroll region while keeping document width bounded. For a timestamp beside a heading, use max-content for its grid track and nowrap for the supplied time; let the heading occupy minmax(0,1fr).
+
+Observe enlarged text at the actual narrow iframe width. Retain label/marker rectangles, time/heading boundaries, scroll-region dimensions, current source hashes and original observation dates. Re-render the affected two entries at four widths after repair; reuse the other twelve unchanged observations by exact identity. This is scoped evidence reuse, not a measured authoring-speed gain. Preserve font, semantic content and existing accessibility/security gates.
 
 ## Verify only what needs fresh proof
 
