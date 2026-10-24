@@ -1,30 +1,12 @@
 {
   "name": "lighthouse-catalog-entry",
-  "version": "1.4",
-  "review_interval": null,
+  "version": "1.0",
+  "review_interval": 30,
   "version_increment_tenths": 1,
-  "measured_completions_at_release": null,
+  "measured_completions_at_release": 0,
   "historical_reference_time_ms": null,
   "historical_crop_time_ms": null,
   "historical_quality_score": null,
-  "runtime": {
-    "python": ">=3.11",
-    "pillow_reviewed": "12.3.0",
-    "dependency_installation": "none"
-  },
-  "automation": "none",
-  "publication_interval": 10,
-  "next_review_at_total": null,
-  "release_basis": "Owner requested immediate speed update; hourly measured review;10x accepted-throughput target,20x stretch; no claimed achieved gain",
-  "candidate_preapproval": false,
-  "parent_review_timing": "stable batch",
-  "review_interval_seconds": 3600,
-  "review_cadence": "hourly",
-  "production_blocked_by_review": false,
-  "historical_1_1_acceptances_before_crop_audit": 8,
-  "historical_1_1_crop_audit_revocations": 2,
-  "live_counts_source": "Append-only helper and parent acceptance ledgers; release-report.json binds actual count at release. Historical1.1 fields are not live counters.",
-  "throughput_target_multiplier": 10,
-  "throughput_stretch_multiplier": 20,
-  "worker_held_for_parent_publication": false
+  "runtime": {"python": ">=3.11", "pillow_reviewed": "12.3.0", "dependency_installation": "none"},
+  "automation": "none"
 }

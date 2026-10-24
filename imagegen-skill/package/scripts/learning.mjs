@@ -9,10 +9,9 @@ import assert from 'node:assert/strict';
 import {pathToFileURL} from 'node:url';
 
 
-import {createLedger,recordEntry,summarize,migrateCadence,migrateHourly} from './learning-core.mjs';
+import {createLedger,recordEntry,summarize,migrateCadence} from './learning-core.mjs';
 import {applyReview} from './release.mjs';
-import {readJob,verifyJob,verifyStored} from './acceptance.mjs';
-export {createLedger,recordEntry,summarize,migrateCadence,migrateHourly,applyReview};
+export {createLedger,recordEntry,summarize,migrateCadence,applyReview};
 export {versionFor} from './statistics.mjs';
 export function packageDigest(root){
  const absolute=fs.realpathSync(root),files=[];
@@ -67,9 +66,9 @@ for(let i=0;
 i<rest.length;
 i+=2){assert(/^--[a-z]+$/.test(rest[i])&&rest[i+1]&&!opts[rest[i]],'Use paired, unique flags');
 opts[rest[i]]=rest[i+1];
-}assert(['record','report','review','migrate','migrate-hourly'].includes(command),'Use record, report, review or migrate');
+}assert(['record','report','review','migrate'].includes(command),'Use record, report, review or migrate');
 assert(opts['--ledger'],'An explicit private --ledger path is required');
-const allowed=['migrate','migrate-hourly'].includes(command)?['--ledger','--receipt','--backup']:command==='record'?['--ledger','--receipt']:command==='review'?['--ledger','--receipt','--package']:['--ledger','--package'];
+const allowed=command==='migrate'?['--ledger','--receipt','--backup']:command==='record'?['--ledger','--receipt']:command==='review'?['--ledger','--receipt','--package']:['--ledger','--package'];
 assert(Object.keys(opts).every(k=>allowed.includes(k)),'Unknown flag');
 
  if(command==='report'){const summary=summarize(fs.existsSync(opts['--ledger'])?read(opts['--ledger'],16*1024*1024):createLedger());
@@ -79,9 +78,8 @@ return summary;
  assert(opts['--receipt'],'--receipt is required');
 const r=read(opts['--receipt'],64*1024);
 
- if(['migrate','migrate-hourly'].includes(command)){assert(opts['--backup'],'Migration requires an original --backup');const backup=read(opts['--backup'],16*1024*1024);return transaction(opts['--ledger'],s=>{assert.deepEqual(backup,s,'Migration backup differs from original ledger');const next=command==='migrate-hourly'?migrateHourly(s,r):migrateCadence(s,r);return {state:next,output:summarize(next)};});}
+ if(command==='migrate'){assert(opts['--backup'],'Migration requires an original --backup');const backup=read(opts['--backup'],16*1024*1024);return transaction(opts['--ledger'],s=>{assert.deepEqual(backup,s,'Migration backup differs from original ledger');const next=migrateCadence(s,r);return {state:next,output:summarize(next)};});}
 
- if(command==='record'){assert(r.acceptanceJob,'Absolute parent-approved acceptanceJob required');const job=readJob(r.acceptanceJob),verified=verifyJob(job);verifyStored(job,verified,r);r.acceptance=verified.acceptance;}
  if(command==='record')return transaction(opts['--ledger'],s=>{const x=recordEntry(s,r);
 return {state:x.state,output:{recorded:x.recorded,...x.summary}};
 });

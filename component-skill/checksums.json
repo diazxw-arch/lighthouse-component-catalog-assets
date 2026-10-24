@@ -1,43 +1,41 @@
 {
-  "version": "2.8",
-  "policyRevision": "expanded-archive-budget-20261024",
-  "archive": "lighthouse-catalog-component-builder-v2.8-expanded-archive-budget-20261024.zip",
+  "version": "1.0",
   "files": [
-    {
-      "file": "CHANGELOG.md",
-      "sha256": "f141c831fa563d8f2e43065908a70f19f8fd3916a6b6adfc49d260ca54ba617d"
-    },
-    {
-      "file": "SKILL.md",
-      "sha256": "b61ccaa816d38f23cc7fe7cc74f9c2d8b6adb19fc13d7dc23ca451206bf35e52"
-    },
     {
       "file": "baseline.json",
       "sha256": "f6530f203fb5fec29129d8c4ebdf34afff4194cdf7a600b479a632a9bd877f76"
     },
     {
+      "file": "CHANGELOG.md",
+      "sha256": "8526e877ec1ac7ebd3bf3b7124791a049099121755c36b8b0d771ee6fc51b3ca"
+    },
+    {
       "file": "manifest.json",
-      "sha256": "25c58cf3c5020dd6e705bb1b551468ffba98bc308b67759b979e65a483d3110a"
+      "sha256": "afc1f75e3374821fd74ef8fc4eca231dfe2f1fee0a6731c390d006d8b9760ce5"
     },
     {
       "file": "receipt.template.json",
-      "sha256": "c93b3c9863c1946a827eb69dc11b13b068c3009b619bbb06f9581725775fbf60"
+      "sha256": "26151daabc235df189b365fb487db10e47d5d4441a609265d65528ddccc4103a"
     },
     {
       "file": "references/known-errors.md",
-      "sha256": "d675780a02b26c050077fa0aed20b3b1a7081ec68a3cbbb761a929736488890a"
+      "sha256": "89de634647f1b41b25afba00aa735f6d5a5af20c80f580a82f935af904bdec75"
     },
     {
       "file": "references/measurement.md",
-      "sha256": "6d9c01921e8c948c068f4207acb02da4b834e93d85073a6a36953cfe47e307b6"
+      "sha256": "c1c8971d36620714ab59801d79fd2d1339b5742e69f9ecedb53606be6bf34a2b"
     },
     {
       "file": "references/workflow.md",
-      "sha256": "74aa9b536ae347c85f29bbfa513cc556a2880837b7e21c534141b02c87b69456"
+      "sha256": "6efd0f14c1e43171bf73a331fde25448e0553403753e6bfcd4bd50361faf1fa5"
     },
     {
       "file": "scripts/cycle.mjs",
-      "sha256": "82979ebdd1b061467ec4b1aa3608501480b6ef42e3fa840eb010b50b30c8d348"
+      "sha256": "8f0f28bffe4b8af438e3f9b9d8c64926b5dfd8d1767c5d02daaa2c1e9e154061"
+    },
+    {
+      "file": "SKILL.md",
+      "sha256": "0f64d159ea8a48da3b7bfffe41bb90f4d1163c7dbf51d07e1c986616d7faf4d2"
     }
   ]
 }

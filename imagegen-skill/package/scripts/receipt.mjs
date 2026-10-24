@@ -39,6 +39,6 @@ assert(/^[a-f0-9]{64}$/.test(r.imageSha256),'Invalid image hash');
 assert(dimensions.every(k=>r.quality[k]>=3),'Reviewed entry has a material quality failure');
 assert.equal(r.quality.protectedMedia,4,'Protected media must match');
 }
- return Object.fromEntries(['entryId','skillVersion','method','difficulty','startedAt','finishedAt','generationMs','activeMs','attempts','status','imageSha256','imageVersion','quality','defects','evidence'].map(k=>[k,r[k]]).concat([['elapsedMs',elapsedMs]],r.timingCoverage?[['timingCoverage',structuredClone(r.timingCoverage)]]:[],r.acceptance?[['acceptance',structuredClone(r.acceptance)]]:[]));
+ return Object.fromEntries(['entryId','skillVersion','method','difficulty','startedAt','finishedAt','generationMs','activeMs','attempts','status','imageSha256','imageVersion','quality','defects','evidence'].map(k=>[k,r[k]]).concat([['elapsedMs',elapsedMs]],r.timingCoverage?[['timingCoverage',structuredClone(r.timingCoverage)]]:[]));
 
 }

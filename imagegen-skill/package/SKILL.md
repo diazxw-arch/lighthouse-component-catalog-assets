@@ -1,36 +1,62 @@
 ---
 name: lighthouse-catalog-imagegen
-description: Use when creating or correcting catalog ImageGen candidates, recovering interrupted image work, or reviewing repeated image quality failures.
+description: Use when creating or correcting ImageGen candidates for existing Lighthouse catalog entries, recovering interrupted image tasks, or reviewing the workflow after 10 completed entries.
 ---
 
 # Lighthouse catalog ImageGen
 
-Version **1.6**, workflow revision **hourly-4**. Produce an accepted component, not a queue of failed pictures. Existing historical records stay intact. New failed candidates remain private: they do not register, count or publish. A difficult entry goes to the repair backlog; it does not freeze unrelated assigned work.
+Version **1.2**. Create one traceable candidate for one real catalog entry at a time. Original references control anatomy, icons, artwork and proportions. Generated candidates, agent review, owner approval, editable assets and working implementations are separate outcomes.
 
-## One entry, one acceptance decision
+## Start
 
-1. Read the latest human steering and exact assignment. A production hold stops generation and registration. Resolve this installed skill directory once; use absolute paths to its scripts. A source/dist copy is not the runtime. Ignore historical chat messages already resolved in the current checkpoint.
-2. Start the entry clock before its first source/assignment lookup. Open the original and native/mock; record exact Japanese copy, row/control/state inventory, native frame/type roles, protected artwork and source/mock conflicts. Apply apple-design and the current catalog design standard. Original icons/artwork/state control inaccurate mocks; scoped human exceptions control their entry only.
-3. Compare original and current rendered references first. Use [native text contract](references/native-contract.md) when a typography question needs source facts; it is a diagnostic, not a mandatory per-entry gate. Saved fields can disagree with rendered output. Record that conflict; do not declare a visible defect from one field alone or spend calls correcting an unverified assumption. Plan the smallest ImageGen edit against the native-sized reference. Name exactly what changes and what stays fixed. Record actual target dimensions and reference roles; prepare the exact tool payload with the installed preflight request mode before every call; see references/request-preflight.md. It checks ordered image hashes, so a separate references-mode pass is unnecessary for the same unchanged inputs. If the required proportions, fine text or artwork cannot be preserved, stop with a private method blocker instead of generating another catalog failure.
-4. Use the returned toolArguments unchanged with ImageGen. Persist actual awaited duration and call ID immediately on return, before copying, probing dimensions or mutating checkpoint objects; never regenerate because bookkeeping failed. Open the actual raw result at intended size and enlarged. Check all text, icons/state, white surfaces, native typography, frame proportions and artwork. Read actual PNG dimensions; a requested canvas is not proof. Compare at the intended display width before judging typography or icon scale; raw canvas whitespace and content scale are separate findings. Count original icon parts (for example three sparkles versus one) instead of inheriting an inaccurate mock. Preserve raw attempts. Candidate provenance is the unmodified raw file returned by the recorded ImageGen call; source/native/reference crops never become generated candidates. If raw provenance is uncertain, leave candidatePath null and recover before another call. Before a second call, use the existing receipt quality/defects fields to name the exact visible material defect and the smallest required change. If exact copy/state, legible hierarchy, no clipping and protected media already pass, row cadence, baseline offsets, an optional last divider or isolated minor weight drift do not justify another call. Do not create another report or delay the next entry to document this decision. A wrong selected state, missing or changed copy, visible ordinary-surface tint, materially wrong anatomy or altered protected artwork still needs correction or private deferral. One scoped correction is allowed; two failed attempts defer that entry privately and continue the next assigned entry; do not retry an exhausted entry without a separate reviewed recovery. Do not advance or hide defects through crop/stretch.
-5. Produce assigned private candidates continuously in microbatches of three within the parent-owned rolling assignment, without waiting for parent review after every call. Use references/throughput.md to remove repeated preparation and bookkeeping while preserving all acceptance checks. Save ready-for-parent or deferred-private status, raw image, prompt/references, timing and concise visible defects. Build a fresh handoff object per entry; require entryId, entryFolder, prompt/reference manifests and candidate path to identify the same assigned entry before appending. The parent reviews results concurrently; private pending output never counts as ready. The parent independently compares the actual candidate with original/rendered evidence. Before labeling artwork invented or missing, inspect the full original; an embedded native crop cannot establish absence. Minor spacing or baseline residuals alone do not need another call when intended-size copy, hierarchy, control alignment and state remain clear, without clipping, wrapping or protected-media defects. Only an inspected ready result with no known material or clearly visible defect at intended size, all quality dimensions at least3 and exact protected media at4 receives a digest-bound approval in the private manager/approvals directory. Source imagery is not exact merely because its subject or logo text is recognizable. The worker never writes parent approvals or manager notes.
-6. Use only the gated registration path below. Verify stored bytes, metadata/manifest and refreshed catalog, then open the stored image. Record the ready receipt and separate production/generation/accounting time. Failed, unseen or pending outputs never count. Parent approval is an evidence workflow, not OS access control.
+1. Resolve the catalog root and requested entry ID. Read its current record, original reference, previous generated versions and applicable design standard. Apply `apple-design` for visual decisions. Inspect reference images before editing. A mock supplies Japanese content/layout only where it agrees with the original. Preserve scoped human corrections and exceptions.
+2. For assigned queues, verify the active thread owns the queue; retain paused workers and completed records. For direct requests, use the requested entry without creating a queue. Reconcile any existing unregistered output or pending catalog refresh before generating again.
+3. Read [the production contract](references/production.md). Save an exact prompt and ordered reference list. Cache unchanged design guidance for the task; inspect each entry's own sources.
 
-## Registration gate
+## Produce and verify
 
-Read [acceptance contract](references/acceptance.md). Prepare one private job JSON containing entryId, assignmentPath, catalogRoot, candidatePath, promptPath, referencesPath and approvalPath. The parent releases the exact assignment only after review.
+1. Start the task timer and checkpoint before the first entry-specific assignment/catalog/source read. On recovery retain the original timer and record interruptions; do not reset a partial cycle. Record generation-call time separately. Select the original crop as the anatomy reference, the mock as content guidance, and an approved example only as style guidance. State each reference's role explicitly.
+2. Use the available **ImageGen tool**. For edits use its documented image-reference mechanism. Keep supplied artwork, Japanese wording, visible state and typography. Use [the prompt recipe](references/prompt-recipe.md).
+3. Open the actual result. Compare it at intended display size and enlarged against the original. Check text, geometry, icons, palette and protected media. One localized ImageGen correction is the default retry budget. Preserve all attempts; unresolved defects become `needs-correction`. Missing visual access becomes `review-pending`, never a claimed visual pass.
+4. Register using the catalog's existing flagged helper; see [operations](references/operations.md). Require `stored:true` **and** `catalogUpdated:true`, matching entry/version/hash readback, an opened stored image, and a saved checkpoint. A saved file alone is unfinished. A refresh lock means retry refresh only; the helper has no idempotency-key flag.
+5. Record the completed entry with `node scripts/learning.mjs record --ledger <explicit-private-ledger.json> --receipt <task-receipt.json>`. Include failed attempts in timing and quality results. Count a fully inspected, registered and checkpointed `needs-correction` entry as processed, while keeping it visibly unready. Incomplete or unseen outputs do not count.
 
-Run with this skill's absolute script path:
+## Every 10 entries
 
-- node <installed>/scripts/register-ready.mjs check --input <absolute-private-job.json>
-- node <installed>/scripts/register-ready.mjs register --input <absolute-private-job.json>
+Run `node scripts/learning.mjs report --ledger <ledger.json>`. The shared ledger counts each catalog ID once; retries and replayed receipts do not advance it. Version arithmetic uses integer tenths: **1.0 → 1.1 → … → 1.9 → 2.0**.
 
-The wrapper verifies current hold, assignment/parent identity, actual candidate/source hashes, target aspect and approval before invoking the existing catalog helper with reviewed status. Never call the legacy helper directly to bypass a failed gate. Unknown registration results require readback, not a second registration.
+At 10, 20, 30… completed entries, **review before the next entry**. Follow [evolution](references/evolution.md): inspect errors and slow steps; compare matched difficulty groups; retain methods only when quality holds; update the skill by exactly 0.1 even when the evidence supports retaining the current method. Test, scan, inspect, install and publish the exact reviewed revision. Record the release using the `review` command. No timer, background server or automatic chat restart is required.
 
-For learning record, include acceptanceJob in the task receipt. Use node <installed>/scripts/learning.mjs record --ledger <absolute-private-ledger> --receipt <absolute-private-receipt>. New records require ready status and parent acceptance. Historical failed rows remain readable and immutable; they are processed history, not ready completion.
+## Recovery
 
-## Review and release
+| Observed problem | Next action |
+| --- | --- |
+| Tool result missing | Recover the existing output/status before another generation call |
+| Stored, refresh failed | Preserve the stored version; refresh and read back, without re-registering |
+| Photo or logo redrawn | Keep the source artwork invariant; mark unresolved rather than accepting a lookalike |
+| Tint, icon weight or geometry drift | Make one scoped correction against the original; preserve prior versions |
+| Review due | Finish the version review before entry 11, 21, 31… |
 
-The parent keeps per-entry quality/workflow notes and timing unknowns. Record time through accounting completion separately from receipt endpoint; active time remains unknown unless measured. Every one hour, the parent reviews new timing, quality and workflow evidence and releases a tested +0.1 revision. This replaces the10-entry schedule. Hourly review never pauses private production or valid registration/counting. If overdue after interruption, reconcile one current review rather than inventing backdated versions. A blocked release keeps the last approved skill active while independent production continues. See [evolution](references/evolution.md). Parent alone publishes skill releases; catalog batches remain every30 accepted entries. Preserve originals, prior versions, existing implementations and other skill routes.
+The website is a read-only snapshot. The agent performs generation through its own tools; users are not asked to operate an image-generation button.
 
-Use [operations](references/operations.md), [production](references/production.md), [prompt recipe](references/prompt-recipe.md) and [known methods](references/learned-methods.md) only for the current step. No new workers, services, dependencies or restart loops are part of this skill.
+## Evidence contract
+
+Before the prompt, record separate original, mock and candidate inventories: wording, row/control/marker counts, selected state, type roles and bounds. Document each supported localization. Original fine geometry, icons and artwork control disagreements. At review, retain both attempts and select the stronger overall result; latest is not automatically best.
+
+Before counting, match actual stored hash/version/status across manifest, metadata and refreshed catalog. A receipt boolean alone is insufficient. Keep review-pending excluded. Measure awaited tool calls with one clock; derive elapsed units from one offset-aware timestamp pair. Capture missing preparation and interruption coverage explicitly; never estimate active time. See [evolution](references/evolution.md) for cadence migration and [known methods](references/learned-methods.md) for evidence limits.
+
+The parent writes per-entry improvement notes and owns releases. Production workers generate/register locally. Parent skill releases occur every 10 valid entries; catalog/image batch pushes remain every30.
+
+## Preflight and parent evidence
+
+Before ImageGen, run `node scripts/preflight.mjs references --input <absolute-private-ordered-references.json>`. It computes SHA256 from actual local PNG/JPEG/WebP bytes and rejects a provided malformed or mismatched digest. Preserve a mistaken historical list; recover into a new dated private list, never silently rewrite it. A header/hash check does not prove image meaning or visual fidelity. Open the images.
+
+Before a prompt, record each original-versus-mock conflict: control count/state, icon silhouette, semantic detail, native type role and bounds. Name the controlling source or direct human exception. A missing original close control, regional label or data series remains unresolved when only the mock omits it. Copy actual native font values; do not promote a 12px role to 14px from memory.
+
+At inspection-save time run `node scripts/preflight.mjs draft --input <absolute-private-draft.json>` to catch 0–4 rating and defect-vocabulary mistakes early. Typography has its own quality dimension; record the concrete type defect in prose with supported `other` if needed. This check does not replace actual visual inspection or final receipt validation.
+
+For mixed pretty/compact acceptance history use `node scripts/preflight.mjs records --input <absolute-private-acceptance.jsonl>`. The reader is lossless and rejects truncated objects; it does not repair, rewrite, count completion or release a queue. Recover missing tails before advancing.
+
+Treat `output_hint` prose as prose. Recover only an actual existing absolute image path returned by the tool or confirmed in owned output records; verify its bytes and open it before another call. Metadata/path failures do not justify regenerating an existing output.
+
+After every entry the parent records actual workflow, skill version, ordered inputs, attempt/recovery sequence, timing coverage and unknowns, separate worker/parent quality and defects, and stored/catalog status. The worker supplies normal production evidence; the parent writes the improvement note. Timing does not become a full-cycle benchmark merely because the receipt is valid.
